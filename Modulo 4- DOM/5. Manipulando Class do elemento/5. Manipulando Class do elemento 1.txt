@@ -1,0 +1,9 @@
+no scipt
+
+criar as funcçoes verde, vermelho e azul
+primeiro passo selecionar os elementos  (document.getElementById(exemplo) ou query selector document.querySelector('#exemplo').classList
+
+após selecionado o elemento, para se alterar a classe existe o .classlist que retorna o elemento chamado DomTokenLiist 
+o .classlist retorna o objeto que controla as classe do elemento especifico
+
+document.querySelector('exemplo').classList.add('verde');

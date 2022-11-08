@@ -1,0 +1,44 @@
+como substituir textos especificos 
+
+REPLACE
+
+
+recebe dois paramentros
+o primeiro é o pesquisado
+e o segundo é o conteudo  que entrara no lugar 
+
+TOUPPERCASE 
+transforma tudo em maiusculo
+
+TOLOWERCASE
+transforma tudo em minusculo
+
+CONCAT
+
+pega o valor da variavel e concatena com o que passo de parametro 
+posso passar quantos parametro quiser 
+
+TRIM
+nao tem nenhum parametro
+apenas tira os espaços
+
+CHARAT 
+tem um parametro 
+que vai mostrar a posicação do caracter
+
+exemplo:
+
+let nome = bozo
+
+let resultado = nome.charAt(2) 
+
+vai mostrar a letra "z" que é o carcter que esta na posição dois 
+
+apartir do ecma script 5
+simplismente pode se usar nome[2]; e ja da a posicação do cactere
+
+SPLIT 
+é passado um parametro
+que vai ser achado  e  que vai ser excluido e o resto divido  em um array
+
+

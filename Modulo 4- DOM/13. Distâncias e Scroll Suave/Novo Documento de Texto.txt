@@ -1,0 +1,9 @@
+document.querySelector('.texto').scrollTop = indica em que posição a barra de rolagem na vertical (scroll) esta 
+
+document.querySelector('.texto').srollLeft = indica na horizontal
+
+window.scrolly = apresenta a posição  da barra na vertical da tela inteira 
+window.scrollx = apresenta a posição  da barra na horizontal da tela inteira 
+
+
+document.querySelector('.texto').srollTo(0,0);  = define aonde a barra sera setada srollTo(x,y)

@@ -1,0 +1,38 @@
+
+---------------------------------------------------------------------------------------------------------
+PROMISES (promeça)
+
+Verifica  se uma requisição deu certo ou não, e retornar uma função de resposta sobre o ocorrido.
+quando temos uma requisição ou processo assincrono fica temos a "promeça" de um resultado, pode ou nao ser recebido
+o promisse é um resultado temporario recebido 
+
+---------------------------------------------------------------------------------------------------------
+no exemplo a seguir a função pegarTemperatura() pega a temporatura e retorna o resultado
+ uma promise, nessa promisse é passado um callback que é executado imediatamente 
+ depois o processo é simulado com setTimeOut de 2 segundos
+
+ex: 
+
+function pegarTemperatura() {
+    return new Promise(function(resolve, reject) {
+        console.log("pegando temperatura...");
+
+        setTimeout(function(){
+            resolve('40 na sombra');
+        }, 2000);     
+    });
+}
+
+//usando promisse
+
+//pode ser armazenada em uma variavel
+
+let temp = pegarTemperatura();  // vai retornar uma promise
+
+temp.then(function(resultado){   //pega a temperatura e quando(then)derc certo e  tiver a temperatura executa function(resultado) "exibe na tela"
+       console.log("temperatura: " +resultado);
+
+       });
+tempo.catch(function(error){                  // catch quando da erro executa outra mensagem na tela 
+    console.log("erro na leitura");
+});

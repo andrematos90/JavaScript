@@ -1,0 +1,8 @@
+FORMAS DE MOSTRAR ALGO AO USUARIO (OUTPUT)
+
+existem 4 formas 
+
+primeira forma: por id
+segunda forma: através de document.write
+terceira forma: através de window (altera a janela do navegador)
+quarta forma: através de console (usado para o desenvolvedor ver no console)

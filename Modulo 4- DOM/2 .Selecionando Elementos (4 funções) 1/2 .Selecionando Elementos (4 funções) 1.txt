@@ -1,0 +1,30 @@
+
+
+existem 4 comandos para se selecionar um elemento da tela
+
+
+*pelo id
+ (document.getElementById('nome do elemento que quero achar') = "pegue o elemento pelo id"  ) seleciona apenas um elemento pq no html um elemento pode ter apenas um id
+após selecionado o elemento posso fazer qualquer coisa com ele
+
+
+document.getelementById('aquivaioid').innerHtml = "aquivaioquevaiapararecernatela";
+
+
+
+*por class
+
+document.getElementsByClassName('nomedaclass') = "pegue os elementos pelo nome da classe" seleciona varios elementos
+
+
+
+
+*pelo nome da tag
+
+documentElementoByTagName('nomedatag') utilizado para fazer uma mudança generalizada em varios elementos 
+
+
+* por name
+
+document.getelementsByName('name') mais utilizado para campos de texto
+

@@ -1,0 +1,47 @@
+
+---------------------------------------------------------------------------------------------------------
+OPERADOR REST
+
+function adicionar(numeros) {
+    console.log(numeros);
+
+}
+
+adicionar(5);
+
+supondo que nao se sabe quandtos parametros serao enviados pelo usuario
+
+function adicionar(...numeros) {
+    console.log(numeros);
+
+}
+
+adicionar(5, 6, 7, 8, 9);  // independente de quantos items forem enviados todos serao recebidos em formato de array
+
+
+---------------------------------------------------------------------------------------------------------
+
+juntando o spread com o rest
+
+function adicionar(nomes, ...novosNomes){      // usando operador rest para receber  novos parametros
+
+    let novoConjunto = [
+        ...nomes,               // usando operador spread, novo array é criado com nomes e novosNomes
+        ...novosNomes
+    ];
+
+    return novoConjunto;
+
+}
+
+let nomes = ["bonieky", "paulo"];
+
+
+
+let outros = adicionar(nomes, "antonio", "maria", "jose");
+
+console.log(outros);
+
+
+
+

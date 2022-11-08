@@ -1,0 +1,24 @@
+métodos responsaveis por extrair informação de uma string
+
+
+são 3
+
+SLICE
+
+pega um pedaço da string apartir de onde quero 
+
+dois parametro são  colocados nele só o primeiro é obrigatório
+
+o primeiro é a posicção inicial que quero começar a pegar as informaçoes 
+o segundo é até aonde
+
+SUBSTRING
+
+basicamente é igual ao slice a diferença é que no slice se um numero negativo for colocado como parametro
+ele começa a pegar as informaçoes do final da string no substring não existe essa possibilidade
+
+SUBSTR
+
+difere no segundo parametro que é a quantidade de caracteres que seram pegos e nao até aonde 
+funciona com valores negaticos 
+é usado em 90% dos casos

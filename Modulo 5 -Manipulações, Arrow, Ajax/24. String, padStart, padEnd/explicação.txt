@@ -1,0 +1,42 @@
+String, padStart, padEnd
+
+sao funções de manipulação de string
+
+---------------------------------------------------------------------------------------------------------
+PADEND
+
+caso uma string tenha por exemplo 9 caracteres, mas essa quuantidade nao é passada,
+essa função preenche os espaços faltantes 
+
+let telefone = '5';
+
+console.log(telefone.padEnd(9, '*'));     //em padEnd sao pasados dois paramentros, quantos caracteres a string deve ter no exemplo 9, o segundo é o que sera
+                                         // colocado no lugar caso a string nao tenha 9 itens no exemplo do telefone, pode ser qualquer coisa passada para preenccher 
+
+
+---------------------------------------------------------------------------------------------------------
+PADSTART
+
+preenche no inicio da string
+
+let telefone = '5';
+
+console.log(telefone.padStart(9, '*'));   
+
+
+---------------------------------------------------------------------------------------------------------
+
+Aplicação pratica:
+ocultando numeros do cartao de credito 
+
+let cartao = '112345654488945848';
+
+let lasDigits = cartao.slice(-4);
+
+let cartaoMascarado = lasDigits.padStart( 16, '*');
+
+console.log( 'Este é o seu cartão? '+cartaoMascarado);
+
+
+
+---------------------------------------------------------------------------------------------------------

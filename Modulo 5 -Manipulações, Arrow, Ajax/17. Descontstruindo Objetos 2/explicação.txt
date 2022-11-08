@@ -1,0 +1,157 @@
+
+---------------------------------------------------------------------------------------------------------
+DESCONSTRUINDO OBJETOS 
+
+eX: pegar objetos dentro de obbjetos
+a duas formas 
+
+let pessoa = {
+    nome: 'André',
+    sobrenome: 'Matos',
+    idade: 32,
+    social: {
+        facebook:'b7web',
+        instagram:'malibu'
+    },
+    nomCompleto: function(){
+        return`$(this.nome) $(this.sobrenome)`;
+    }
+};
+
+let { facebook, instagram } = pessoa.social;
+
+console.log(facebook, instagram);
+
+
+---------------------------------------------------------------------------------------------------------
+
+pegando junto com as outras informações 
+
+
+eX: pegar objetos dentro de obbjetos
+a duas formas 
+
+let pessoa = {
+    nome: 'André',
+    sobrenome: 'Matos',
+    idade: 32,
+    social: {
+        facebook:'b7web',
+        instagram:'malibu'
+    },
+    nomCompleto: function(){
+        return`$(this.nome) $(this.sobrenome)`;
+    }
+};
+
+let { nome, idade, social: { instagram} } = pessoa;
+
+console.log(nome, idade, instagram);
+
+
+para pegar a informação que esta dentro de um outro objeto, eu seleciono o objeto depois coloco a informação que quero let { nome, idade, social: { instagram} } = pessoa;
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+selecionando um objeto dentro de outro objeto
+
+
+ex:
+
+let pessoa = { 
+    nome: 'André',
+    sobrenome: 'Matos',
+    idade: 32,
+    social: {
+        facebook: 'b7web',
+        instagram: {
+            url:'@andre',
+            seguidores: 1000
+        }
+    },
+    nomCompleto: function(){
+        return`$(this.nome) $(this.sobrenome)`;
+    
+    }
+ };
+
+ let { nome, idade, social: {instagram:{url:instagram}} } = pessoa;    // dentro de "url" renomeio para "instagram"
+
+ console.log(nome, idade, instagram);
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+usando em uma função
+
+let pessoa = { 
+    nome: 'André',
+    sobrenome: 'Matos',
+    idade: 32,
+    social: {
+        facebook: 'b7web',
+        instagram: {
+            url:'@andre',
+            seguidores: 1000
+        }
+    }
+
+ };
+
+ function pegarNomeCompleto(obj){
+    return obj.nome+' '+obj.sobrenome;
+ }
+ 
+
+ console.log(pegarNomeCompleto(pessoa));
+
+
+ outra forma 
+
+ let pessoa = { 
+    nome: 'André',
+    sobrenome: 'Matos',
+    idade: 32,
+    social: {
+        facebook: 'b7web',
+        instagram: {
+            url:'@andre',
+            seguidores: 1000
+        }
+    }
+
+ };
+
+ function pegarNomeCompleto(obj){
+    let nome = obj.nome;
+    let sobrenome = obj.sobrenoome;
+
+    return `${nome} ${sobrenome}`;
+ 
+ }
+ 
+
+ console.log(pegarNomeCompleto(pessoa));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

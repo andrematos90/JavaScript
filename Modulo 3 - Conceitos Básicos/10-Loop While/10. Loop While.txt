@@ -1,0 +1,16 @@
+faz a mesma coisa do for 
+mas pode se controlar de uma forma diferente
+enquanto a condição for "satisfeita" o código roda
+
+
+
+let html = '';
+
+let c = 1;
+
+while (c = <= 10) {
+
+   html += "Numero: "+c+"<br/>;
+}
+
+document.getElementById("demo").innerHTML = html;

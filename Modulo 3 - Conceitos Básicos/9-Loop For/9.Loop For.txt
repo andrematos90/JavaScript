@@ -1,0 +1,13 @@
+loop for 
+
+forma de rodar o mesmo codigo varias vezes distintas 
+for funciona semelhante ao if mas tem 3 partes distintas:
+1. criar a variavel auxiliar, normalmente de uma letra só
+2. criar a condição 
+3. autoincrementação
+
+
+existem dois tipos de for "for loop e for loop array"
+
+
+ for loop array : percorre o array

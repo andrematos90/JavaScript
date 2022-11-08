@@ -1,0 +1,88 @@
+
+--------------------------------------------------------------------------------------------------------
+objeto DATE
+
+criando um objeto da classe DATE:
+pegando a hora,minuto,segundo,dia,mes completo
+
+let d = new Date();
+
+ 
+console.log(d);
+
+--------------------------------------------------------------------------------------------------------
+retornado apenas dia, mes,ano
+let d = new Date();
+
+console.log( d.toDateString());
+
+--------------------------------------------------------------------------------------------------------
+TOUTCSTRING()
+tira o fuso
+converte para hora GMT
+
+
+let d = new Date();
+
+console.log( d.toUTCString());
+
+--------------------------------------------------------------------------------------------------------
+definindo informaçoes para deppois manipular
+na classe date se tem a opção de colocar 7 parametros ou um apenas 
+
+let d = new Date(2020, 0, 1, 12, 30, 12);  // passando como parametro o ano o mes "no javascript o mes começa do zero" o dia, hora , minutos ....etc 
+
+console.log( d.toString());
+
+--------------------------------------------------------------------------------------------------------
+outra forma de gerar a mesma data 
+passando um unico parametro com datestring
+
+let d = new Date('2022-01-01 15:42:17');  
+
+console.log( d.toString() );
+
+--------------------------------------------------------------------------------------------------------
+as datas começão a ser contatdas apartir de 1970 
+para manipular data anterior a isso colocar o sinal de negativo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+
+---------------------------------------------------------------------------------------------------------
+CALLBACKS
+
+em javascript é uma função criada que é mandada para outra execução, geralmente assincrona
+quando determinada coisa acontecer executa tal função
+i'm gonna call you back  (eu te ligo de volta)
+é uma função que fica esperando o resultado de outra para ser executada
+
+ex:
+
+aguarda dois segundo e executa a função "alertar"
+
+function alertar(){
+    alert("opa, tudo bem?);
+
+    setTimeout(alertar, 2000);
+}
+
+ex:
+
+function alertar(){
+    console.log("opa tudo bem" +' '+nome+'?');
+}
+
+let nome = 'bonieky';
+setTimeout(alertar, 2000);
+let sobrenome = 'lacerda';
+console.log("nome completo = "+nome+' '+sobrenome);

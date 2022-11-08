@@ -1,0 +1,58 @@
+Eventos no JavaScript
+Normalmente, ao visitarmos páginas web, executamos ações através de botões, links ou elementos de ui. 
+Como esses elementos clicáveis são manipulados através de eventos em JavaScript para podermos executar determinada funcionalidade.
+
+ONCLIK
+
+Um dos eventos mais utilizados é o onclick , que é executado quando o usuário clica em um elemento. ( quando clicado "aciona" "executa a ação que esta referenciada")
+
+
+Sintaxe básica do onclick:  
+
+
+
+<element onclick="function()">Clique here</element> 
+
+<button onclick="function()">Clique here</button>
+
+Note que o atributo onclick é puramente JavaScript. O valor que ele recebe é a função que será executada já que ela é passada diretamente na tag de abertura.
+
+Em JavaScript declaramos uma função chamando-a pelo nome e em seguida adicionamos parênteses após o identificador da função(o nome da mesma)
+
+
+img01 - no html é referenciada o nome da função que é chamada de outro arquivo javacript
+ima01.1 arquivo java scripit onde fica a função
+img02 - executao código javascritp direto n
+img03 -(alterando o texto do próprio botao com a propriedade "this" significa "isto")
+img04- varios eventos combinados
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ONMOUSEOVER 
+
+executa a função quando o mouse passa sobre o elemento
+
+
+
+Eventos suportados por HTML 4.01 e XHTML
+Evento	        Origem	            Descrição	Elementos           onde se aplica
+onload	        documento	Disparado quando documento é carregado	body,frameset
+onunload	documento	Disparado quando documento é descarregado de janela ou de frame	body,frameset
+onsubmit	documento	Disparado quando formulário é submetido	form
+onreset	mouse	Disparado quando formulário é "limpado" via botão de reset	form
+onselect	mouse	Disparado quando texto é selecionado numa area de entrada de texto	input type="text", ou type="password" ou textarea
+onblur	mouse/teclado	Disparado quando elemento de entrada do formulário perde o foco, i.é, qdo texto fora do elemento é selecionado	a, area, button, input, select, textarea
+onchange	mouse/teclado	Disparado quando elemento perde o foco e foi modificado	input, select,textarea
+onclick	mouse	Disparado quando botão de formulário é pressionado ou link é selecionado via click do mouse	maioria
+ondblclick	mouse	Idem, mas click duplo do mouse	maioria
+onfocus	mouse/teclado	Disparado quando o elemento recebe foco: clicando o mouse dentro do elemento ou entrando no mesmo via Tab	a, area, button, input, select, textarea
+onmousedown	mouse	Disparado quando mouse é pressionado enquanto está sobre um elementro	maioria
+onmouseup	mouse	Idem, mas quando mouse é despressionado	maioria
+onmousemove	mouse	Disparado quando mouse é movido enquanto sobre elemento	maioria
+onmouseout	mouse	Disparado quando mouse é movido fora do elemento onde estava	maioria
+onmouseover	mouse	Disparado quando cursor do mouse é movido sobre elemento	maioria
+onkeydown	teclado	Disparado quando tecla é pressionada.	maioria
+onkeypress	teclado	Disparado quando tecla é pressionada e liberada.	maioria
+onkeyup	teclado	Disparado quando tecla pressionada é liberada.	maioria
+
+

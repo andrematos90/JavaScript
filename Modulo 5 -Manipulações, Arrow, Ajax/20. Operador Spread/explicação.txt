@@ -1,0 +1,46 @@
+
+---------------------------------------------------------------------------------------------------------
+OPERADOR SPREAD
+utilizado em funções em que se tem uma variavel com determinados dados e nao quer recriar os dados apenas adicionar mais
+
+COM ARRAY
+
+let numeros = [ 1, 2, 3, 4];
+
+let outros = [...numneros,5,6,7,8]   // outro array mas aproveitando junto o primeiro
+
+---------------------------------------------------------------------------------------------------------
+
+COM OBJETO
+
+let indo = {
+    nome:'andre',
+    sobrenome:'matos',
+    idade: 32
+};
+
+let novainfo = {
+    ...info,
+    cidade:"joinville
+    estado:"santa catarina
+};
+
+console.log(novainfo);
+
+
+COM UMA FUNÇÃO 
+
+function adicionarInfo(indo) {
+    let novasInfo = {
+        ...info,
+        status:0,
+        token:'blablabla',
+        data_cadastro:'.....'
+    };
+    
+    return novasInfo;
+
+
+}
+
+console.log(adicionarInfo({nome:'andre', 'sobrenome:'matos'}));

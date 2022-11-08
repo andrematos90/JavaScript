@@ -1,0 +1,84 @@
+
+---------------------------------------------------------------------------------------------------------
+OBJETOS: KEY, VALUES, ENTRIES
+
+servem para objetos e arrays
+---------------------------------------------------------------------------------------------------------
+KEY
+
+retorna os indices
+
+ex:
+
+let lista = ['ovo', 'pao', 'macarro', 'feijao'];
+
+console.log( Object.keys(lista) );
+
+
+---------------------------------------------------------------------------------------------------------
+VALUES
+
+retorna os valores
+
+
+let lista = ['ovo', 'pao', 'macarro', 'feijao'];
+
+console.log( Object.values(lista) );
+
+---------------------------------------------------------------------------------------------------------
+ENTRIES
+
+cria um novo array e em cada array um outro array com dois items 
+com o indice e os valores 
+
+
+
+let lista = ['ovo', 'pao', 'macarro', 'feijao'];
+
+console.log( Object.entries(lista)
+
+---------------------------------------------------------------------------------------------------------
+
+COM OBJETO
+
+KEY
+
+let pessoa = {
+    nome:'andre',
+    sobrenome:'lacerda'.
+    idade:88
+};
+
+console.log( Object.keys(pessoa));
+
+retorna um array com nomme,sobrenome e idade
+com esta função da para saber todas as chaves do objeto 
+
+
+
+---------------------------------------------------------------------------------------------------------
+VALUES
+
+   let pessoa = {
+    nome:'andre',
+    sobrenome:'lacerda'.
+    idade:88
+};
+
+console.log( Object.values(pessoa));
+
+retorna um array com andre,lacerda e 90
+com esta função da para saber todos os valores do objeto
+
+---------------------------------------------------------------------------------------------------------
+ENTRIES
+
+   let pessoa = {
+    nome:'andre',
+    sobrenome:'lacerda',
+    idade:88
+};
+
+console.log( Object.entries(pessoa));
+
+retorna um array com outros 3 arrays em cada outros dois arrays com a key e o values

@@ -1,0 +1,5 @@
+semelhante ao if
+usado para quando se tem um valor expecifico e apartir desse valor 
+fazer varias comficionais diferentes
+sempre tem que ser usado o "brake" para interromper a execução
+default: quando nenhuma das condições seja atendida usa se o default ( valor padrao)

@@ -1,0 +1,32 @@
+
+let n = 10.45454243;
+
+let res = n.toFixed(2);  // ira pegar "dois" numeros depois da virgula 
+
+console.log(res);
+
+
+---------------------------------------------------------------------------
+
+let n = 10;
+
+let res = n.toString();  // ira converter o valor para string "texto"
+
+console.log(res);
+
+---------------------------------------------------------------------------
+
+
+let n = '25';
+
+let res = parseInt(n) +5; // converte de string para number, no caso (n) é passado como paramentro e convertido para um numero inteiro
+
+console.log(res);
+
+----------------------------------------------------------------------
+
+let n = '25';
+
+let res = parseFloat(n) +5; // vai preservar os decimais do numero se ele tiver 
+
+console.log(res);

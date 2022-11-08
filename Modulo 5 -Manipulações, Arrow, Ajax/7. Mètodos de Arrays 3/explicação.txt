@@ -1,0 +1,177 @@
+MAP()
+mapeia(percorre) o array e executa uma função em cada item 
+
+exemplo: cada numero do array "lista" vai ser dobrado,
+         e salvo em um novo array, para isso  
+         dentro da função "map" é criada uma função que retorna o dobro do valor do array
+
+
+
+let lista =  ['1', '9', '12', '8'];
+
+let lista2 = [];
+
+
+lista2 = lista.map(function(item) {
+      return item * 2;
+});
+
+
+let res = lista2;
+
+console.log(res);
+
+
+
+OUTRA FORMA DE FAZER 
+
+
+let lista =  ['1', '9', '12', '8'];
+
+let lista2 = [];
+
+
+for(let i in lista) {
+    lista2.push(lista[i] * 2);
+}
+
+let res = lista2;
+
+console.log(res);
+
+--------------------------------------------------------------------------------------------------------
+FILTER()
+vai rodar uma função e essa função vai retornar true ou false
+se retornar false nao aproveita o item do array
+se retorar true aproveita
+
+ex: 
+gerar novo array apenas com numeros menores do que 20 
+
+vai filtrar os itens 
+
+
+let lista =  ['45', '4', '9', '16' , '25'];
+
+let lista2 = [];
+
+lista2 = lista.filter(function(item){
+     if(item < 20) {
+        return true;
+     } else {
+        return false;
+     }
+});
+let res = lista2;
+
+console.log(res);
+
+
+--------------------------------------------------------------------------------------------------------
+EVERY()
+filtra tudo ou nada
+retorna true ou false mas não gera um novo array
+diz se todos os itens do array batem com a condição de finiada se sim retorna  true
+
+
+let lista =  ['45', '4', '9', '16' , '25'];
+
+let lista2 = [];
+
+
+lista2 = lista.every(function(item){
+     if(item > 20) {
+        return true;
+     } else {
+        return false;
+     }
+});
+let res = lista2;
+
+console.log(res);
+
+--------------------------------------------------------------------------------------------------------
+
+SOME()
+em vez de pegar todos pega alguns itens do array
+
+let lista =  ['45', '4', '9', '16' , '25'];
+
+let lista2 = [];
+
+
+lista2 = lista.some(function(item){
+     if(item > 20) {
+        return true;
+     } else {
+        return false;
+     }
+});
+let res = lista2;
+
+console.log(res);
+
+
+todo esse codigo pode ser resumido com operador ternario:
+
+let lista =  ['45', '4', '9', '16' , '25'];
+
+let lista2 = [];
+
+
+
+lista2 = lista.some(function(item){
+
+       return (item > 3) ? true : false; //se le, se item for maior do que 3 então true se nao false
+
+});
+
+
+let res = lista2;
+
+console.log(res);
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

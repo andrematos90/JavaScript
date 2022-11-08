@@ -1,0 +1,67 @@
+
+---------------------------------------------------------------------------------------------------------
+DESCONSTRUINDO ARRAYS 
+
+ex:
+
+lembrando o array nao tem um nome como index como os objetos e sim um numero
+
+a desconstrução de arrays é feita na ordem em que o array é criado
+
+let array = [ 'Bnieki Lacerda', 'Bonieky, '@andre'];
+
+let [nomnomeCompleto, nome, sobrenome, instagram] = info;  //os aarrays nao tem nome mas nessa caso como vao virar uma variaveis é dado um nome ex: nomeCompleto, nome, sobrenome, instagram
+                                                        // qualquer nome pode ser dado e le pegara na ordem do array
+
+console.log(nomnomeCompleto, nome, sobrenome, instagram);
+
+
+--------------------------------------------------------------------------------------------------------
+
+pulando um item 
+
+ex: pegando apenas o nome completo e o instagram
+
+let array = [ 'Bnieki Lacerda', 'Bonieky, '@andre'];
+
+let [nomnomeCompleto, , , instagram] = info;
+
+console.log(nomnomeCompleto, instagram);
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+criando e ja DESCONSTRUINDO
+
+ex: 
+
+let [nome, sobrenome] = ['Bonieky', 'Lacerda'];
+
+console.log(nome, sobrenome);
+
+
+--------------------------------------------------------------------------------------------------------
+
+gerando e ja desconstruindo atraves de uma funçao
+
+function  criar(){
+    let a = [1,2,3];
+    return a;
+}
+
+let [a,b,c] = numeros;
+
+console.log(a,b,c);
+
+
+outra forma:
+
+function  criar(){
+
+    return [1,2,3];
+}
+
+let [a,b,c] = criar();
+
+console.log(a,b,c);

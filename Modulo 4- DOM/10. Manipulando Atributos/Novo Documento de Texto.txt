@@ -1,0 +1,7 @@
+insere valor no atributo
+
+settAtreibute('oatributoquequerotrocar', 'valorquequerocolocar')
+
+
+pega um atributo especifico
+getatributo

@@ -1,0 +1,49 @@
+VARIÁVEIS
+
+*Existem três tipos de declarações em JavaScript.
+
+var
+
+Declara uma variável, opcionalmente, inicializando-a com um valor.
+
+let
+
+Declara uma variável local de escopo do bloco, opcionalmente, inicializando-a com um valor.
+
+ const
+
+Declara uma constante de escopo de bloco, apenas de leitura.
+
+
+*podem começar com letra, $ ou _
+*nao podem começar com numeros
+*é possivel usar letras ou numeros
+*é possivel usar acentos e simbolos
+*não podem conter espaços
+*não podem usar palavras reservadas
+
+*todos os numeros sao do tipo "number" inteiros e ou reais
+
+* o comando 'typeof' mostra qual é o tipo da variável
+
+
+CONVERSÃO DE TIPO DE VARIAVEL 
+
+* window.prompt retorna uma string, para realizar a soma temos que fazer uma conversao para o tipo numero
+        var n2 = Number.parseInt(window.prompt(' Digite outro Numero: ')); // para converter usa se o comando
+ Number.parseInt para inteiros Number.parsefloat para reais ou apenas Number para converter automaticamente.
+
+*  para se converter de number para string pode se utilizar os comandos String(o que quero convertert) ou
+oquequeroconverter.toString().
+
+
+
+variaveis podem ser definidas com "var" ou com "let"
+
+var = essa variavel é "hoisting" enviada para o escopo geral da tela,
+pode ser usada com uma variabel global.
+
+isso significa que se tem acesso a ela em qualquer lugar do sistema.
+
+let = ela fica disponivel naquele escopo do codigo, apenas naquela area
+do código

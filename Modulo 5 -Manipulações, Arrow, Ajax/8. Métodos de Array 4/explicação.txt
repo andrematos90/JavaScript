@@ -1,0 +1,94 @@
+
+--------------------------------------------------------------------------------------------------------
+FIND()
+
+vai procurar em todo o array e retornar o primeiro item que satisfaça a  condição solicitada
+
+let lista = [45, 4 , 9, 16, 25];
+let lista2 = [];
+
+lista2 = lista.find(function(item){
+        return (item == 26) ? true : false;
+});
+
+let res = lista2;
+
+console.log(res);
+
+ex:
+
+achar sobrennome  'matos' entre varios objetos no array
+
+let lista = [
+       {id:1, nome:'Bonieky', sobrennome: 'Lacerda'},
+       {id:2, nome:'André', sobrennome: 'Matos'},
+       {id:2, nome:'Jubileu', sobrennome: 'Gomes'},
+    ];
+    
+    let pessoa = lista.find(function(item){
+       return (item.sobrennome=='Matos') ? true : false;
+    });
+    
+    let res = lista2;
+    
+    console.log(pessoa);
+
+
+"let pessoa" = é o que vou procurar
+let.find() = recebe a função
+essa função recebe o proprio item
+e simplismente é feita verificação = return (item.sobrennome=='Matos') ? true : false;
+
+
+--------------------------------------------------------------------------------------------------------
+FINDINDEX()
+
+o funcionamento é parecido a diferença é que ao invés retornar o item ele retorna a posição do item no array
+
+
+let lista = [45, 4 , 9, 16, 25];
+let lista2 = [];
+
+lista2 = lista.findIndex(function(item){
+        return (item == 26) ? true : false;
+});
+
+let res = lista2;
+
+console.log(res);
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

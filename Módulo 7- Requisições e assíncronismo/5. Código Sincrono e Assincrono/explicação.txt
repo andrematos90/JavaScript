@@ -1,0 +1,24 @@
+
+---------------------------------------------------------------------------------------------------------
+CÓDIGO SINCRONO E ASSINCRONO
+
+
+SINCRONO
+
+é executado linha a linha, é só passa a próxima após a linha atual terminar de ser executada
+
+let nome = 'bonieky';
+let sobrenome = 'lacerda';
+let completo = nome+' '+sobrenome;
+
+ASSINCRONO
+
+executa linha a linha mas pode passar para a proxima antes da atual for finaliada
+
+let nome = 'bonieky';
+let sobrenome = 'lacerda';
+let temperatura = Maquininha.pegarTemperatura(); //assincrona, essa linha levar um certo tempo para fazer a leitura mas o codigo nao espera isso para passar a executar a proxima
+let completo = nome+' '+sobrenome;
+
+
+toda requisição interna é uma requisição assincrona

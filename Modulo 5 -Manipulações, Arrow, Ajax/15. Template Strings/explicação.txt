@@ -1,0 +1,38 @@
+
+---------------------------------------------------------------------------------------------------------
+TEMPLATE STRINGS
+
+é uma nova forma de criar as strings 
+
+EX: como era feito
+
+let nome = 'André';
+let idade = 90;
+
+let frase  = 'meu nome é '+nome+' e tenho  '+idade+' anos';
+
+console.log(frase);
+
+mesma frase feita com template strings
+
+let nome = 'André';
+let idade = 90;
+let frase = `meu nome é ${nome}, e eu tenho ${idade} anos;`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

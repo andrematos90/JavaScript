@@ -1,0 +1,12 @@
+async function mostrar(){
+   let imagem = document.getElementById('imagem').files[0];  //seleciona a imagem 
+
+  //apartir do objeto "file" gera apartir dele uma URL', temos duas opções criar a imagem na lata  ex: inner.HTML = <img />; e depois altero essa imagem
+  // ou posso criar a tag da imagem e adiciono
+  let img = document.createElement('img');
+  img.src = URL.createObjectURL(imagem) // passo como parametro a imagem/file
+
+   document.getElementById('area').appendChild(img);
+}
+
+

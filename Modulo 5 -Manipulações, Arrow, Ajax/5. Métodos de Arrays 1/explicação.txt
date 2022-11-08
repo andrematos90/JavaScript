@@ -1,0 +1,110 @@
+primeiro metodo de manipulação de array
+--------------------------------------------------------------------------------------------------
+
+TOSTRING() 
+
+transforma o array em uma string 
+
+--------------------------------------------------------------------------------------------------
+JOIN()
+
+pega o array transforma em uma string separando os itens pelo que foi passado como parametro
+
+let lista =  ['ovo', 'farinha', 'leite', 'trigo'];
+
+let res = lista.join('-');
+
+console.log(res);
+
+---------------------------------------------------------------------------------------------------------------
+
+INDEXOF();
+
+vai pegar um item especifico do array e mostra aonde ele est, se for passado um item do array que nao existe ele vai apresentar um numero negativo
+
+let lista =  ['ovo', 'farinha', 'leite', 'trigo'];
+
+let res = lista.indexOf('leite');
+
+console.log(res);
+
+----------------------------------------------------------------------------------------------------------------
+
+POP() 
+
+altera o array, removendo o ultimo item da lista 
+
+let lista =  ['ovo', 'farinha', 'leite', 'trigo'];
+
+let res = lista.pop();
+
+console.log(res);
+
+-------------------------------------------------------------------------------------------------------------------
+
+SHIFT()
+
+altera o array, removendo o primeiro item da lista 
+
+let lista =  ['ovo', 'farinha', 'leite', 'trigo'];
+
+let res = lista.shift();
+
+console.log(res);
+
+----------------------------------------------------------------------------------------------------------------------
+
+PUSH()
+
+adiciona um novo item no array
+
+let lista =  ['ovo', 'farinha', 'leite', 'trigo'];
+
+let res = lista.push('fermento');
+
+console.log(res);
+
+---------------------------------------------------------------------------------------------------------------------------
+
+selecionando um item no array e alterando seu valor
+
+let lista =  ['ovo', 'farinha', 'leite', 'trigo'];
+
+lista[0] = 'ovos';
+
+let res = lista;
+
+console.log(res);
+
+se selecionar um iten que não existe, ele adiciona esse item no array ex: lista[4] = 'açucar'; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

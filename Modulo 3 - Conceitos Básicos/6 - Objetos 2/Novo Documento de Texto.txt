@@ -1,0 +1,5 @@
+uso do this
+refere se ao proprio elemento que esta sendo usado no contexto
+existe apenas dentro de um objeto
+consigo acessar de dentro do meu objeto
+atrvaes da funçao consigo acessar as propriedades ou executar outras funções

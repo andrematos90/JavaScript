@@ -1,0 +1,19 @@
+existem tres grupos diferentes de informaçoes que se pode pegar
+
+primeir grupo 
+
+documennt.querySelector('.texto').offsetHeight = o numero apresentado é a largura + scrollbar +padding+ borda
+
+document.querySelector('.texto').offsetWidth = o numero apresentado é a altura + scrollbar +padding+ borda
+
+segundo grupo 
+
+document.querySelector('.texto').clientHeight = apresenta apenas a largura do conteudo  +padding excluido o scrollbar (barra de rolagem)
+
+document.querySelector('.texto').clientWidth = apresenta apenas a altura do conteudo  +padding excluido o scrollbar (barra de rolagem)
+
+terceiro grupo 
+
+document.querySelector('.texto'.scrollHeight = apresenta o tamanho real do conteudo (texto)
+document.querySelector('.texto'.scrollWidht
+

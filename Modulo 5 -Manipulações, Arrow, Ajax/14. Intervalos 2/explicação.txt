@@ -1,0 +1,45 @@
+
+---------------------------------------------------------------------------------------------------------
+INTERVALOS OU TIMERS 
+
+setTimeOut()  um tempo é setado e depois desse tempo ele roda a função, pode ser colocado em uma variavel
+mas é mais comum "avulso"
+
+
+setTimeOut(function() {alert("rodou");}, 2000);    // primeiro parametro é passada a função que vai rodar, pode ser criada fora ou dentro desse parametro, e o segundo tempo é p quanto ele vai esperar para executar 
+
+}                                                    
+--------------------------------------------------------------------------------------------------------
+
+let timer;
+
+function rodar() {
+       timer = setTimeOut(function() {
+           document.querySelector('.demo').innerHTML = 'Rodou!';
+      }, 2000);   
+}
+
+function parar() {
+  clearTimeout();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

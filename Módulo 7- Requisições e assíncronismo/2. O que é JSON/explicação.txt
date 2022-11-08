@@ -1,0 +1,26 @@
+O que é JSON?
+Javascript Object Notation é uma sintaxe de objeo, é um objeto java script
+usado para fazer a comunicação entre requisições para guardar, enviar ou receber informações nessas requisições
+é uma forma de se "comunicar" pode se fazer essa comnicação em JSON, xml ou outras 
+JSON é um formato de arquivo de texto para transporte de dados
+---------------------------------------------------------------------------------------------------------
+
+EX: 
+
+criando um JSON, crio uma variavel e um objeto dentro dela 
+com json coloco o nome da propriedade e depois o valor dela 
+
+let pessoa = {nome: "andré", idade: 32};
+
+EX: informações dentro de informações nome, idade e caracteristicas 
+
+let pessoa = {
+    nome: "andre",
+    idade: 32,
+    caracteristicas: ['bonito', 'lindo','rico'] // adicionando varias caracteristicas com um array
+};
+
+
+EX: objeto dentro de um objeto 
+
+let pessoa = { nome: 'andre', idade: 60, estetica: {altura: 1.65, peso: 88 }};

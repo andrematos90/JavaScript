@@ -1,0 +1,71 @@
+metodos de manipulação de array
+--------------------------------------------------------------------------------------------------------
+SPLICE()
+
+
+remove um item do array
+são passados dois parametros 
+o primeiro é que vai ser removido
+e o segundo quantos itens quero remover 1
+
+
+
+let lista =  ['ovo', 'farinha', 'leite', 'trigo'];
+
+lista.splice(1,1) // apartir do item 1 quero remover um item
+
+
+
+let res = lista;
+
+console.log(res);
+
+--------------------------------------------------------------------------------------------------------
+
+CONCAT()
+
+concatenar dois arrays
+
+
+let lista =  ['ovo', 'farinha', 'leite', 'trigo'];
+let lista2 = ['fogo', 'gas', 'tempo', 'forma' ]
+
+lista.concat(lista2);
+
+
+let res = lista;
+
+console.log(res);
+
+---------------------------------------------------------------------------------------------------------
+
+SORT()
+
+altera o array ordenando em ordem alfabetica 
+
+
+let lista =  ['ovo', 'farinha', 'leite', 'trigo'];
+
+lista.sort();
+
+let res = lista;
+
+console.log(res);
+
+
+---------------------------------------------------------------------------------------------------------
+
+REVERSE()
+
+altera o array invertendo a ordem alfabetica 
+
+
+let lista =  ['ovo', 'farinha', 'leite', 'trigo'];
+
+lista.sort();
+lista.reverse();
+
+let res = lista;
+
+console.log(res);
+

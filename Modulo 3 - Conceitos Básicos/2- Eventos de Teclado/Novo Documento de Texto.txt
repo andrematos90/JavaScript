@@ -1,0 +1,14 @@
+
+
+Eventos de Teclado - onkeydown, onkeyup e onkeypress
+Neste tutorial de JavaScript, vamos aprender a detectar eventos de teclado, como onkeydown, onkeyup e o onkeypress.
+Fazer download da apostila
+Eventos de teclado: onkeydown, onkeyup e o onkeypress
+
+ Assim como os eventos de mouse, de apertar o botão do mouse, soltar e clicar, existe o mesmo para o caso de teclas do seu teclado.
+
+O onkeywdown detecta quando a tecla é pressionada (bem rápido)
+O onkeyup é o evento que detecta o contrário, quando você solta a tecla.
+E o onkeypress é o de apertar uma teclada como ALT, CONTROl ou SHIFT.
+
+O primeiro evento a ocorrer no processo de digitar uma tecla é o onkeydown, depois imediatamente onkeypress, então o sistema captura a teclada e depois ocorre o onkeyup.

@@ -1,0 +1,18 @@
+basicamente substitui todas as ouutras 4 formas , por  id, class, tag, nome sempre retorna o primeiro que achar 
+
+
+por id
+document.querySelector('#exemplo')  é o mesmo que  =  document.getElementById('exemplo')
+
+por class
+document.querySelector('.lista')   retorna apenas o primeiro
+
+document.querySelectorAll('.lista') retorna todos os itens
+
+por tag
+
+(selecionando um botao)
+document.querySelector('button') 
+
+(alterando o que tem escrito no botao)
+document.querySelector('button').inner.HTML = 'alguma coisa';

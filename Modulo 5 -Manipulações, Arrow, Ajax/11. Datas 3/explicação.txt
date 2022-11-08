@@ -1,0 +1,110 @@
+
+---------------------------------------------------------------------------------------------------------
+
+METODOS PPAR SETAR/ALTERAR INFORMAÇOES DE DATA
+
+Date.Now pega o horario atual sem precisar definir uma variavel nem instanciar um novo objeto
+na retorna uma string, retorna "timestant" do momento atual
+
+let  novoValor = Date.Now();
+
+console.log(novoValor)
+
+
+---------------------------------------------------------------------------------------------------------
+
+alterar/setar o ano setFullYear()
+
+
+
+let d = new Date();
+
+d.setFullYear(2015)
+
+let novoValor = d;
+
+console.log( novoValor);
+
+---------------------------------------------------------------------------------------------------------
+
+alterar/setar o mes setMonth()
+
+
+
+let d = new Date();
+
+d.setMonth(08)
+
+let novoValor = d;
+
+console.log( novoValor);
+
+---------------------------------------------------------------------------------------------------------
+
+alterar/setar o dia setDate()
+
+
+
+let d = new Date();
+
+d.setDate(08)
+
+let novoValor = d;
+
+console.log( novoValor);
+
+exemplo:
+
+aumentando a data atual 
+
+
+let d = new Date();
+
+d.setDate(d.getDate() + 5);
+
+let novoValor = d;
+
+console.log( novoValor);
+
+---------------------------------------------------------------------------------------------------------
+
+exemplo: adicionando 24 horas a data atual
+
+
+let d = new Date();
+
+d.setHours( d.getHours() + 24 );
+
+let novoValor = d;
+
+console.log( novoValor);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

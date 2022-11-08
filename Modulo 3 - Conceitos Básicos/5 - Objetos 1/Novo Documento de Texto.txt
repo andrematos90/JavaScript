@@ -1,0 +1,108 @@
+O objeto é semelhante ao array, a diferença é que o array é uma lista numerada e o objeto é uma lista nomeada. array usa [], objeto usa {}
+
+
+Em JavaScript um objeto é uma coleção de propriedades, sendo cada propriedade definida como uma sintaxe de par chave : valor. A chave pode ser uma string e o valor pode der qualquer informação.
+
+Para criar um objeto, use a sintaxe literal de objeto.
+
+
+Todos nós lidamos com objetos de uma maneira ou de outra ao escrevermos código em uma linguagem de programação. Em JavaScript, os objetos fornecem uma maneira para armazenarmos, manipularmos, e enviarmos dados pela rede.
+
+Objetos em JavaScript diferem de objetos em outras linguagens de programação mainstream, como o Java, de muitas maneiras. Tentarei tratar disso em outro tópico. Aqui, vamos nos concentrar nas diversas formas pelas quais o JavaScript nos permite criar objetos.
+
+Pense nos objetos em JavaScript como uma coleção de pares 'chave:valor'. Isso nos traz à maneira inicial e mais popular de criarmos objetos em JavaScript.
+
+Vamos começar.
+
+1. Criar objetos usando a sintaxe literal de objeto
+Essa é bastante simples. Tudo o que precisamos fazer é lançar os pares chave-valor, separados por dois pontos (:) dentro de um conjunto de chaves ({ }) e o objeto estará pronto para ser servido (ou consumido), como veremos abaixo:
+
+const pessoa = {
+  nome: 'testeNome',
+  sobrenome: 'testeSobrenome'
+};
+Essa é a forma mais simples e mais conhecida de se criar objetos em JavaScript.
+
+2. Criar objetos usando a palavra-chave 'new'
+Este método de criação de objetos lembra a maneira como os objetos são criados em linguagens baseadas em classes, como o Java. A propósito, a partir da ES6, as classes também são nativas no JavaScript. Assim, veremos como criar objetos definindo classes mais para o final deste artigo. Pois bem, para criar um objeto usando a palavra-chave 'new', precisamos ter uma função construtora.
+
+Existem 2 maneiras de usarmos o padrão com a palavra-chave 'new':
+
+a) Usando a palavra-chave 'new' com a função construtora Object integrada
+
+Para criar um objeto, use a palavra-chave 'new' com o construtor Object(), assim:
+
+const pessoa = new Object();
+Agora, para adicionar propriedades a esse objeto, temos de fazer algo semelhante a isso:
+
+pessoa.nome = 'testeNome';
+pessoa.sobrenome = 'testeSobrenome';
+Você deve ter percebido que esse método é um pouco mais longo para se digitar. Além disso, essa não é uma prática recomendada por haver uma resolução de escopo que acontece internamente para saber se a função construtora é integrada ou definida pelo usuário.
+
+b) Usando 'new' com uma função construtora definida pelo usuário
+
+O outro problema com a abordagem que usa a função construtora 'Object' resulta do fato de, a cada vez que criarmos um objeto, termos de adicionar manualmente as propriedades do objeto criado.
+
+E se tivéssemos de criar centenas de objetos 'pessoa'? Você pode imaginar agora o sacrifício que seria. Assim, para evitar de adicionar manualmente propriedades aos objetos, criamos funções construtoras personalizadas (ou definidas pelo usuário). Primeiro, criamos uma função construtora e, em seguida, usamos a palavra-chave 'new' para obter os objetos:
+
+function Pessoa(primNome, sbrNome) {
+  this.nome = primNome;
+  this.sobrenome = sbrNome;
+}
+Agora, quando quisermos criar um objeto 'Pessoa', basta fazer isso:
+
+const pessoaUm = new Pessoa('testeNomeUm', 'testeSobrenomeUm');
+const pessoaDois = new Pessoa('testeNomeDois', 'testeSobrenomeDois');
+3. Usar Object.create() para criar objetos
+Este padrão é bastante útil quando nos pedem para criar objetos a partir de outros objetos existentes e não diretamente, usando a sintaxe com a palavra-chave 'new'. Vejamos como usar esse padrão. Conforme afirma a MDN:
+
+O método Object.create() cria um novo objeto, utilizando um outro objeto existente como protótipo para o novo objeto a ser criado.
+Para entender o método Object.create, lembre-se apenas de que ele recebe dois parâmetros. O primeiro parâmetro é um objeto obrigatório que serve como protótipo para o novo objeto a ser criado. O segundo parâmetro é um objeto opcional que contém as propriedades a serem adicionadas ao novo objeto.
+
+Não vamos entrar em detalhes sobre os protótipos nem sobre cadeias de herança agora para mantermos nosso foco no tópico do artigo. Porém, para uma referência rápida, imagine os protótipos como sendo objetos a partir dos quais outros objetos podem pegar emprestados propriedades/métodos de que necessitam.
+
+Imagine que você tenha uma organização representada por objOrg
+
+const objOrg = { empresa: 'ABC Corp' };
+E que você queira consultar os funcionários dessa organização. Logicamente, você quer todos os objetos funcionario.
+
+const funcionario = Object.create(objOrg, { nome: { valor: 'FuncionarioUm' } });
+
+console.log(funcionario); // { empresa: "ABC Corp" }
+console.log(funcionario.nome); // "FuncionarioUm"
+4. Usar Object.assign() para criar objetos
+E se quiséssemos criar um objeto que precisa ter as propriedades de mais de um objeto?  É onde Object.assign() vem nos ajudar.
+
+Conforme diz a MDN:
+
+O método Object.assign() é usado para copiar os valores de todas as propriedades próprias enumeráveis de um ou mais objetos de origem para um objeto de destino. Este método retornará o objeto de destino.
+O método Object.assign pode receber uma quantidade qualquer de objetos como parâmetros. O primeiro parâmetro é o objeto que ele criará e retornará. O resto dos objetos passados para ele será usado para copiar as propriedades para o novo objeto. Vamos entender isso estendendo o exemplo anterior.
+
+Considere que você tenha dois objetos, conforme vemos abaixo:
+
+const objOrg = { empresa: 'ABC Corp' }
+const objCarro = { nomeCarro: 'Ford' }
+Agora, você quer um objeto funcionario de 'ABC Corp' que dirija um carro 'Ford'. Você pode fazer isso com a ajuda de Object.assign, como vemos aqui
+
+const funcionario = Object.assign({}, objOrg, objCarro);
+
+Nesse momento, você tem um objeto funcionario que tem empresa e nomeCarro como suas propriedades.
+
+console.log(funcionario); // { nomeCarro: "Ford", empresa: "ABC Corp" }
+5. Usar as classes da ES6 para criar objetos
+Você perceberá que o uso desse método é similar ao uso de 'new' com a função construtora definida pelo usuário. As funções construtoras foram substituídas por classes já que têm o suporte das especificações da ES6. Vejamos o código abaixo.
+
+class Pessoa {
+  constructor(primeiroNome, sbrNome) {
+    this.nome = primeiroNome;
+    this.sobrenome = sbrNome;
+  }
+}
+
+const pessoa = new Pessoa('testeNome', 'testeSobrenome');
+
+console.log(pessoa.nome); // testeNome
+console.log(pessoa.sobrenome); // testeSobrenome
+
+Essas são as maneiras que eu conheço de criar objetos em JavaScript. Espero que você tenha gostado deste artigo e que agora esteja entendendo como criar objetos.
+

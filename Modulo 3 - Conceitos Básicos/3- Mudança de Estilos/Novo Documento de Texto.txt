@@ -1,0 +1,64 @@
+A ideia por trás dessa técnica é muito simples, primeiramente precisamos selecionar o elemento alvo
+
+Seja por classe, id ou query selector, para isso você pode utilizar os métodos:
+
+getElementById
+getElementsByClassName
+querySelector ou querySelectorAll
+Feito isso você precisa acessar a propriedade style do elemento selecionado, e fazer as alterações no CSS
+
+Lembrando que regras como background-color que tem duas palavras, você deve substituir pelo camelCase desta maneira: backgroundColor
+
+Vamos a um exemplo prático:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Como usar JavaScript para mudar propriedades CSS</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <p id="paragrafo">Este parágrafo vai ter o CSS alterado!</p>
+</body>
+</html>
+
+
+alterando css com js ex1
+Bom, aqui temos uma tag p, com um id de parágrafo, agora vamos selecionar este elemento e alterar o estilo dele com JavaScript
+
+
+
+let el = document.getElementById('paragrafo');
+// alterando uma propriedade
+el.style.color = 'red';
+// varias propriedades
+el.style.cssText =
+    'color: blue;' +
+    'background-color: yellow;' +
+    'border: 1px solid magenta';
+
+
+
+A primeira opção devemos colocar cada propriedade em uma linha, o que pode ser bem custoso caso queiramos estilizar muito o componente
+
+Já na segunda forma concatenamos uma string em várias linhas, o que da uma impressão de CSS e fica organizado, para atingir várias propriedades de uma vez só
+
+Vai da sua escolha e necessidade
+
+E é claro, quando uma linha de código altera uma propriedade que já tinha valor antes, a anterior é substituída ( que é o caso do color )
+
+Veja como fica no navegador:
+
+O elemento recebeu todos os estilos da segunda regra, e o da primeira foi substituído
+
+E é assim que alteramos CSS com JavaScript 😀
+
+Conclusão
+Neste artigo vimos  usar JavaScript para mudar propriedades CSS
+
+Precisamos selecionar o elemento e depois alterar a propriedade style com a regra que queremos mudar no CSS, por exemplo border
+
+Aí inserimos os valores e o CSS é alterado
+
+Há a possibilidade de alterar múltiplas regras com a propriedade cssText, porém precisamos passar uma string com todas elas

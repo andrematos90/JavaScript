@@ -1,0 +1,7 @@
+A função Stringify é o contrario da parse
+é passado um JSON que é convertido para string
+---------------------------------------------------------------------------------------------------------
+
+ex:
+JSON.stringify({nome:'andre', idade: 90});
+

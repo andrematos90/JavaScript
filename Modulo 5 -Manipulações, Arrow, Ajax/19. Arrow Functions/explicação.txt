@@ -1,0 +1,64 @@
+
+---------------------------------------------------------------------------------------------------------
+ARROW FUNCTIONS (FLECHA FUNÇÃO) ou função anonmima
+nao se tem o objeto "this"
+
+primeira maneira de criar uma função
+
+function somar(x, y) { 
+
+    return x + y;
+} 
+
+console.log( somar(10, 5) );
+
+segunda maneira de criar uma função
+
+let somar = function(x,y ){
+
+            return x + y;
+
+}
+
+console.log( somar(10, 5) );
+
+terceira maneira 
+
+let somar = (x, y) => {    // => diz que é uma função
+  
+    return x + y
+}  
+
+
+outra maneira 
+
+let somar = (x + y) => x+y;    //desta maneira nao precisa do "return" como os colchetes {} precisa do return
+
+console.log(10, 5) );
+
+---------------------------------------------------------------------------------------------------------
+
+quando se tem apenas um parametro
+
+let letrasNome = (nome) => {
+    return nome.length;
+}
+
+console.log( letrasNome('Andre') );
+
+
+outra maneira usando arrow function
+
+let letrasNome = (nome) => nome.length;
+
+
+console.log( letrasNome('andre') );
+
+outra maneira 
+com apenas um parametro o parenteses é opcional( ), quando nao se tem nenhuma é obrigado a colocar 
+
+let letrasNome = nome => nome.length;
+
+console.log( letrasNome('andre') );
+
+

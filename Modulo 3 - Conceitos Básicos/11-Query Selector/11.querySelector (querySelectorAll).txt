@@ -1,0 +1,2 @@
+serve para selecionar os elementos 
+usando usando a mesma maneira que no css

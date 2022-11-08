@@ -1,0 +1,141 @@
+
+---------------------------------------------------------------------------------------------------------
+
+FUNÇÕES RELACIONADAS A MATEMATICA  CLASSE MATH.
+
+o javascript tem uma classe especifica para processos matematicos 
+
+EX:
+
+numero de PI
+
+let novoValor = Math.PI;
+
+console.log(novoValor);
+
+
+---------------------------------------------------------------------------------------------------------
+
+arrendar numeros para cima ou para baixo
+
+temos 3 funções para isso
+
+
+
+função ROUND()
+
+arredonda o numero para cima ou para baixo dependendo do proprio numero
+
+EX: 3.67 vai arredondar para cima apartir do 3.50 se for 3.49 vai arredondar para baixo
+
+let novoValor = Math.round(3.67);
+console.log( novoValor);
+
+
+---------------------------------------------------------------------------------------------------------
+
+função FLOOR()
+
+arredondar para baixo 
+
+EX: 3.67 vai arredondar para cima apartir do 3.50 se for 3.49 vai arredondar para baixo
+
+let novoValor = Math.floor(3.67);
+console.log( novoValor);
+
+---------------------------------------------------------------------------------------------------------
+
+função CEIL()
+
+arredondar para cima
+
+EX: 3.67 vai arredondar para cima apartir do 3.50 se for 3.49 vai arredondar para baixo
+
+let novoValor = Math.ceil(3.67);
+console.log( novoValor);
+
+---------------------------------------------------------------------------------------------------------
+
+função MIN()
+pega o menor numero que foi passado como parametro
+
+let novoValor = Math.min(7 , 8, 12, 89);
+
+console.log( novoValor);
+
+---------------------------------------------------------------------------------------------------------
+
+função MAX()
+pega o maior numero que foi passado como parametro
+
+let novoValor = Math.max(7 , 8, 12, 89);
+
+console.log( novoValor);
+
+---------------------------------------------------------------------------------------------------------
+
+função RANDOM()
+retorna um numero aleatorio entre 0 e 1
+
+let novoValor = Math.random();
+
+console.log( novoValor);
+
+
+para retornar entre 0 e outro numero que foi definido como parametro "100" por exemplo é usada junto com outra função
+usando o metodo random multiplicando pelo numero que quero usar como parametro  e depoir pego o resultado
+e vou arrendondar para baixo para garantir que nunca vai passar do numero que passei
+
+let novoValor = Math.floor(Math.random() * 100);
+
+console.log(novoValor);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

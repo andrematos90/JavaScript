@@ -1,0 +1,14 @@
+Quando se faz uma requisição 
+se recebe um json "puro" , ou seja uma string e dentro dessa string tem um json
+
+ex: deste modo 
+
+'{"nome: "bonieky", "idade": 90}' >> uma string 
+
+no json o nome da propriedade nao tem aspas, mas no formato de string tem que ter par a ser valido
+o proprio navegador converte  JSON.parse(), pega uma string de um json e converte para um json 
+
+ex:
+ let pessoa.parse('{"nome: "bonieky", "idade": 90}');
+---------------------------------------------------------------------------------------------------------
+
