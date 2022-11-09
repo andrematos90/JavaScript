@@ -1,0 +1,53 @@
+Em JavaScript podemos declarar variáveis de duas formas atualmente, com let ou var,
+ sendo let a forma recomendada. let permite declarar variáveis que existem apenas no escopo no qual desejamos utilizá-las.
+  Esse comportamento é diferente quando utilizamos var, que cria variáveis globais e que podem ser acessadas em qualquer local no arquivo ou função onde foram declaradas.
+
+  Variáveis podem armazenar diferentes tipos de valores como textos ou números:
+
+let tipoNumber = 12
+let tipoString1 = 'Texto entre aspas simples'
+let tipoString2 = "Texto entre aspas duplas"
+let tipoNull = null
+let tipoUndefined = undefined
+let tipoObject = { nome : 'José da Silva', idade : 18 }
+let tipoBoolean = true || false
+
+É possível atribuir a uma variável o resultado de uma expressão:
+
+let totalBruto = 5000
+let desconto = 0.1
+
+let totalLiquido = totalBruto - (totalBruto * desconto)
+
+As variáveis declaradas com let dentro de blocos if ou for não podem ser acessadas de fora destes blocos.
+
+let admin = true
+
+if(admin) {
+    let menu = [ "home", "contato", "settings" ]
+}
+
+if(menu.includes("settings")) {
+    // Alguma logica
+}
+
+Quando usamos var para declarar a variável usada como índice em um for a mesma permanece acessível, mesmo após o encerramento deste laço de repetição.
+
+for(var i = 0; i < precos.length; i++) {
+    total += precos[i]
+}
+
+media = total / precos.length
+
+console.log(i) // 3
+
+
+Para corrigir esse código devemos utilizar o let no for para evitar que variáveis criadas para a sua execução sejam acessíveis fora de seu escopo:
+
+for(let i = 0; i < precos.length; i++) {
+    total += precos[i]
+}
+
+media = total / precos.length
+
+console.log(i) // ReferenceError: i is not defined
