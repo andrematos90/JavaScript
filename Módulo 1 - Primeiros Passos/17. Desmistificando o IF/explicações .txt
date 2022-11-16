@@ -1,0 +1,86 @@
+ a função do if é verificar se é verdadeiro ou false 
+
+ Declarações if ... else
+De longe o tipo mais comum de declaração condicional que você usará em JavaScript — as modestas declarações if ... else.
+
+Sintaxe básica if ... else
+Veja a sintaxe básica do if...else no pseudocódigo:
+
+if (condicao) {
+  codigo para executar caso a condição seja verdadeira
+} else {
+  senão, executar este código
+}
+Aqui nós temos:
+
+A palavra reservada if seguida de um par de parênteses.
+Um teste condicional, localizado dentro dos parênteses (normalmente "este valor é maior que esse", ou "este valor existe"). Esta condição pode fazer uso dos operadores de comparação que discutimos no último módulo, e podem retornar true ou false.
+Um par de chaves, e dentro dele temos código — pode ser qualquer código que queiramos, e só vai ser executado se o teste condicional retornar true.
+A palavra reservada else.
+Outro par de chaves, dentro dele temos mais um pouco de código — pode ser qualquer código que queiramos, e só vai executar se o teste condicional retornar um valor diferente de true, neste caso not true, ou false.
+Este tipo de código é bem legível por seres humanos — ele diz: "if a condição for true, execute o bloco de código A, else execute o bloco de código B" (se a condição for verdadeira, execute o bloco de código A, senão execute o bloco de código B).
+
+Você precisa saber que não é obrigado a colocar a palavra reservada else e o segundo bloco de par de chaves. O código apresentado a seguir é perfeitamente válido e não produz erros:
+
+if (condicao) {
+  codigo para executar se a condição for verdadeira
+}
+
+código a ser executado
+Entretanto, você precisa ser cauteloso aqui — neste caso, repare que o segundo bloco de código não é controlado pela declaração condicional, então ele vai executar sempre, independente do teste condicional retornar true ou false. É claro, isto não é necessariamente uma coisa ruim, mas isso pode não ser o que você quer — com muita frequência você vai querer executar ou um bloco de código ou outro, não os dois juntos.
+
+Por fim, você verá muitas vezes declarações if...else escritas sem as chaves, no seguinte estilo de escrita:
+
+if (condicao) executar aqui se for verdadeira
+else executar este outro codigo
+Este é um código perfeitamente válido, mas não é recomendado — ele facilita que você escreva código fora do escopo do if e do else, o que seria mais difícil se você estivesse usando as chaves para delimitar os blocos de código, e usando multiplas linhas de código e identação.
+
+Um exemplo real
+Para entender bem a sintaxe, vamos considerar um exemplo real. Imagine um filhote de humanos sendo chamdo a ajudar com as tarefas do Pai ou da Mãe. Os pais podem falar: "Ei querido, se você me ajudar a ir e fazer as compras, eu te dou uma grana extra para que você possa comprar aquele brinquedo que você quer." Em JavaScript, nós podemos representar isso como:
+
+var comprasFeitas = false;
+
+if (comprasFeitas === true) {
+   var granaFilhote = 10;
+ } else {
+   var granaFilhote = 5;
+ }
+Esse código como mostrado irá sempre resultar na variável comprasFeitas retornando false, sendo um desapontamento para nossas pobres crianças. Cabe a nós fornecer um mecanismo para o pai definir a variável comprasFeitas como true se o filho fez as compras.
+
+Nota: Você pode ver a versão completa desse exemplo no GitHub (também veja live.)
+
+else if
+O último exemplo nos forneceu duas opções ou resultados - mas e se quisermos mais do que dois?
+
+Existe uma maneira de encadear escolhas/resultados extras ao seu if...else — usando else if. Cada escolha extra requer um bloco adicional para colocar entre if() { ... } e else { ... } — confira o seguinte exemplo mais envolvido, que pode fazer parte de um aplicativo simples de previsão do tempo:
+
+<label for="weather">Select the weather type today: </label>
+<select id="weather">
+  <option value="">--Make a choice--</option>
+  <option value="sunny">Sunny</option>
+  <option value="rainy">Rainy</option>
+  <option value="snowing">Snowing</option>
+  <option value="overcast">Overcast</option>
+</select>
+
+<p></p>
+var select = document.querySelector('select');
+var para = document.querySelector('p');
+
+select.addEventListener('change', setWeather);
+
+function setWeather() {
+  var choice = select.value;
+
+  if (choice === 'sunny') {
+    para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+  } else if (choice === 'rainy') {
+    para.textContent = 'Rain is falling outside; take a rain coat and a brolly, and don\'t stay out for too long.';
+  } else if (choice === 'snowing') {
+    para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+  } else if (choice === 'overcast') {
+    para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+  } else {
+    para.textContent = '';
+  }
+}
