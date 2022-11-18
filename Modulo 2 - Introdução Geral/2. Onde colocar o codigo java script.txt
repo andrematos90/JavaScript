@@ -1,7 +1,0 @@
-*o javascripit pode ser "usado" de duas formas 
-com a tag "script" ou criando um arquivo.js e linkando no html
-
-
-*o link que referencia o arquivo java script 
-pode ser colocado no head, mas para a página carregar mais rapido
-é colocado no fim body
