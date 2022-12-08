@@ -28,3 +28,32 @@ documentElementoByTagName('nomedatag') utilizado para fazer uma mudança general
 
 document.getelementsByName('name') mais utilizado para campos de texto
 
+
+---------------------------------------------------------------------------------------------------------------------
+
+QUERY QUERYSELECTOR
+
+basicamente substitui todas as ouutras 4 formas , por  id, class, tag, nome sempre retorna o primeiro que achar 
+
+a sintaxe é a mesma que  do css  usando o #, . etc..
+
+por id
+document.querySelector('#exemplo')  é o mesmo que  =  document.getElementById('exemplo')
+
+por class
+document.querySelector('.lista')   retorna apenas o primeiro
+
+document.querySelectorAll('.lista') retorna todos os itens
+
+por tag
+
+(selecionando um botao)
+document.querySelector('button') 
+
+(alterando o que tem escrito no botao)
+document.querySelector('button').inner.HTML = 'alguma coisa';
+
+
+
+document.querySelectorAll("#teste1 ul li")  selecionando o primeiro item de uma lista onde há duas divs com listas
+

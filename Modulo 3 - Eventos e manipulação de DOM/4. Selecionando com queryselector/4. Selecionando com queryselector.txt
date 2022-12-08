@@ -1,5 +1,6 @@
 basicamente substitui todas as ouutras 4 formas , por  id, class, tag, nome sempre retorna o primeiro que achar 
 
+a sintaxe é a mesma que  do css  usando o #, . etc..
 
 por id
 document.querySelector('#exemplo')  é o mesmo que  =  document.getElementById('exemplo')
