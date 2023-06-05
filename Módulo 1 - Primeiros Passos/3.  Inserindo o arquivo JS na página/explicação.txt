@@ -1,0 +1,38 @@
+Para inserir JavaScript em uma página HTML, você pode utilizar a tag <script>. Existem algumas maneiras diferentes de fazer isso. Vou apresentar duas opções comuns:
+
+Inserir código JavaScript diretamente na página HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de JavaScript em HTML</title>
+</head>
+<body>
+    <h1>Exemplo de JavaScript em HTML</h1>
+
+    <script>
+        // Seu código JavaScript aqui
+        alert("Olá, mundo!");
+    </script>
+</body>
+</html>
+
+Nesse exemplo, o código JavaScript é inserido diretamente entre as tags <script> e </script>. Você pode escrever o código JavaScript diretamente no local indicado.
+
+--------------------------------------------------------------------------------------------------------------
+
+Referenciar um arquivo externo de JavaScript:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de JavaScript em HTML</title>
+    <script src="meu-script.js"></script>
+</head>
+<body>
+    <h1>Exemplo de JavaScript em HTML</h1>
+</body>
+</html>
+
+Nesse exemplo, o arquivo JavaScript é referenciado usando o atributo src da tag <script>. Você precisa criar um arquivo separado chamado "meu-script.js" (ou o nome que preferir) e colocar seu código JavaScript nesse arquivo. O arquivo JavaScript será carregado e executado quando a página HTML for carregada no navegador.
