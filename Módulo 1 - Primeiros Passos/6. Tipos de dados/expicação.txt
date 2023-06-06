@@ -1,0 +1,29 @@
+Em JavaScript, existem vários tipos de dados que podem ser usados para armazenar diferentes tipos de valores. Cada tipo de dado possui características e comportamentos específicos. A seguir, explicarei os principais tipos de dados em JavaScript:
+
+Number (Número): O tipo de dado "Number" representa valores numéricos, como números inteiros e números de ponto flutuante. Por exemplo: let idade = 25;
+
+String (Texto): O tipo de dado "String" representa sequências de caracteres. Uma string é sempre definida entre aspas simples (') ou aspas duplas ("). Por exemplo: let nome = 'João';
+
+Boolean (Booleano): O tipo de dado "Boolean" representa valores lógicos verdadeiro ou falso. Os valores booleanos são true (verdadeiro) e false (falso). Por exemplo: let temCarro = true;
+
+Undefined (Indefinido): O tipo de dado "Undefined" é atribuído a uma variável que não possui um valor definido. Por exemplo: let endereco;
+
+Null (Nulo): O tipo de dado "Null" representa a ausência de valor intencional. É usado para indicar que uma variável não tem um valor válido. Por exemplo: let usuario = null;
+
+Object (Objeto): O tipo de dado "Object" representa um objeto, que é uma coleção de propriedades e métodos. Os objetos são usados para armazenar informações estruturadas. Por exemplo:
+consegue ter além de uma lista com nomes, uma referência para esse nome como nos dicionários em python.
+
+let pessoa = {
+  nome: 'Maria',
+  idade: 30,
+  cidade: 'São Paulo'
+};
+
+
+Array (Matriz): O tipo de dado "Array" representa uma lista ordenada de valores. Os elementos de uma matriz são acessados pelo seu índice, começando por 0. Por exemplo:
+
+let numeros = [1, 2, 3, 4, 5];
+let cores = ['vermelho', 'azul', 'amarelo'];
+
+
+Esses são alguns dos tipos de dados mais comuns em JavaScript. JavaScript é uma linguagem de programação de tipagem dinâmica, o que significa que você não precisa declarar explicitamente o tipo de dado de uma variável. O tipo de dado é inferido automaticamente com base no valor atribuído à variável. Isso permite que você altere o tipo de dado de uma variável durante a execução do programa.
