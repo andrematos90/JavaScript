@@ -1,5 +1,7 @@
 let nome = "andre"
-let idade = 32
+let idade = 33
 
-console.log(nome);
-console.log(idade);
+console.log("ola " + nome + " tudo bem?");
+console.log("voce tem " + idade + " anos");
+alert("ola " + nome + " tudo bom?");
+alert("você tem " + idade + " anos de idade, não é?") 

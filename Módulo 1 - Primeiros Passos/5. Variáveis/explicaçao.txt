@@ -1,53 +1,34 @@
-Em JavaScript podemos declarar variáveis de duas formas atualmente, com let ou var,
- sendo let a forma recomendada. let permite declarar variáveis que existem apenas no escopo no qual desejamos utilizá-las.
-  Esse comportamento é diferente quando utilizamos var, que cria variáveis globais e que podem ser acessadas em qualquer local no arquivo ou função onde foram declaradas.
+Em JavaScript, as variáveis são usadas para armazenar e manipular dados. Uma variável é uma referência para um valor que pode ser alterado ao longo do tempo. Para usar uma variável em JavaScript, você precisa declará-la antes de usá-la.
 
-  Variáveis podem armazenar diferentes tipos de valores como textos ou números:
+A declaração de uma variável em JavaScript pode ser feita utilizando as palavras-chave var, let ou const, seguidas pelo nome da variável. Vejamos cada uma dessas palavras-chave e suas características:
 
-let tipoNumber = 12
-let tipoString1 = 'Texto entre aspas simples'
-let tipoString2 = "Texto entre aspas duplas"
-let tipoNull = null
-let tipoUndefined = undefined
-let tipoObject = { nome : 'José da Silva', idade : 18 }
-let tipoBoolean = true || false
+var: Era a forma mais comum de declarar variáveis em versões antigas do JavaScript. Variáveis declaradas com var têm escopo de função ou escopo global, dependendo de onde são declaradas. Elas podem ser reatribuídas e redeclaradas dentro do mesmo escopo.
 
-É possível atribuir a uma variável o resultado de uma expressão:
+let: Introduzido no ECMAScript 6 (ES6), o let permite a declaração de variáveis com escopo de bloco. Isso significa que elas são visíveis apenas dentro do bloco onde são declaradas. Variáveis declaradas com let podem ser reatribuídas, mas não podem ser redeclaradas no mesmo escopo.
 
-let totalBruto = 5000
-let desconto = 0.1
+const: Também introduzido no ES6, o const é usado para declarar constantes, ou seja, valores que não podem ser alterados após a atribuição inicial. As variáveis declaradas com const têm escopo de bloco e não podem ser reatribuídas ou redeclaradas.
 
-let totalLiquido = totalBruto - (totalBruto * desconto)
+Após declarar uma variável, você pode atribuir um valor a ela utilizando o operador de atribuição =. Por exemplo:
 
-As variáveis declaradas com let dentro de blocos if ou for não podem ser acessadas de fora destes blocos.
+let idade = 25;
+const nome = 'João';
 
-let admin = true
+console.log(idade); // imprime 25
+console.log(nome); // imprime 'João'
 
-if(admin) {
-    let menu = [ "home", "contato", "settings" ]
-}
+As variáveis em JavaScript são dinâmicas, o que significa que você pode atribuir um valor de qualquer tipo a uma variável. O tipo de uma variável é determinado automaticamente com base no valor atribuído a ela. Por exemplo:
 
-if(menu.includes("settings")) {
-    // Alguma logica
-}
+let numero = 10; // tipo: número
+let texto = 'Olá'; // tipo: string
+let condicao = true; // tipo: booleano
 
-Quando usamos var para declarar a variável usada como índice em um for a mesma permanece acessível, mesmo após o encerramento deste laço de repetição.
+Você também pode alterar o valor de uma variável ao longo do tempo:
 
-for(var i = 0; i < precos.length; i++) {
-    total += precos[i]
-}
+let contador = 0;
+contador = contador + 1;
+console.log(contador); // imprime 1
 
-media = total / precos.length
+contador++; // incrementa o valor em 1
+console.log(contador); // imprime 2
 
-console.log(i) // 3
-
-
-Para corrigir esse código devemos utilizar o let no for para evitar que variáveis criadas para a sua execução sejam acessíveis fora de seu escopo:
-
-for(let i = 0; i < precos.length; i++) {
-    total += precos[i]
-}
-
-media = total / precos.length
-
-console.log(i) // ReferenceError: i is not defined
+Em resumo, variáveis em JavaScript são usadas para armazenar e manipular dados. Elas precisam ser declaradas antes de serem usadas e podem ser declaradas usando var, let ou const. As variáveis podem ter seus valores alterados ao longo do tempo e podem armazenar diferentes tipos de dados.
