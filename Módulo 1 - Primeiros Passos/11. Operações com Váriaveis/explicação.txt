@@ -1,0 +1,26 @@
+Em JavaScript, você pode realizar várias operações em variáveis. Aqui estão algumas operações comuns que você pode realizar em variáveis em JavaScript:
+
+Operações numéricas:
+
+Soma: Usando o operador +, você pode adicionar dois valores numéricos.
+Subtração: Usando o operador -, você pode subtrair um valor numérico de outro.
+Multiplicação: Usando o operador *, você pode multiplicar dois valores numéricos.
+Divisão: Usando o operador /, você pode dividir um valor numérico por outro.
+Resto da divisão: Usando o operador %, você pode obter o resto da divisão entre dois valores numéricos.
+Potenciação: Usando o operador **, você pode elevar um valor numérico a uma potência.
+Concatenação de strings:
+
+Usando o operador +, você pode concatenar duas strings em JavaScript.
+Operações lógicas:
+
+Igualdade: Usando o operador == ou ===, você pode verificar se dois valores são iguais.
+Desigualdade: Usando o operador != ou !==, você pode verificar se dois valores são diferentes.
+Maior que: Usando o operador >, você pode verificar se um valor é maior que outro.
+Menor que: Usando o operador <, você pode verificar se um valor é menor que outro.
+Maior ou igual a: Usando o operador >=, você pode verificar se um valor é maior ou igual a outro.
+Menor ou igual a: Usando o operador <=, você pode verificar se um valor é menor ou igual a outro.
+Operadores lógicos: Você também pode usar os operadores && (AND), || (OR) e ! (NOT) para combinar ou negar expressões lógicas.
+Atribuição de valores:
+
+Atribuição simples: Usando o operador =, você pode atribuir um valor a uma variável.
+Atribuição com operação: Usando operadores como +=, -=, *=, /=, entre outros, você pode realizar uma operação e atribuir o resultado a uma variável.
