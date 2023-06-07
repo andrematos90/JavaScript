@@ -30,7 +30,7 @@ else {
 > maior
 == igual
 >= maior ou igual
-<+ menor ou igual
+<= menor ou igual
 != diferente 
 
 */

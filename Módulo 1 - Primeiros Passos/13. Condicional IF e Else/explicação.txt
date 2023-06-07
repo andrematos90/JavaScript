@@ -1,0 +1,54 @@
+A estrutura condicional if/else em JavaScript é usada para executar blocos de código com base em uma condição. A sintaxe básica é a seguinte:
+
+if (condição) {
+  // bloco de código a ser executado se a condição for verdadeira
+} else {
+  // bloco de código a ser executado se a condição for falsa
+}
+
+A condição é uma expressão que é avaliada como verdadeira ou falsa. Se a condição for verdadeira, o bloco de código dentro do primeiro conjunto de chaves {} será executado. Caso contrário, se a condição for falsa, o bloco de código dentro do segundo conjunto de chaves {} será executado (se houver um bloco else).
+
+Aqui está um exemplo de uso do if/else:
+
+let idade = 18;
+
+if (idade >= 18) {
+  console.log("Você é maior de idade.");
+} else {
+  console.log("Você é menor de idade.");
+}
+
+
+No exemplo acima, a condição idade >= 18 é avaliada. Se a idade for maior ou igual a 18, a mensagem "Você é maior de idade" será exibida. Caso contrário, se a idade for menor que 18, a mensagem "Você é menor de idade" será exibida.
+
+Você também pode usar uma estrutura if sem um bloco else se não houver a necessidade de executar um código específico quando a condição for falsa. Nesse caso, o bloco de código dentro do if será executado se a condição for verdadeira, e nenhum código será executado caso contrário.
+
+
+let temperatura = 25;
+
+if (temperatura > 30) {
+  console.log("Está muito quente!");
+}
+
+console.log("Fim do programa.");
+
+No exemplo acima, se a temperatura for maior que 30, a mensagem "Está muito quente!" será exibida. Se a temperatura for 30 ou menos, nenhuma mensagem será exibida após o bloco if. O código "Fim do programa." será sempre executado, independentemente da condição.
+
+Além disso, você pode usar várias estruturas if/else aninhadas para lidar com múltiplas condições.
+
+let nota = 75;
+
+if (nota >= 90) {
+  console.log("Aprovado com nota A");
+} else if (nota >= 80) {
+  console.log("Aprovado com nota B");
+} else if (nota >= 70) {
+  console.log("Aprovado com nota C");
+} else {
+  console.log("Reprovado");
+}
+
+Neste exemplo, a nota é verificada em ordem decrescente, começando pela condição mais alta (nota >= 90) e terminando com um bloco else para qualquer nota abaixo de 70. O bloco de código correspondente à primeira condição verdadeira será executado, e os blocos seguintes serão ignorados.
+
+Esses são alguns exemplos básicos de como usar a estrutura condicional if/else em JavaScript. A estrutura if/else é uma maneira poderosa de controlar o fluxo de execução do código com base em condições específicas.
+
