@@ -1,0 +1,107 @@
+------------------------------------------------ STRINGS ----------------------------------------------------
+
+Em JavaScript, uma string é uma sequência de caracteres entre aspas simples (') ou aspas duplas ("). As strings são usadas para representar texto em JavaScript. Aqui estão algumas operações e funcionalidades comuns relacionadas a strings em JavaScript:
+
+Declaração de uma string:
+Você pode declarar uma string atribuindo um valor entre aspas simples ou aspas duplas a uma variável.
+
+Exemplo:
+
+let nome = "João";
+let mensagem = 'Olá, mundo!';
+
+Concatenação de strings:
+Para combinar duas strings em uma única string, você pode usar o operador +.
+
+Exemplo:
+
+let saudacao = "Olá";
+let nome = "Maria";
+let mensagem = saudacao + ", " + nome + "!";  // Resultado: "Olá, Maria!"
+
+
+Comprimento da string:
+Para obter o número de caracteres em uma string, você pode usar a propriedade length.
+
+Exemplo:
+
+let texto = "Olá, mundo!";
+let tamanho = texto.length;  // Resultado: 12
+
+Acessando caracteres individuais:
+Você pode acessar caracteres individuais em uma string usando a notação de colchetes [índice]. Os índices começam em 0 para o primeiro caractere e vão até length - 1 para o último caractere.
+
+Exemplo:
+
+let texto = "Olá, mundo!";
+let primeiroCaractere = texto[0];     // Resultado: "O"
+let terceiroCaractere = texto[2];     // Resultado: "á"
+let ultimoCaractere = texto[texto.length - 1];  // Resultado: "!"
+
+Métodos de manipulação de strings:
+JavaScript possui vários métodos embutidos para manipulação de strings, como toUpperCase(), toLowerCase(), substring(), split(), replace(), indexOf(), entre outros. Esses métodos permitem realizar operações como alterar o caso dos caracteres, extrair substrings, dividir uma string em um array, substituir partes da string, encontrar a posição de um caractere ou substring, entre outros.
+
+Exemplo:
+
+let texto = "Olá, mundo!";
+let textoMaiusculo = texto.toUpperCase();  // Resultado: "OLÁ, MUNDO!"
+let substring = texto.substring(4, 9);     // Resultado: " mundo"
+let arrayPalavras = texto.split(", ");     // Resultado: ["Olá", "mundo!"]
+let textoSubstituido = texto.replace("mundo", "amigo");  // Resultado: "Olá, amigo!"
+let indice = texto.indexOf("m");           // Resultado: 5
+
+
+------------------------------------- TEMPLATE STRINGS --------------------------------------------------
+
+
+Em JavaScript, o template string é uma sintaxe especial que permite criar strings formatadas de maneira mais flexível e legível. Em vez de usar aspas simples ou duplas para delimitar uma string, o template string utiliza crases (`) como delimitadores.
+
+O template string permite que você insira expressões JavaScript dentro da string, utilizando a sintaxe ${expressão}. A expressão dentro do ${} será avaliada e o resultado será inserido na string final. Isso é chamado de interpolação de string.
+
+Aqui está um exemplo de como usar o template string:
+
+
+let nome = "João";
+let idade = 25;
+
+let mensagem = `Olá, meu nome é ${nome} e eu tenho ${idade} anos.`;
+
+console.log(mensagem);
+// Saída: "Olá, meu nome é João e eu tenho 25 anos."
+
+
+o exemplo acima, a variável nome e a variável idade são incorporadas à string usando a interpolação de string dentro do template string. As expressões ${nome} e ${idade} são avaliadas e seus valores são inseridos na string resultante.
+
+Além da interpolação de variáveis, o template string também permite que você realize operações mais complexas dentro das expressões, como chamadas de função, operações aritméticas, operações lógicas, entre outras.
+
+
+let preco = 19.99;
+let desconto = 0.2;
+
+let mensagem = `O preço com desconto é ${preco - (preco * desconto)}.`;
+
+console.log(mensagem);
+// Saída: "O preço com desconto é 15.992."
+
+
+O template string também suporta quebras de linha e indentação sem a necessidade de caracteres de escape, o que facilita a escrita de strings multilinhas de forma mais legível.
+
+
+let texto = `
+  Esta é uma string
+  de várias linhas.
+  Permite quebras de linha
+  e indentação sem caracteres de escape.
+`;
+
+console.log(texto);
+// Saída:
+// "
+//   Esta é uma string
+//   de várias linhas.
+//   Permite quebras de linha
+//   e indentação sem caracteres de escape.
+// "
+
+O uso do template string em JavaScript torna a criação e formatação de strings mais simples e flexível, permitindo uma maior legibilidade e facilitando a incorporação de expressões JavaScript dentro das strings.
+
