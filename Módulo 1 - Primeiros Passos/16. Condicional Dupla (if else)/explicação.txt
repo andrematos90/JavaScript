@@ -1,0 +1,29 @@
+A estrutura de uma condicional dupla (if-else) em JavaScript permite executar um bloco de código se a condição especificada for verdadeira e executar um bloco de código diferente se a condição for falsa.
+
+Aqui está um exemplo de como usar uma condicional dupla:
+
+let idade = 25;
+
+if (idade >= 18) {
+  console.log("Você é adulto.");
+} else {
+  console.log("Você é menor de idade.");
+}
+
+Neste exemplo, a condição idade >= 18 verifica se a idade é maior ou igual a 18. Se a condição for verdadeira, o bloco de código dentro do if será executado e a mensagem "Você é adulto." será exibida. Caso contrário, o bloco de código dentro do else será executado e a mensagem "Você é menor de idade." será exibida.
+
+Você também pode encadear várias condicionais duplas usando a estrutura else if, para verificar múltiplas condições:
+
+let diaSemana = "domingo";
+
+if (diaSemana === "segunda") {
+  console.log("Hoje é segunda-feira.");
+} else if (diaSemana === "quarta") {
+  console.log("Hoje é quarta-feira.");
+} else if (diaSemana === "sexta") {
+  console.log("Hoje é sexta-feira.");
+} else {
+  console.log("Hoje não é segunda, quarta ou sexta-feira.");
+}
+
+Neste exemplo, várias condições são verificadas usando else if. Se nenhuma das condições anteriores for verdadeira, o bloco de código dentro do else será executado e a mensagem "Hoje não é segunda, quarta ou sexta-feira." será exibida.
