@@ -1,34 +1,30 @@
-/* substitua o @ pela condicional correta para que 
-o resultado seja TRUE
-*/
+/* Substitua o @ pela condicional correta para que o resultado se TRUE */
 
 let x = 10;
 let y = 5;
-console.log( x > y);
+console.log(x > y);
 
-/* substitua o @ pela condicional correta para que o resultado
-seja FALSE */
+/* Substitua o @ pela condicional correta para que o resultado se FALSE*/ 
 
 let w = "10";
 let z = 10;
-console.log( w === z);
+console.log(w === z);
 
-/* substitua o @ pela condicional correta para que
-o resultado seja TRUE
-*/
+/*
+Substitua o @ pela condicional correta para que o resultado se TRUE */
 
 let a = 10;
 let b = 5;
-console.log (a != b);
+console.log(a != b)
 
-/* crie uma condicional para verificar se o preço da carne
-esta barato ou caro. PS: até 45 esta barato.
-*/
+/*Crie uma condicional para verificar se o preço da carne esta barata ou cara . Até R$45 é barata */
 
 let preco = 40.3;
-
 if (preco <= 45) {
-    console.log ("A Carne está barata!")
+    console.log(`Preço da Carne: R$${preco}`)
+    console.log('Barata')
 }
-
-else console.log("A Carne está cara!");
+else {
+    console.log(`Preço da Carne: R$${preco}`)
+    console.log('Cara!')
+}
