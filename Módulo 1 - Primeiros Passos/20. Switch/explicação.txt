@@ -1,0 +1,54 @@
+A estrutura switch em JavaScript permite realizar múltiplos casos de verificação em uma expressão e executar diferentes blocos de código com base no valor dessa expressão. Aqui está a sintaxe básica do switch:
+
+switch (expressao) {
+  case valor1:
+    // Bloco de código a ser executado se expressao for igual a valor1
+    break;
+  case valor2:
+    // Bloco de código a ser executado se expressao for igual a valor2
+    break;
+  // Outros casos...
+  default:
+    // Bloco de código a ser executado se nenhum caso anterior for correspondido
+}
+
+
+A expressao é a expressão que será avaliada para coincidir com um ou mais casos. Cada case especifica um valor a ser comparado com a expressao. Se o valor da expressao corresponder a um dos case, o bloco de código correspondente será executado até encontrar um break. O break é usado para sair da estrutura switch após o bloco de código correspondente ser executado. Caso nenhum caso seja correspondido, o bloco de código dentro de default será executado.
+
+Aqui está um exemplo de uso do switch:
+
+let diaSemana = 2;
+let nomeDia;
+
+switch (diaSemana) {
+  case 1:
+    nomeDia = "Domingo";
+    break;
+  case 2:
+    nomeDia = "Segunda-feira";
+    break;
+  case 3:
+    nomeDia = "Terça-feira";
+    break;
+  case 4:
+    nomeDia = "Quarta-feira";
+    break;
+  case 5:
+    nomeDia = "Quinta-feira";
+    break;
+  case 6:
+    nomeDia = "Sexta-feira";
+    break;
+  case 7:
+    nomeDia = "Sábado";
+    break;
+  default:
+    nomeDia = "Dia inválido";
+}
+
+console.log("Hoje é " + nomeDia);
+
+
+Neste exemplo, a expressao é diaSemana e cada case contém um valor correspondente a um dia da semana. Dependendo do valor de diaSemana, o bloco de código correspondente será executado. No final, o nome do dia correspondente é atribuído à variável nomeDia, que é exibida no console.
+
+É importante incluir o break após cada bloco de código para evitar que a execução continue nos casos subsequentes. Caso contrário, todos os casos a partir do primeiro correspondido seriam executados.
