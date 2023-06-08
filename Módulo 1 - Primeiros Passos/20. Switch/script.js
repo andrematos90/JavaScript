@@ -8,6 +8,8 @@ camisa
 
 let profession = "policial";
 
+console.log(`Profissão: ${profession}`)
+
 switch(profession) {
     case 'fiscal':
         console.log("Camisa Verde");

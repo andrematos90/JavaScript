@@ -1,31 +1,26 @@
-/* Substitua o @ pela condicional correta para que o resultado se TRUE */
 
-let x = 10;
-let y = 5;
-console.log(x > y);
+let profissao = ''
+switch (profissao) {
+    case 'policial':
+        uniforme = 'farda'
+        console.log(`${profissao} ${uniforme}`)
+        break
 
-/* Substitua o @ pela condicional correta para que o resultado se FALSE*/ 
+    case  'bombeiro':
+        uniforme = 'camisa vermelha'
+        console.log(`${profissao} ${uniforme}`)
+        break
 
-let w = "10";
-let z = 10;
-console.log(w === z);
+    case 'médico':
+        uniforme = 'camisa branca'
+        console.log(`${profissao} ${uniforme}`)
+        break
 
-/*
-Substitua o @ pela condicional correta para que o resultado se TRUE */
-
-let a = 10;
-let b = 5;
-console.log(a != b)
-
-/*Crie uma condicional para verificar se o preço da carne esta barata ou cara . Até R$45 é barata */
-
-let preco = 40.3;
-if (preco <= 45) {
-    console.log(`Preço da Carne: R$${preco}`)
-    console.log('Barata')
+    case 'guarda':
+        uniforme = 'camisa azul'
+        console.log(`${profissao} ${uniforme}`)
+        break
+    default:
+        uniforme = 'sem unifome'
+        console.log(`${uniforme}`)
 }
-else {
-    console.log(`Preço da Carne: R$${preco}`)
-    console.log('Cara!')
-}
-
