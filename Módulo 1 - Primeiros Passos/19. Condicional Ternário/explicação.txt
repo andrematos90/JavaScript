@@ -1,0 +1,18 @@
+A condicional ternária em JavaScript é uma forma mais concisa de expressar uma condicional simples (if-else) em uma única linha. A sintaxe da condicional ternária é a seguinte:
+
+condicao ? valorSeVerdadeiro : valorSeFalso;
+
+
+A condicao é uma expressão que é avaliada como verdadeira ou falsa. Se a condicao for verdadeira, o valor valorSeVerdadeiro será retornado. Caso contrário, o valor valorSeFalso será retornado.
+
+Aqui está um exemplo de uso da condicional ternária:
+
+let idade = 20;
+let mensagem = idade >= 18 ? "Você é adulto." : "Você é menor de idade.";
+
+console.log(mensagem);
+
+
+Neste exemplo, a condicao é idade >= 18. Se a idade for maior ou igual a 18, a expressão retornará o valor "Você é adulto.". Caso contrário, a expressão retornará o valor "Você é menor de idade.". O resultado é atribuído à variável mensagem, e então a mensagem é exibida no console.
+
+A condicional ternária é útil para expressões simples onde você deseja atribuir um valor com base em uma condição, evitando a necessidade de escrever um bloco de código if-else mais extenso.
