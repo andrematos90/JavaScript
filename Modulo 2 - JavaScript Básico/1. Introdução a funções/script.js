@@ -7,3 +7,11 @@ JavaScript. Uma função é um procedimento de JavaScript
 
 
 */
+
+function mini(texto){
+   minusculo = texto.toLowerCase();
+   return minusculo
+}
+
+msg = 'ola MUNDO!';
+console.log(mini(msg));
