@@ -1,0 +1,59 @@
+JavaScript é uma linguagem de programação muito versátil que permite criar diversas funções para executar tarefas específicas. Aqui estão alguns exemplos de funções em JavaScript:
+
+Função sem parâmetros:
+
+function saudacao() {
+  console.log("Olá, mundo!");
+}
+
+// Chamando a função
+saudacao(); // Output: Olá, mundo!
+
+Função com parâmetros:
+
+function saudar(nome) {
+  console.log("Olá, " + nome + "!");
+}
+
+// Chamando a função
+saudar("João"); // Output: Olá, João!
+saudar("Maria"); // Output: Olá, Maria!
+
+Função com valor de retorno:
+
+function soma(a, b) {
+  return a + b;
+}
+
+// Chamando a função e armazenando o resultado em uma variável
+var resultado = soma(5, 3);
+console.log(resultado); // Output: 8
+
+Função anônima (sem nome) atribuída a uma variável:
+
+var saudacao = function() {
+  console.log("Olá, mundo!");
+};
+
+// Chamando a função
+saudacao(); // Output: Olá, mundo!
+
+Função de retorno de outra função (função de ordem superior):
+
+
+function criarSaudacao(saudacao) {
+  return function(nome) {
+    console.log(saudacao + ", " + nome + "!");
+  };
+}
+
+// Criando uma função de saudação personalizada
+var saudarPortugues = criarSaudacao("Olá");
+saudarPortugues("João"); // Output: Olá, João!
+
+var saudarEspanhol = criarSaudacao("Hola");
+saudarEspanhol("Maria"); // Output: Hola, Maria!
+
+Esses são apenas exemplos básicos de funções em JavaScript. A linguagem oferece muitas outras possibilidades, como funções recursivas, funções de callback, funções assíncronas, entre outras. Com JavaScript, você pode criar funções para manipular dados, interagir com o usuário, fazer requisições na web e muito mais.
+
+
