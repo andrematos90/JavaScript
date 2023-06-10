@@ -1,7 +1,11 @@
-function mini(texto){
-    minusculo = texto.toLowerCase();
-    return minusculo
-}
+function maiordeIdade(n){
+    if (n >= 18) {
+        msg = ('Maior de idade!')
+    }
+    else {
+        msg = ('Menor de idade!')
 
-msg = 'ola MUNDO!';
-console.log(mini(msg));
+    }
+}
+n = 17
+console.log(maiordeIdade(n))

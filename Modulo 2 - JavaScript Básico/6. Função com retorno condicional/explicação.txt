@@ -1,0 +1,26 @@
+Em JavaScript, um "retorno condicional" refere-se ao uso de uma expressão condicional para determinar o valor retornado por uma função. Isso permite que a função retorne diferentes valores com base em uma condição específica.
+
+Existem várias maneiras de implementar um retorno condicional em JavaScript, sendo as mais comuns o uso de declarações if/else ou o operador ternário (? :).
+
+Declarações if/else:
+
+function retornaValor(condicao) {
+  if (condicao) {
+    return "Valor se a condição for verdadeira";
+  } else {
+    return "Valor se a condição for falsa";
+  }
+}
+
+Nesse exemplo, a função retornaValor recebe uma condição como argumento. Se a condição for verdadeira, a função retorna "Valor se a condição for verdadeira". Caso contrário, retorna "Valor se a condição for falsa".
+
+Operador ternário (? :):
+
+function retornaValor(condicao) {
+  return condicao ? "Valor se a condição for verdadeira" : "Valor se a condição for falsa";
+}
+
+
+Nesse exemplo, a função retornaValor utiliza o operador ternário para realizar a mesma lógica do exemplo anterior. Se a condição for verdadeira, o valor antes do : é retornado; caso contrário, o valor após o : é retornado.
+
+Ambos os exemplos ilustram o conceito de retorno condicional em JavaScript, permitindo que uma função retorne diferentes valores com base em uma condição específica. A escolha entre as duas abordagens depende da complexidade da lógica condicional e da preferência do desenvolvedor.
