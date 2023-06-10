@@ -24,9 +24,16 @@ console.log(somar(5,2));
 // console.log(somar(5,2));
 
 
-// se tivesse apenas uma parametro, nao precisa 
-// nem de parenteses 
-// ex:
+/*4 formas de declarar a mesma função: 
 
-const sobrenome = (sob) => 'Matos' + sob;
-console.log (sobrenome('André'))
+1 - function sobrenome(sob){
+      return 'André' + ' ' + sob
+  }
+2 - const sobrenome = sob => 'André' + ' ' + sob;   se tivesse apenas uma parametro, nao precisa nem de parenteses 
+3 - const sobrenome = (sob) => 'André' + ' '+ sob;
+4 - const sobrenome = (sob) => 'André' + ' ' + sob;
+
+
+segundonome = sobrenome('matos');
+chamada da função = console.log(sobrenome(segundonome));
+*/

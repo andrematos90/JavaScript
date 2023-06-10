@@ -1,0 +1,29 @@
+Arrow functions, também conhecidas como funções de seta, são uma forma mais concisa de escrever funções em JavaScript. Elas foram introduzidas na versão ES6 (ECMAScript 2015) e proporcionam uma sintaxe mais simplificada para criar funções.
+
+Aqui está um exemplo de uma função tradicional e sua equivalente usando uma arrow function:
+
+Função tradicional:
+
+function somar(a, b) {
+  return a + b;
+}
+
+Arrow function:
+
+const somar = (a, b) => a + b;
+
+Na arrow function, utilizamos a sintaxe (parâmetros) => expressão para definir a função. No exemplo acima, (a, b) são os parâmetros da função, e a + b é a expressão que será avaliada e retornada. O uso das chaves {} e da palavra-chave return são opcionais quando a função tem apenas uma expressão.
+
+As arrow functions têm algumas características importantes:
+
+Sintaxe concisa: A sintaxe reduzida das arrow functions torna o código mais limpo e legível.
+
+Escopo léxico: As arrow functions têm escopo léxico, o que significa que elas não criam um novo escopo de função. Em vez disso, elas herdam o escopo do contexto em que são definidas.
+
+this léxico: O valor de this em uma arrow function é definido de forma léxica, o que significa que ele é herdado do contexto externo. Isso difere do comportamento em funções tradicionais, onde o valor de this pode variar dependendo de como a função é chamada.
+
+Não têm arguments: As arrow functions não têm a variável especial arguments. Se você precisar acessar os argumentos de uma arrow function, pode usar o operador rest ... para criar um array com os argumentos.
+
+As arrow functions são amplamente utilizadas em JavaScript devido à sua sintaxe concisa e ao comportamento do escopo léxico, tornando-as uma opção popular para funções simples e expressões de função.
+
+
