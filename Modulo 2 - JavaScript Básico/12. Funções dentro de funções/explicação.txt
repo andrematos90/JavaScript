@@ -1,0 +1,38 @@
+Em JavaScript, é possível definir funções dentro de outras funções. Essas são chamadas de funções aninhadas ou funções internas.
+Aqui está um exemplo de como você pode definir funções dentro de funções em JavaScript:
+
+function funcaoExterna() {
+  // Código da função externa
+
+  function funcaoInterna() {
+    // Código da função interna
+  }
+
+  // Chamada da função interna
+  funcaoInterna();
+}
+
+// Chamada da função externa
+funcaoExterna();
+
+No exemplo acima, temos uma função externa chamada funcaoExterna, que contém uma função interna chamada funcaoInterna. A função interna é definida dentro da função externa e só pode ser acessada dentro do escopo da função externa.
+
+Uma vantagem de usar funções aninhadas é que a função interna tem acesso aos parâmetros e variáveis da função externa, mesmo depois que a função externa é concluída. Isso ocorre porque a função interna mantém um "fechamento" (closure) sobre as variáveis da função externa.
+
+Aqui está um exemplo que demonstra o acesso à variável da função externa a partir da função interna:
+
+function funcaoExterna() {
+  var mensagem = 'Olá';
+
+  function funcaoInterna() {
+    console.log(mensagem); // Acesso à variável da função externa
+  }
+
+  return funcaoInterna;
+}
+
+var minhaFuncao = funcaoExterna();
+minhaFuncao(); // 'Olá'
+
+Nesse exemplo, a função externa funcaoExterna retorna a função interna funcaoInterna. Quando atribuímos a chamada de funcaoExterna() à variável minhaFuncao, obtemos uma referência à função interna. A função interna mantém acesso à variável mensagem, mesmo quando é chamada fora do escopo da função externa.
+
