@@ -1,0 +1,29 @@
+Em JavaScript, você pode declarar variáveis dentro de funções usando a palavra-chave var, let ou const. A escolha entre elas depende do escopo que você deseja para a variável.
+
+Usando var: Ao declarar uma variável com var dentro de uma função, a variável será içada (hoisted) para o topo do escopo da função. Isso significa que a variável pode ser acessada em qualquer lugar dentro da função, independentemente do local onde ela foi declarada.
+
+function minhaFuncao() {
+  var x = 10;
+  console.log(x); // 10
+}
+
+minhaFuncao();
+
+Usando let ou const: Ao declarar uma variável com let ou const dentro de uma função, a variável terá escopo de bloco. Isso significa que ela só pode ser acessada dentro do bloco onde foi declarada.
+
+
+
+function minhaFuncao() {
+  let x = 10;
+  const y = 20;
+  console.log(x); // 10
+  console.log(y); // 20
+}
+
+minhaFuncao();
+console.log(x); // Erro: x não está definido
+console.log(y); // Erro: y não está definido
+
+Além disso, vale ressaltar que variáveis declaradas dentro de funções não são acessíveis fora delas, a menos que você retorne essas variáveis ou suas referências em um valor de retorno da função.
+
+
