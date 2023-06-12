@@ -21,5 +21,5 @@ console.log(`total de ingredientes : ${ingredientes.length}`); // saber o total 
 
 // ingredientes.pop();  // função pop(), remove o ultimo item do array
 
-//ingredientes.shiht(); // função shift(), remove o primeiro item do array 
+//ingredientes.shift(); // função shift(), remove o primeiro item do array 
 
