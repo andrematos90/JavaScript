@@ -26,7 +26,7 @@ let personagem = {
     nome: 'andre',
     idade: 32,
     carros: [
-        {modelo: 'fiat', cor: 'preto'},
+        {modelo: 'fiat', cor: 'preto',},
         {modeloo: 'twingo', cor: 'prata'}
     ]
 }
