@@ -10,3 +10,7 @@ let pessoa = {
 
 console.log(pessoa.nomeCompleto());
 
+/* this é uma keyword "palavra chave" e significa isto 
+se refere ao proprio objeto, acessa ao proprio objeto
+
+*/

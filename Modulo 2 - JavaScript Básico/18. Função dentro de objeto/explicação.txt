@@ -1,0 +1,20 @@
+Em JavaScript, é comum definir funções dentro de objetos para criar métodos associados a esses objetos. Essas funções são chamadas de métodos de objeto e podem ser usadas para realizar ações ou operações relacionadas ao objeto em questão. Aqui está um exemplo de como definir uma função dentro de um objeto em JavaScript:
+
+const pessoa = {
+  nome: "João",
+  idade: 30,
+  saudacao: function() {
+    console.log("Olá, meu nome é " + this.nome + "!");
+  }
+};
+
+pessoa.saudacao(); // "Olá, meu nome é João!"
+
+
+No exemplo acima, criamos um objeto chamado "pessoa" com duas propriedades: "nome" e "idade". Em seguida, definimos uma função chamada "saudacao" dentro do objeto usando a sintaxe de função anônima. Essa função imprime uma mensagem de saudação usando o valor da propriedade "nome" do objeto "pessoa". Em seguida, chamamos o método "saudacao()" para executar a função e imprimir a mensagem.
+
+Observe o uso da palavra-chave this dentro da função. Ela se refere ao objeto atual em que o método está sendo chamado. No exemplo acima, this.nome se refere à propriedade "nome" do objeto "pessoa".
+
+Os métodos de objeto podem acessar e modificar as propriedades do objeto usando a notação de ponto (this.propriedade) e podem até mesmo interagir com outras partes do código ou realizar operações mais complexas.
+
+Os métodos de objeto em JavaScript são uma maneira poderosa de encapsular comportamentos relacionados aos objetos e tornar o código mais organizado e modular.
