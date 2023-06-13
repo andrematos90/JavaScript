@@ -18,7 +18,7 @@ personagem.caracteristicas.forca += 5; // alterando objeto dentro de objeto
 console.log(`A força é: ${personagem.caracteristicas.forca}`);
 
 personagem.olhos.push('verde'); //adicionando mais um valor no array dentro do objeto
-                               // com a função pusch() essa funçao só funciona com array
+                               // com a função push() esse metodo só funciona com array
 
     */                        
 
