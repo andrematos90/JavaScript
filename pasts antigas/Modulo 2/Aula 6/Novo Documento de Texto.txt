@@ -1,3 +1,0 @@
-o "this" só existe dentro de um objeto 
-não existe fora 
-acessa o proprio 

@@ -1,9 +1,0 @@
-variaveis podem ser definidas com "var" ou com "let"
-
-var = essa variavel é "hoisting" enviada para o escopo geral da tela,
-pode ser usada com uma variabel global.
-
-isso significa que se tem acesso a ela em qualquer lugar do sistema.
-
-let = ela fica disponivel naquele escopo do codigo, apenas naquela area
-do código

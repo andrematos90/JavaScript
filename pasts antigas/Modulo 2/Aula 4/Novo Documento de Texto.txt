@@ -1,7 +1,0 @@
-Array 
-
-é uma variavel que armazena varios valores ao mesmo tempo
-Um array é uma estrutura de dados que segue uma sequência não ordenada.
-Os elementos ficam em um lugar isolado e o acesso é realizado a partir de índices
-na primeira posição de cada item. Eles têm a funcionalidade de armazenar uma lista de itens
-dentro deles e esses itens podem ser de quaisquer formato ou tipo.
