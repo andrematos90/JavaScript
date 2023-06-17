@@ -1,0 +1,28 @@
+ O loop while é uma estrutura de controle em JavaScript que permite executar repetidamente um bloco de código enquanto uma determinada condição for verdadeira. Ele é útil quando você não sabe quantas vezes o loop precisa ser executado de antemão.
+
+Aqui está a sintaxe básica do loop while em JavaScript:
+
+
+while (condição) {
+  // Código a ser executado enquanto a condição for verdadeira
+}
+
+Vamos entender cada parte dessa sintaxe:
+
+condição: É uma expressão booleana que é avaliada antes de cada iteração do loop. Se a condição for verdadeira, o bloco de código dentro do loop será executado. Se a condição for falsa, o loop será interrompido e a execução continuará no próximo trecho de código após o loop while.
+// Código a ser executado enquanto a condição for verdadeira: Aqui você insere o código que deseja executar repetidamente enquanto a condição especificada for verdadeira. É importante garantir que a condição eventualmente se torne falsa em algum ponto, para evitar loops infinitos.
+Aqui está um exemplo prático que usa um loop while para imprimir os números de 1 a 5:
+
+var i = 1;
+
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+
+
+Nesse exemplo, o loop while continuará a ser executado enquanto o valor de i for menor ou igual a 5. A cada iteração, o valor de i é impresso no console e incrementado em 1.
+
+É importante mencionar que você precisa ter cuidado ao usar loops while, pois se a condição nunca se tornar falsa, o loop continuará indefinidamente, resultando em um loop infinito. Portanto, é essencial garantir que a condição seja eventualmente falsa para evitar esse problema.
+
+Além disso, é possível usar a declaração break dentro do loop para interromper a execução antecipadamente se uma condição específica for atendida. E você também pode usar a declaração continue para pular uma iteração do loop e avançar para a próxima.
