@@ -8,9 +8,9 @@ console.log(frutas);
 
 
 let carros = [
-    {marca: 'Fiat', ano: 2022 },
-    {marca: 'volkswagen', ano: 2002},
-    {marca: 'chevrolet', ano: 2013}
+    {marca: 'Fiat', ano: 1997 },
+    {marca: 'volkswagen', ano: 1985},
+    {marca: 'chevrolet', ano: 2010}
 ]
 
 //baseando a lista pelo ano
