@@ -1,0 +1,68 @@
+/*MÉTODOS EXPECIFICOS PARA A MANIPULAÇÃO DE ARRYS
+
+métodos específicos para manipulação de elementos no início ou no final de um array:
+
+pop(): O método pop() remove o último elemento de um array e retorna esse elemento removido. Ele também altera o tamanho do array, diminuindo-o em 1. Aqui está um exemplo de uso:
+
+const array = [1, 2, 3, 4, 5];
+const ultimoElemento = array.pop();
+console.log(array);  // Output: [1, 2, 3, 4]
+console.log(ultimoElemento);  // Output: 5
+
+
+shift(): O método shift() remove o primeiro elemento de um array e retorna esse elemento removido. Ele também altera o tamanho do array, diminuindo-o em 1. Veja um exemplo:
+
+const array = [1, 2, 3, 4, 5];
+const primeiroElemento = array.shift();
+console.log(array);  // Output: [2, 3, 4, 5]
+console.log(primeiroElemento);  // Output: 1
+
+push(): O método push() adiciona um ou mais elementos ao final de um array e retorna o novo tamanho do array. Ele modifica o array original. Aqui está um exemplo:
+
+const array = [1, 2, 3];
+const novoTamanho = array.push(4, 5);
+console.log(array);  // Output: [1, 2, 3, 4, 5]
+console.log(novoTamanho);  // Output: 5
+
+
+
+const array = [1, 2, 3, 4, 5];
+const stringUnida = array.join('-');
+console.log(stringUnida);  // Output: "1-2-3-4-5"
+
+
+Esses são métodos úteis para manipular arrays em JavaScript e podem ser usados em diferentes situações, dependendo das necessidades do seu código.
+
+
+FUNÇÕES DE ARRAYS MAIS GENÉRICAS 
+
+forEach: Executa uma função de retorno para cada elemento do array.
+
+map: Cria um novo array com os resultados da aplicação de uma função a cada elemento do array.
+
+filter: Cria um novo array contendo apenas os elementos do array original que atendem a uma determinada condição.
+
+reduce: Reduz o array a um único valor aplicando uma função cumulativa a partir da esquerda.
+
+some: Verifica se pelo menos um elemento do array atende a uma determinada condição.
+
+every: Verifica se todos os elementos do array atendem a uma determinada condição.
+
+find: Retorna o primeiro elemento do array que atende a uma determinada condição.
+
+indexOf: Retorna o índice da primeira ocorrência de um determinado elemento no array.
+
+includes: Verifica se um determinado elemento está presente no array.
+
+sort: Classifica os elementos do array em ordem alfabética ou numérica.
+
+reverse: Inverte a ordem dos elementos do array.
+
+slice: Retorna uma cópia superficial de uma porção do array, especificada por um índice inicial e final.
+
+splice: Altera o conteúdo do array removendo, substituindo ou adicionando elementos.
+
+concat: Combina dois ou mais arrays e retorna um novo array.
+
+join: Junta todos os elementos do array em uma única string usando um separador.
+
