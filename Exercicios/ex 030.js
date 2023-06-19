@@ -1,0 +1,1 @@
+/*Escreva uma função chamada filterEvenNumbers que recebe um array de números inteiros como argumento. A função deve usar o método filter() para retornar um novo array contendo apenas os números pares do array original.*/

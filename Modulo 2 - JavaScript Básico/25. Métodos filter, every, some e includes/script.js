@@ -1,7 +1,7 @@
 
 let frutas = ['uva', 'pera', 'maça','manga'];
 
-// função filter gera um novo array, ex: filtra e gera um novo array apenas com os iten que tem mais de 4 letras 
+// método filter gera um novo array, ex: filtra e gera um novo array apenas com os iten que tem mais de 4 letras 
 let bigrutas = frutas.filter((item) => {
 return  item.length > 4 ;
  
@@ -22,7 +22,7 @@ if (ok) {
     console.log('não são todos maiores');
 }
 
-// função some() filtra se algum item do array
+// método some() filtra se algum item do array
 
 
 // filtrar por "tal" fruta por exemplo

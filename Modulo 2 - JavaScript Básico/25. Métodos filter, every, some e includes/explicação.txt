@@ -1,0 +1,146 @@
+FILTER()
+O método filter() em JavaScript é usado para criar um novo array com todos os elementos que passam por um teste (função de callback) fornecido. Basicamente, ele filtra os elementos de um array com base em uma condição especificada e retorna um novo array contendo apenas os elementos que atendem a essa condição.
+
+A sintaxe básica do método filter() é a seguinte:
+
+array.filter(callback(elemento, índice, array), thisArg)
+
+array: O array original no qual você deseja aplicar o filtro.
+callback: Uma função que é chamada para cada elemento do array. Ela recebe três argumentos opcionais:
+elemento: O elemento atual sendo processado no array.
+índice (opcional): O índice do elemento atual no array.
+array (opcional): O array original no qual o método filter() foi chamado.
+thisArg (opcional): Um valor para ser usado como this ao executar a função de callback.
+
+A função de callback retorna um valor booleano (true ou false) com base em uma condição. Se o valor retornado for true, o elemento atual é incluído no novo array resultante. Caso contrário, o elemento é excluído do novo array.
+
+Aqui está um exemplo simples para ilustrar o uso do método filter():
+
+const numbers = [1, 2, 3, 4, 5];
+
+const evenNumbers = numbers.filter(function (number) {
+  return number % 2 === 0;
+});
+
+console.log(evenNumbers); // Output: [2, 4]
+
+Nesse exemplo, a função de callback verifica se cada número no array numbers é par, retornando true apenas para os números pares. O resultado é armazenado no array evenNumbers, que contém apenas os números pares filtrados.
+
+O método filter() é útil quando você deseja extrair elementos específicos de um array com base em certas condições, criando um novo array com apenas esses elementos que atendem aos critérios estabelecidos.
+
+
+
+EVERY()
+
+O  método every() é uma função de array que verifica se todos os elementos do array satisfazem uma determinada condição. Ele percorre cada elemento do array e executa uma função de retorno fornecida como argumento. Essa função de retorno deve retornar um valor booleano, indicando se o elemento atende à condição especificada ou não.
+
+A sintaxe básica do método every() é a seguinte:
+
+array.every(funçãoDeRetorno(elementoAtual[, índice[, arrayCompleto]])[, valorThis])
+
+funçãoDeRetorno: Uma função que será chamada para cada elemento do array. Ela pode receber até três argumentos:
+elementoAtual: O elemento atual sendo processado no array.
+índice (opcional): O índice do elemento atual no array.
+arrayCompleto (opcional): O array ao qual o elemento pertence.
+valorThis (opcional): Um valor a ser usado como this ao executar a função de retorno.
+
+O método every() retorna true se a função de retorno retornar true para todos os elementos do array. Caso contrário, retorna false assim que encontrar o primeiro elemento que não atenda à condição.
+
+Aqui está um exemplo simples para ilustrar o uso do método every():
+
+const numbers = [1, 2, 3, 4, 5];
+
+const allGreaterThanZero = numbers.every((number) => number > 0);
+console.log(allGreaterThanZero); // true
+
+const allEven = numbers.every((number) => number % 2 === 0);
+console.log(allEven); // false
+
+No primeiro exemplo, a função de retorno verifica se todos os números são maiores que zero. Como todos os elementos atendem a essa condição, o resultado é true. No segundo exemplo, a função de retorno verifica se todos os números são pares. Como o número 1 não é par, o método every() retorna false.
+
+Lembre-se de que o método every() irá parar de iterar assim que encontrar o primeiro elemento que não atenda à condição, o que pode ser útil em casos em que você não precisa verificar todos os elementos do array.
+
+
+SOME()
+
+Em JavaScript, o método some() é uma função de array que verifica se pelo menos um elemento do array satisfaz uma determinada condição. Ele percorre cada elemento do array e executa uma função de retorno fornecida como argumento. Essa função de retorno deve retornar um valor booleano, indicando se o elemento atende à condição especificada ou não.
+
+A sintaxe básica do método some() é a seguinte:
+
+array.some(funçãoDeRetorno(elementoAtual[, índice[, arrayCompleto]])[, valorThis])
+
+funçãoDeRetorno: Uma função que será chamada para cada elemento do array. Ela pode receber até três argumentos:
+elementoAtual: O elemento atual sendo processado no array.
+índice (opcional): O índice do elemento atual no array.
+arrayCompleto (opcional): O array ao qual o elemento pertence.
+valorThis (opcional): Um valor a ser usado como this ao executar a função de retorno.
+O método some() retorna true se a função de retorno retornar true para pelo menos um elemento do array. Caso contrário, retorna false se nenhum elemento atender à condição especificada.
+
+Aqui está um exemplo simples para ilustrar o uso do método some():
+
+
+const numbers = [1, 2, 3, 4, 5];
+
+const hasNegative = numbers.some((number) => number < 0);
+console.log(hasNegative); // false
+
+const hasEven = numbers.some((number) => number % 2 === 0);
+console.log(hasEven); // true
+
+
+No primeiro exemplo, a função de retorno verifica se algum número é menor que zero. Como todos os elementos são números positivos ou zero, o resultado é false. No segundo exemplo, a função de retorno verifica se algum número é par. Como o número 2 é par, o método some() retorna true.
+
+O método some() também pode ser utilizado para verificar a existência de um valor específico em um array. Veja o exemplo a seguir:
+
+
+const fruits = ['apple', 'banana', 'orange'];
+
+const hasBanana = fruits.some((fruit) => fruit === 'banana');
+console.log(hasBanana); // true
+
+const hasGrape = fruits.some((fruit) => fruit === 'grape');
+console.log(hasGrape); // false
+
+
+Neste exemplo, a função de retorno verifica se algum elemento do array é igual a 'banana' ou 'grape'. Como 'banana' está presente no array, o resultado é true. Já 'grape' não está presente, então o resultado é false.
+
+
+INCLUDES()
+
+Em JavaScript, o método includes() é uma função de array que verifica se um determinado elemento está presente no array. Ele retorna true se o elemento for encontrado e false caso contrário.
+
+A sintaxe básica do método includes() é a seguinte:
+
+array.includes(elementoBuscado[, índiceInicial])
+
+elementoBuscado: O elemento que você deseja verificar se está presente no array.
+índiceInicial (opcional): O índice a partir do qual a busca deve começar. Se não for fornecido, a busca será realizada em todo o array.
+O método includes() retorna true se o elementoBuscado for encontrado no array. Caso contrário, retorna false.
+
+Aqui está um exemplo simples para ilustrar o uso do método includes():
+
+
+const fruits = ['apple', 'banana', 'orange'];
+
+const hasApple = fruits.includes('apple');
+console.log(hasApple); // true
+
+const hasGrape = fruits.includes('grape');
+console.log(hasGrape); // false
+
+No exemplo acima, o primeiro uso de includes() verifica se o elemento 'apple' está presente no array de frutas. Como 'apple' está na lista, o resultado é true. O segundo uso de includes() verifica se o elemento 'grape' está presente no array. Como 'grape' não faz parte da lista, o resultado é false.
+
+O método includes() também pode ser usado com tipos de dados diferentes de strings. Veja o exemplo a seguir:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const hasThree = numbers.includes(3);
+console.log(hasThree); // true
+
+const hasTen = numbers.includes(10);
+console.log(hasTen); // false
+
+
+Neste exemplo, o primeiro uso de includes() verifica se o número 3 está presente no array. Como 3 faz parte do array, o resultado é true. O segundo uso de includes() verifica se o número 10 está presente. Como 10 não está no array, o resultado é false.
+
+O método includes() é uma maneira conveniente e simples de verificar a existência de um elemento em um array sem a necessidade de escrever um loop ou usar outros métodos de array mais complexos.
