@@ -36,3 +36,4 @@ A função filterEvenNumbers() é executada e retorna o array [8, 10, 12, 20].
 O resultado retornado pela função é exibido no console por meio do console.log().
 
 No console, você verá o array [8, 10, 12, 20], que são os números pares filtrados do array original [8, 9, 10, 11, 12, 20, 1].*/
+ 
