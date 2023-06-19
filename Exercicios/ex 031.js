@@ -22,4 +22,4 @@ Fora da função areAllPositiveNumbers, é criada uma variável chamada lista qu
 A função areAllPositiveNumbers é chamada passando o lista como argumento.
 O resultado da função é impresso no console usando console.log().
 Neste exemplo específico, como o primeiro elemento da lista é -1 (um número negativo), a função areAllPositiveNumbers retorna false.
-Portanto, o resultado impresso no console será false*/
+Portanto, o resultado impresso no console será false*/ 
