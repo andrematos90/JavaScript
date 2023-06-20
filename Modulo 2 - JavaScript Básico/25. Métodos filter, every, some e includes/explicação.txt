@@ -144,3 +144,47 @@ console.log(hasTen); // false
 Neste exemplo, o primeiro uso de includes() verifica se o número 3 está presente no array. Como 3 faz parte do array, o resultado é true. O segundo uso de includes() verifica se o número 10 está presente. Como 10 não está no array, o resultado é false.
 
 O método includes() é uma maneira conveniente e simples de verificar a existência de um elemento em um array sem a necessidade de escrever um loop ou usar outros métodos de array mais complexos.
+
+EXPLICAÇÃO FINAL
+
+Dentre os métodos filter, every, some e includes, é possível passar uma função como parâmetro para os seguintes métodos:
+
+filter: Você pode passar uma função como parâmetro para o método filter. Essa função será executada em cada elemento do array e retornará um novo array contendo apenas os elementos que satisfazem a condição especificada na função. Por exemplo:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const evenNumbers = numbers.filter(function(number) {
+  return number % 2 === 0;
+});
+
+console.log(evenNumbers); // Output: [2, 4]
+
+every: É possível passar uma função como parâmetro para o método every. Essa função será executada em cada elemento do array e deve retornar um valor booleano. O método every verifica se todos os elementos do array satisfazem a condição especificada na função. Por exemplo:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const allGreaterThanZero = numbers.every(function(number) {
+  return number > 0;
+});
+
+console.log(allGreaterThanZero); // Output: true
+
+
+Por outro lado, o método some e o método includes não aceitam uma função como parâmetro:
+
+some: O método some verifica se pelo menos um dos elementos do array satisfaz uma determinada condição. Ele não aceita uma função como parâmetro, mas espera receber um valor de teste. Por exemplo:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const hasEvenNumber = numbers.some(2);
+
+console.log(hasEvenNumber); // Output: true
+
+
+includes: O método includes verifica se um determinado valor está presente no array. Ele não aceita uma função como parâmetro, mas espera receber o valor a ser procurado. Por exemplo:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const hasNumberThree = numbers.includes(3);
+
+console.log(hasNumberThree); // Output: true
