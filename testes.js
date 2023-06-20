@@ -1,15 +1,9 @@
-let fruits = [ 'maça', 'uva', 'morando', 'banana', 'limão']
+/*
+Você está desenvolvendo um aplicativo de lista de tarefas e precisa implementar uma função que verifique se um determinado item está presente na lista. Sua tarefa é criar a função verificarPresencaItem(lista, item) utilizando o método includes().*/
 
-for(let fruit in fruits){
-    console.log(fruits[fruit])
+function verificarPresencaItem(lista, item){
+    return lista.includes(item)
 }
 
-for (fruit of fruits){
-    console.log(fruit)
-}
-
-let n = 1
-while (n <= 100){
-    console.log(n)
-    n++
-}
+arraydeNumeros = [8, 4, 8, 18]
+console.log(verificarPresencaItem(arraydeNumeros, 5))
