@@ -1,0 +1,8 @@
+let titulo = document.getElementsByTagName("h1")
+console.log(titulo)
+let container = document.getElementById("container")
+console.log(container)
+let p = document.getElementsByClassName("paragrafo")
+console.log(p)
+let primeiroItem = document.querySelector("ul li")
+console.log(primeiroItem)
