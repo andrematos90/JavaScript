@@ -1,0 +1,36 @@
+Eventos de clique, também conhecidos como eventos de click, são eventos que ocorrem quando um elemento HTML é clicado pelo usuário. Esses eventos são disparados quando o usuário pressiona e solta o botão do mouse (ou toca a tela sensível ao toque, em dispositivos móveis) em um elemento específico da página.
+
+Os eventos de clique fornecem uma maneira de capturar a interação do usuário com os elementos da página e responder a ela por meio de código. Essa interação pode incluir ações como clicar em um botão, selecionar um link, interagir com um elemento de menu ou qualquer outro elemento que seja clicável.
+
+Para lidar com eventos de clique em JavaScript, você pode adicionar um ouvinte de eventos (event listener) ao elemento HTML desejado. Isso permite que você especifique uma função que será executada sempre que o evento de clique for acionado nesse elemento.
+
+Aqui está um exemplo básico de como adicionar um ouvinte de eventos para capturar o evento de clique em um botão:
+
+const meuBotao = document.getElementById('meuBotao');
+
+meuBotao.addEventListener('click', function(event) {
+  // Código a ser executado quando o botão for clicado
+  console.log('Botão clicado!');
+});
+
+Nesse exemplo, a função anônima é acionada sempre que o botão for clicado, exibindo uma mensagem no console. Você pode substituir o código dentro dessa função pelo comportamento desejado para responder ao clique do usuário.
+
+Os eventos de clique são amplamente utilizados em desenvolvimento web para criar interatividade e tornar os elementos da página clicáveis, permitindo que os usuários realizem ações específicas em resposta aos seus cliques.
+
+
+
+ONCLICK
+
+O onclick é um atributo HTML usado para associar um evento de clique a um elemento específico em uma página da web. Ele é usado principalmente em tags HTML, como <button>, <a>, <input>, entre outros, para definir um código JavaScript a ser executado quando o elemento é clicado.
+
+Quando um elemento possui o atributo onclick, o código JavaScript especificado é acionado sempre que o elemento é clicado pelo usuário. O código JavaScript pode ser uma função existente ou um código inline diretamente no atributo onclick.
+
+Por exemplo, suponha que você tenha o seguinte botão HTML:
+
+<button onclick="minhaFuncao()">Clique aqui</button>
+
+Nesse caso, quando o botão é clicado, a função minhaFuncao() será chamada. A função minhaFuncao() pode estar definida em um arquivo JavaScript externo ou dentro da própria página.
+
+O onclick também pode ser usado em outros elementos, como links (<a>) e imagens (<img>), permitindo que ações personalizadas sejam executadas quando esses elementos são clicados.
+
+Vale ressaltar que, embora o uso de onclick seja comum e simples de implementar, em cenários mais complexos ou com melhores práticas de separação de código, é recomendado utilizar métodos de manipulação de eventos mais avançados, como a adição de ouvintes de eventos (addEventListener), principalmente quando se trabalha com JavaScript separado do código HTML.
