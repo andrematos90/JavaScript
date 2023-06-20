@@ -1,0 +1,28 @@
+No DOM, você pode selecionar elementos usando diferentes métodos, dependendo dos requisitos específicos da seleção. Aqui estão algumas das principais maneiras de selecionar elementos no DOM usando JavaScript:
+
+getElementById: Este método permite selecionar um elemento pelo valor do atributo id. Como o id deve ser único em um documento HTML, esse método retorna apenas um elemento.
+
+const element = document.getElementById('idDoElemento');
+
+getElementsByClassName: Este método seleciona todos os elementos que possuem uma determinada classe. Ele retorna uma coleção de elementos (objeto do tipo HTMLCollection ou NodeList) que correspondem à classe especificada.
+
+const elements = document.getElementsByClassName('nomeDaClasse');
+
+getElementsByTagName: Este método seleciona todos os elementos que possuem uma determinada tag (como <p>, <div>, <ul>, etc.). Ele também retorna uma coleção de elementos.
+
+const elements = document.getElementsByTagName('nomeDaTag');
+
+querySelector: Este método seleciona o primeiro elemento que corresponde a um seletor CSS especificado. Você pode usar seletores CSS para identificar o elemento desejado, como seletores de tag, classe, ID e outros.
+
+const element = document.querySelector('seletorCSS');
+
+querySelectorAll: Este método seleciona todos os elementos que correspondem a um seletor CSS especificado. Ele retorna uma coleção de elementos que correspondem ao seletor.
+
+const elements = document.querySelectorAll('seletorCSS');
+
+parentNode: Propriedade que permite acessar o nó pai de um elemento no DOM.
+
+const parentElement = element.parentNode;
+
+
+Essas são apenas algumas das maneiras mais comuns de selecionar elementos no DOM. Cada método possui suas características e pode ser útil dependendo da situação. Lembre-se de que alguns métodos retornam coleções de elementos, enquanto outros retornam apenas o primeiro elemento correspondente.
