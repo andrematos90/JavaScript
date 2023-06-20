@@ -65,3 +65,19 @@ Além de acessar e modificar elementos, você também pode adicionar ou remover 
 
 Em resumo, o DOM é uma representação estruturada de um documento HTML ou XML que permite a interação e manipulação desses elementos usando JavaScript (ou outras linguagens de programação). Ele fornece uma interface poderosa para acessar e modificar o conteúdo e a estrutura de um documento da web.
 
+
+
+ANALOGIA PARA O ENTENDIMENTO 
+
+
+Pode se fazer a analogia de que o DOM é uma maquete de uma  casa, onde alterações feitas na maquete refletem-se também na planta que é o HTML.
+
+Imagine que você tem a planta de uma casa em papel, representando sua estrutura e layout. Essa planta é o HTML, que descreve a estrutura e o conteúdo da página.
+
+Agora, você cria uma maquete física da casa baseada na planta, usando peças de montar ou outros materiais. Essa maquete é o DOM, uma representação em memória do HTML.
+
+Se você fizer alterações na maquete, como mover móveis, adicionar objetos ou alterar o layout de uma sala, essas alterações serão refletidas diretamente na planta. Da mesma forma, se você fizer alterações no DOM, como adicionar ou remover elementos, alterar atributos ou modificar o conteúdo de um elemento, essas alterações serão refletidas no HTML original.
+
+Assim como a maquete física é uma representação visual da planta, o DOM é uma representação em memória do HTML. Qualquer modificação feita no DOM afeta diretamente o HTML subjacente, assim como as alterações na maquete afetam a planta da casa.
+
+Essa analogia ajuda a ilustrar como o DOM funciona como uma representação dinâmica do HTML, onde você pode interagir com os elementos, modificá-los e ver as alterações sendo refletidas no HTML original, assim como uma maquete pode refletir as alterações feitas na planta da casa.
