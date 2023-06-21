@@ -25,7 +25,6 @@ function atualizarContador(){
     elemento.textContent = cliques++  //alterar o conteudo do elemento com a variavel clique que é incrementada a cada clique
 
 }
-
 /*
 let elemento = document.getElementById("contador"): Essa linha busca o elemento do DOM com o ID "contador" e o armazena na variável elemento.
 
