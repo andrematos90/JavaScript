@@ -32,5 +32,4 @@ let elemento = document.getElementById("contador"): Essa linha busca o elemento 
 console.log(elemento): Essa linha exibe o elemento no console do navegador. Isso é útil para verificar se o elemento está sendo corretamente obtido.
 
 elemento.textContent = cliques++: Nesta linha, a propriedade textContent do elemento é atualizada com o valor de cliques. O operador ++ é usado para incrementar o valor de cliques em 1 após atribuí-lo ao textContent. Isso garante que o valor exibido seja atualizado a cada vez que a função atualizarContador() é chamada.
-
 Portanto, quando a função atualizarContador() é chamada, o valor atual de cliques é exibido no elemento com o ID "contador" e, em seguida, é incrementado em 1 para o próximo clique.*/
