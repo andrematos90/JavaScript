@@ -20,9 +20,9 @@ Utilize apenas HTML, CSS e JavaScript para implementar a solução.*/
 let cliques = 1
 
 function atualizarContador(){
-    let elemento = document.getElementById("contador")
+    let elemento = document.getElementById("contador") //seleciona o elemento e salva na variavel
     console.log(elemento)
-    elemento.textContent = cliques++
+    elemento.textContent = cliques++  //alterar o conteudo do elemento com a variavel clique que é incrementada a cada clique
 
 }
 
