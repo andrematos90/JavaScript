@@ -19,5 +19,4 @@ A função removerItem() é definida no JavaScript e recebe o elemento como par�
 Essa abordagem também permite personalizar a lógica dentro da função removerItem() para realizar outras ações antes ou após a remoção do item, se necessário.
 
 OBS: 
-
 Usando a propriedade onclick diretamente no HTML, o elemento clicado é automaticamente passado para a função como o valor de this. Portanto, não é necessário selecionar o elemento novamente na função.*/
