@@ -1,0 +1,11 @@
+Para manipular elementos HTML usando JavaScript, você pode utilizar várias APIs e métodos e propriedades disponíveis. Algumass das principais propriedades utilizados são:
+
+
+innerHTML: A propriedade innerHTML permite obter ou definir o conteúdo HTML de um elemento. Por exemplo, elemento.innerHTML retorna o conteúdo HTML do elemento, e elemento.innerHTML = "<p>Novo conteúdo</p>" define um novo conteúdo HTML para o elemento.
+
+textContent: A propriedade textContent permite obter ou definir o texto de um elemento, sem interpretar o HTML dentro dele. Por exemplo, elemento.textContent retorna o texto do elemento, e elemento.textContent = "Novo texto" define um novo texto para o elemento.
+
+classList: A propriedade classList permite manipular as classes de um elemento. Você pode adicionar uma classe usando elemento.classList.add("classe"), remover uma classe usando elemento.classList.remove("classe"), ou verificar se um elemento possui uma classe usando elemento.classList.contains("classe").
+
+Esses são apenas alguns dos métodos e propriedades mais comuns usados para manipular elementos HTML com JavaScript. Existem muitos outros disponíveis, dependendo das suas necessidades específicas.
+
