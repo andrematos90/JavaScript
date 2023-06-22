@@ -1,5 +1,6 @@
 
 function muda(){
    let elemento = document.querySelector('#teste');
-   console.log(elemento.children[0].children);
+  let ul = elemento.querySelector('ul');
+  ul.children[0].append('NOVO')
 }

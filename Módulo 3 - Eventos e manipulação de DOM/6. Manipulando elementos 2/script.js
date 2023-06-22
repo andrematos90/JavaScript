@@ -61,4 +61,52 @@ const texto = document.createTextNode('Conteúdo');
 pai.prepend(filho1, filho2, texto);
 
 Em resumo, o append() adiciona elementos ou conteúdo ao final do elemento pai, o appendChild() adiciona um único elemento filho ao final do elemento pai, e o prepend() adiciona elementos ou conteúdo ao início do elemento pai. Esses métodos oferecem flexibilidade na manipulação do DOM e permitem adicionar elementos de maneira fácil e eficiente.
+
+
+
+
+
+
+ PRIMEIRA FORMA  ADICONA O ELMENTO E MAIS A COPIA DO ANTIGO  (EXIGE MAIS PROCESSAMENTO)
+
+function clicou() {
+    const teste = document.querySelector('#teste);   seleciona o elemento 
+    const ul = teste.quereSelector('ul'):            seleciona o elmento filho
+
+    ul.innerHTML += "<li> Item adicionador</li>;"     adiciona ao elemento
+}
+
+SEGUNDA FORMA  APENAS ADICIONA O NOVO ELMENTO 
+
+function clicou(){
+    const test = document.querySelector('#teste);
+    cons ul = teste.querySelector('#teste);
+
+    let nerwLI = documente.creatElement("li");  cria o novo elemento, "li" sera o elemento no caso
+    nerwLI.innnerText = "Item adicionado";      adiciona o conteudo ao novo elemento
+
+    ul.appendChild(nerwLI);   é elemento criado é enviado ao elemento pai
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
