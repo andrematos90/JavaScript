@@ -14,7 +14,7 @@ A função clicou() começa obtendo uma referência para um elemento HTML com o 
 Em seguida, é feito um console.log(teste.children[0].children). Vamos analisar isso em partes:
 
 teste.children[0] retorna o primeiro filho do elemento teste. Essa notação [0] é usada para acessar o primeiro elemento na lista de filhos.
-.children retorna uma lista dos filhos do primeiro filho de teste. Isso imprimirá a lista de elementos filhos.
+.children retorna uma lista dos filhos do primeiro filho de teste e não o texto que pode existir dentro por exemplo. Isso imprimirá a lista de elementos filhos.
 A próxima linha de código utiliza teste.querySelector('ul') para encontrar o primeiro elemento <ul> dentro do elemento teste. O resultado é armazenado na constante ul.
 
 A linha ul.innerHTML = "<li> Item alterado</li>"; define o conteúdo HTML da lista <ul> para uma nova string, que neste caso é "<li> Item alterado</li>". Isso substituirá todo o conteúdo anterior da lista.
