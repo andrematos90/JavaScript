@@ -1,0 +1,32 @@
+A manipulação de atributos no Document Object Model (DOM) é um processo que envolve a modificação dos atributos de elementos HTML ou XML usando JavaScript. O DOM representa a estrutura de um documento da web como uma árvore de nós, onde cada nó corresponde a um elemento, atributo, texto ou outro tipo de conteúdo presente no documento.
+
+Existem várias formas de manipular atributos no DOM usando JavaScript. Aqui estão alguns dos métodos mais comuns:
+
+Acesso aos atributos: Para acessar um atributo de um elemento no DOM, você pode usar a propriedade getAttribute(). Por exemplo, se você tiver um elemento <img> com o atributo src, pode recuperar o valor desse atributo da seguinte forma:
+
+var image = document.getElementById('myImage');
+var src = image.getAttribute('src');
+
+
+Definição de atributos: Para definir ou modificar o valor de um atributo, você pode usar o método setAttribute(). Por exemplo, para definir o atributo src de uma imagem:
+
+var image = document.getElementById('myImage');
+image.setAttribute('src', 'nova-imagem.jpg');
+
+
+Remoção de atributos: Para remover um atributo de um elemento, você pode usar o método removeAttribute(). Por exemplo, para remover o atributo src de uma imagem:
+
+var image = document.getElementById('myImage');
+image.removeAttribute('src');
+
+
+Verificação de existência de atributos: Para verificar se um elemento possui um atributo específico, você pode usar o método hasAttribute(). Por exemplo, para verificar se uma imagem tem o atributo src:
+
+var image = document.getElementById('myImage');
+if (image.hasAttribute('src')) {
+  // O atributo src existe
+} else {
+  // O atributo src não existe
+}
+
+Esses são apenas alguns exemplos básicos de manipulação de atributos no DOM usando JavaScript. O DOM oferece muitos outros métodos e propriedades para manipular elementos e seus atributos.
