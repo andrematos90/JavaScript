@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício de Seleção e Manipulação de Elementos no DOM - Nível Avançado</title>
+  <style>
+    .selected {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Tarefas</h1>
+
+  <input type="text" id="newTaskInput" placeholder="Digite uma nova tarefa">
+  <button onclick="adicionaTarefa()" id="addTaskButton">Adicionar Tarefa</button>
+
+  <ul id="taskList">
+    <li onclick="adicionaClasse(this)">Ler um livro</li>
+    <li onclick="adicionaClasse(this)">Fazer exercícios</li>
+    <li onclick="adicionaClasse(this)">Limpar o quarto</li>
+  </ul>
+
+  <script src="ex 040.js"></script>>
+</body>
+</html>
