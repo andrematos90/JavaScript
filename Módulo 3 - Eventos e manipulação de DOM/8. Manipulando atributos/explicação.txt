@@ -30,3 +30,29 @@ if (image.hasAttribute('src')) {
 }
 
 Esses são apenas alguns exemplos básicos de manipulação de atributos no DOM usando JavaScript. O DOM oferece muitos outros métodos e propriedades para manipular elementos e seus atributos.
+
+
+
+------------------------------------------------------------------------------------------------------
+PASSOS PARA SELECIONAR
+
+1° selecionar o elemento em qual esta o atributo através de um (get ou queryselector)
+2° pegar  o atributo, vairiavelparasalvaratributo = nomedavariavelqueoelmentofoisalvo.getAttribute('atributoquequeropegar')
+
+
+PARA SABER SE O ATRIBUTO EXISTE
+
+1° fazer
+
+1° selecionar o elemento em qual esta o atributo através de um (get ou queryselector)
+2° if (nomedavariavelqueoelmentofoisalvo.hasAttribute('atributoquequeroverificar'))
+           console.log('tem atributo')
+  else{
+    console.log('não possui atributo')
+  }
+
+COLOCAR ATRIBUTO OU TROCAR VALOR DO ATRIBUTO
+
+1° selecionar o elemento em qual esta o atributo através de um (get ou queryselector)
+2° nomedavariavelqueoelmentofoisalvo.setAttribute('atributoquequerotrocar', 'valorquequerocolocarnele)
+
