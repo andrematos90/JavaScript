@@ -1,0 +1,36 @@
+A manipulação de classes no DOM permite adicionar, remover e alternar classes em elementos HTML. Isso é útil para aplicar estilos dinamicamente ou controlar o comportamento dos elementos através de JavaScript. Aqui estão algumas das principais maneiras de manipular classes no DOM:
+
+classList.add(): O método add() da propriedade classList é usado para adicionar uma classe a um elemento. Por exemplo:
+
+var elemento = document.getElementById('meuElemento');
+elemento.classList.add('minhaClasse');
+
+
+Isso adicionará a classe "minhaClasse" ao elemento.
+
+classList.remove(): O método remove() da propriedade classList é usado para remover uma classe de um elemento. Por exemplo:
+
+var elemento = document.getElementById('meuElemento');
+elemento.classList.remove('minhaClasse');
+
+Isso removerá a classe "minhaClasse" do elemento, se ela estiver presente.
+
+classList.toggle(): O método toggle() da propriedade classList é usado para alternar uma classe em um elemento. Se a classe estiver presente, ela será removida; caso contrário, será adicionada. Por exemplo:
+
+var elemento = document.getElementById('meuElemento');
+elemento.classList.toggle('minhaClasse');
+
+
+Isso adicionará a classe "minhaClasse" se ela não estiver presente e a removerá se já estiver presente.
+
+classList.contains(): O método contains() da propriedade classList é usado para verificar se um elemento possui uma classe específica. Ele retorna true se o elemento tiver a classe e false caso contrário. Por exemplo:
+
+var elemento = document.getElementById('meuElemento');
+if (elemento.classList.contains('minhaClasse')) {
+  // A classe "minhaClasse" está presente no elemento
+} else {
+  // A classe "minhaClasse" não está presente no elemento
+}
+
+
+Essas são apenas algumas das principais maneiras de manipular classes no DOM usando JavaScript. A manipulação de classes é uma técnica poderosa para controlar a aparência e o comportamento de elementos HTML dinamicamente.
