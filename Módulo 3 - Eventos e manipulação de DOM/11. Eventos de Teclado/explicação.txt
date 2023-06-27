@@ -32,3 +32,16 @@ campoDeEntrada.addEventListener('keypress', function(event) {
 Nesse exemplo, os eventos de teclado são adicionados a um campo de entrada identificado por "meuCampo". Quando o usuário interage com o teclado nesse campo, os eventos são acionados e as informações sobre as teclas pressionadas, liberadas ou caracteres digitados são exibidas no console.
 
 Essa é apenas uma introdução aos eventos de teclado. Existem muitos outros recursos e funcionalidades relacionadas a esses eventos, como combinações de teclas, prevenção do comportamento padrão, entre outros.
+
+----------------------------------------------------------------------------------------------------------
+
+Existem duas formas de adicionar eventos de teclado, pelo html ou por JavaScript
+
+no HTML: 
+
+<input type="text" onkeydown="apertou()" onkeypress="segurou()" onkeyup="soltou()">
+
+no JavaScript 
+
+document.addEventListener('nomedoevento, nomedaFunção);
+
