@@ -1,0 +1,26 @@
+ Existem várias maneiras de manipular o CSS através do DOM. 
+ Aqui estão algumas das principais abordagens:
+
+Acessar o objeto style do elemento: Cada elemento HTML possui uma propriedade style que representa seus estilos inline. Você pode modificar diretamente as propriedades de estilo usando essa propriedade. Por exemplo:
+
+var elemento = document.getElementById('meuElemento');
+elemento.style.backgroundColor = 'red';
+elemento.style.fontSize = '20px';
+
+Adicionar/remover classes: Você pode adicionar ou remover classes em elementos HTML para aplicar estilos definidos em uma folha de estilo separada (CSS). Para isso, você pode usar as propriedades classList e className. Por exemplo:
+
+var elemento = document.getElementById('meuElemento');
+elemento.classList.add('destaque'); // adiciona a classe "destaque"
+elemento.classList.remove('ativo'); // remove a classe "ativo"
+elemento.className = 'novo-estilo'; // define uma nova classe
+
+Acessar ou modificar classes específicas: Se você deseja modificar uma propriedade específica de uma classe, pode usar as propriedades getComputedStyle e setProperty. Por exemplo:
+
+var elemento = document.getElementById('meuElemento');
+var estiloComputado = window.getComputedStyle(elemento); // obtém os estilos calculados
+var corDeFundo = estiloComputado.backgroundColor; // obtém a cor de fundo calculada
+
+elemento.style.setProperty('color', 'blue'); // modifica a cor do texto para azul
+
+Essas são apenas algumas das maneiras de manipular o CSS através do DOM usando JavaScript. Existem outras abordagens mais avançadas, como usar bibliotecas como jQuery ou frameworks front-end como React ou Vue.js, que fornecem funcionalidades adicionais para manipulação de estilos.
+
