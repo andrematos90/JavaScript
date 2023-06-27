@@ -1,0 +1,34 @@
+Os eventos de teclado são eventos acionados quando o usuário interage com o teclado em um elemento HTML. Esses eventos permitem capturar ações como pressionar uma tecla, soltar uma tecla ou digitar texto em campos de entrada. Com o uso de eventos de teclado, você pode criar interações dinâmicas e controlar o comportamento de um aplicativo web.
+
+Aqui estão alguns dos eventos de teclado mais comuns:
+
+keydown: O evento keydown é acionado quando uma tecla é pressionada e mantida pressionada. Esse evento ocorre repetidamente enquanto a tecla estiver sendo mantida pressionada. É útil para implementar funcionalidades como navegação por teclado ou atalhos de teclado.
+
+keyup: O evento keyup é acionado quando uma tecla é liberada após ter sido pressionada. Esse evento é útil para executar ações específicas quando uma tecla é solta.
+
+keypress: O evento keypress é acionado quando uma tecla é pressionada e solta. Esse evento é mais adequado para lidar com a entrada de caracteres de texto. É útil para capturar a entrada de texto em campos de entrada ou implementar funcionalidades como validação de entrada em tempo real.
+
+Além desses eventos principais, existem outros eventos relacionados aos eventos de teclado que fornecem informações adicionais:
+
+event.key: Essa propriedade retorna a tecla pressionada como uma string. Por exemplo, "Enter", "A", "1", etc.
+event.keyCode: Essa propriedade retorna o código numérico associado à tecla pressionada. No entanto, essa propriedade está obsoleta e é recomendado usar event.key em seu lugar.
+event.shiftKey, event.ctrlKey, event.altKey: Essas propriedades retornam um valor booleano indicando se a tecla Shift, Ctrl ou Alt foi pressionada simultaneamente com a tecla principal.
+Exemplo de uso de eventos de teclado em JavaScript:
+
+var campoDeEntrada = document.getElementById('meuCampo');
+
+campoDeEntrada.addEventListener('keydown', function(event) {
+  console.log('Tecla pressionada:', event.key);
+});
+
+campoDeEntrada.addEventListener('keyup', function(event) {
+  console.log('Tecla liberada:', event.key);
+});
+
+campoDeEntrada.addEventListener('keypress', function(event) {
+  console.log('Caractere digitado:', event.key);
+});
+
+Nesse exemplo, os eventos de teclado são adicionados a um campo de entrada identificado por "meuCampo". Quando o usuário interage com o teclado nesse campo, os eventos são acionados e as informações sobre as teclas pressionadas, liberadas ou caracteres digitados são exibidas no console.
+
+Essa é apenas uma introdução aos eventos de teclado. Existem muitos outros recursos e funcionalidades relacionadas a esses eventos, como combinações de teclas, prevenção do comportamento padrão, entre outros.
