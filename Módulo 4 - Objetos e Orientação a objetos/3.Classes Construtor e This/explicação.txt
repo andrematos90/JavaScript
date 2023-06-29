@@ -1,0 +1,26 @@
+Em JavaScript, as classes são uma forma de definir objetos que possuem propriedades e métodos em comum. Elas são consideradas uma abstração da programação orientada a objetos (POO) e fornecem uma maneira mais clara e organizada de criar e estruturar código.
+
+Uma classe é basicamente um molde ou uma planta para criar objetos. Ela define as propriedades e comportamentos que os objetos derivados dessa classe terão. As propriedades representam as características do objeto, enquanto os métodos são as ações que o objeto pode executar.
+
+Para criar uma classe em JavaScript, você pode usar a sintaxe class. Aqui está um exemplo simples de como definir uma classe chamada "Pessoa":
+
+class Pessoa {
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+
+  saudacao() {
+    console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`);
+  }
+}
+
+
+Neste exemplo, a classe "Pessoa" tem duas propriedades: "nome" e "idade". O método "saudacao()" é responsável por exibir uma saudação com o nome e a idade da pessoa.
+
+Para criar um objeto a partir dessa classe, você pode usar a palavra-chave new seguida do nome da classe e dos argumentos necessários para o construtor. Aqui está um exemplo de como criar um objeto "pessoa1" a partir da classe "Pessoa":
+
+let pessoa1 = new Pessoa("João", 25);
+pessoa1.saudacao(); // Saída: Olá, meu nome é João e tenho 25 anos.
+
+Dessa forma, as classes em JavaScript permitem criar objetos com propriedades e comportamentos compartilhados, facilitando a reutilização de código e a organização estruturada do programa.
