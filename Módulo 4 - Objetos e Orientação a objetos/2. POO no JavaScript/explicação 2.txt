@@ -1,0 +1,48 @@
+JavaScript é uma linguagem de programação que possui suporte à orientação a objetos, embora sua implementação seja um pouco diferente de outras linguagens mais tradicionais, como Java ou C++. Em JavaScript, a orientação a objetos é baseada em protótipos.
+
+Em vez de usar classes como em outros paradigmas orientados a objetos, JavaScript usa objetos protótipos. Um objeto protótipo é um objeto existente que serve como modelo para a criação de novos objetos. Cada objeto em JavaScript tem um protótipo, que é outro objeto a partir do qual herda propriedades e métodos.
+
+Aqui está um exemplo básico de como criar objetos em JavaScript usando protótipos:
+
+// Definindo um objeto protótipo
+const pessoaPrototype = {
+  cumprimentar: function() {
+    console.log(`Olá, meu nome é ${this.nome}`);
+  }
+};
+
+// Criando um novo objeto a partir do protótipo
+const pessoa1 = Object.create(pessoaPrototype);
+pessoa1.nome = "João";
+pessoa1.cumprimentar(); // Saída: Olá, meu nome é João
+
+// Criando outro objeto a partir do protótipo
+const pessoa2 = Object.create(pessoaPrototype);
+pessoa2.nome = "Maria";
+pessoa2.cumprimentar(); // Saída: Olá, meu nome é Maria
+
+Nesse exemplo, pessoaPrototype é o objeto protótipo que define a propriedade cumprimentar. Em seguida, usamos o método Object.create() para criar novos objetos pessoa1 e pessoa2 com base no protótipo. Cada objeto possui sua própria propriedade nome e herda o método cumprimentar do protótipo.
+
+Além disso, JavaScript também oferece a possibilidade de criar "classes" por meio da sintaxe de classe introduzida na versão ECMAScript 2015 (ES6). Essa sintaxe facilita a definição de objetos e seus métodos de uma maneira mais familiar para aqueles que estão acostumados com linguagens que usam classes.
+
+Aqui está um exemplo usando a sintaxe de classe em JavaScript:
+
+class Pessoa {
+  constructor(nome) {
+    this.nome = nome;
+  }
+
+  cumprimentar() {
+    console.log(`Olá, meu nome é ${this.nome}`);
+  }
+}
+
+const pessoa1 = new Pessoa("João");
+pessoa1.cumprimentar(); // Saída: Olá, meu nome é João
+
+const pessoa2 = new Pessoa("Maria");
+pessoa2.cumprimentar(); // Saída: Olá, meu nome é Maria
+
+Nesse exemplo, a classe Pessoa é definida com um construtor e um método cumprimentar. A palavra-chave new é usada para criar instâncias dessa classe.
+
+Embora a sintaxe de classe seja usada em JavaScript para criar objetos com métodos e propriedades, ela ainda é baseada em protótipos por baixo dos panos. A sintaxe de classe apenas fornece uma maneira mais conveniente e legível de trabalhar com objetos orientados a objetos em JavaScript.
