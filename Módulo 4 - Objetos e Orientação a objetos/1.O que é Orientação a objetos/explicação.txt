@@ -1,0 +1,15 @@
+A orientação a objetos é um paradigma de programação que organiza o software em torno de objetos, que são instâncias de classes. Essa abordagem se baseia no conceito de que o mundo real é composto por objetos que interagem entre si, e busca representar essa realidade na estruturação do software.
+
+Em programação orientada a objetos, um objeto é uma entidade que possui atributos (dados) e comportamentos (métodos). Os atributos são as características do objeto, enquanto os comportamentos são as ações que o objeto pode realizar ou que podem ser realizadas nele. Por exemplo, um objeto "carro" pode ter atributos como cor, modelo e ano, e comportamentos como acelerar, frear e ligar o motor.
+
+As classes são os modelos ou moldes que definem a estrutura e o comportamento dos objetos. Elas encapsulam os atributos e métodos que os objetos de uma determinada classe podem ter. A partir de uma classe, podemos criar várias instâncias, ou seja, vários objetos, que possuem as mesmas características e comportamentos definidos pela classe.
+
+Os conceitos fundamentais da orientação a objetos são:
+
+Encapsulamento: é o princípio que define que os atributos e métodos de um objeto devem estar contidos em sua própria classe, garantindo que somente o objeto tenha acesso e controle sobre seus próprios dados.
+
+Herança: é um mecanismo que permite criar novas classes a partir de classes existentes, aproveitando seus atributos e métodos. A classe criada é chamada de classe derivada ou subclasse, e a classe original é chamada de classe base ou superclasse. A herança permite reutilizar código e estabelecer relações hierárquicas entre classes.
+
+Polimorfismo: é a capacidade de objetos de diferentes classes responderem ao mesmo método de maneiras diferentes. O polimorfismo permite tratar diferentes objetos de forma uniforme, através do conceito de interfaces e herança.
+
+A orientação a objetos facilita o desenvolvimento de software modular, flexível, reutilizável e de fácil manutenção. Ela é amplamente utilizada em diversas linguagens de programação, como Java, C++, Python, entre outras.

@@ -1,0 +1,38 @@
+A orientação a objetos é um paradigma de programação que permite organizar e estruturar o código de forma mais intuitiva e modular, baseado em objetos que representam entidades do mundo real. Em JavaScript, que é uma linguagem de programação versátil e amplamente usada, também é possível utilizar a orientação a objetos.
+
+Em JavaScript, os objetos são coleções de propriedades que podem conter valores ou funções. As funções em um objeto são chamadas de métodos. Os objetos podem ser criados usando a sintaxe de objeto literal ou por meio da utilização de funções construtoras e da palavra-chave new.
+
+Aqui está um exemplo de como criar um objeto em JavaScript usando a sintaxe de objeto literal:
+
+const pessoa = {
+  nome: 'João',
+  idade: 25,
+  saudacao: function() {
+    console.log('Olá, meu nome é ' + this.nome + ' e tenho ' + this.idade + ' anos.');
+  }
+};
+
+pessoa.saudacao(); // Saída: Olá, meu nome é João e tenho 25 anos.
+
+Nesse exemplo, o objeto pessoa possui duas propriedades (nome e idade) e um método (saudacao) que imprime uma saudação usando os valores das propriedades.
+
+Além disso, é possível criar classes em JavaScript usando a sintaxe class introduzida no ECMAScript 2015 (também conhecido como ES6). As classes são uma forma de definir objetos com comportamentos e propriedades específicas. Aqui está um exemplo de como criar uma classe em JavaScript:
+
+class Pessoa {
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+
+  saudacao() {
+    console.log('Olá, meu nome é ' + this.nome + ' e tenho ' + this.idade + ' anos.');
+  }
+}
+
+const pessoa1 = new Pessoa('João', 25);
+pessoa1.saudacao(); // Saída: Olá, meu nome é João e tenho 25 anos.
+
+
+Nesse exemplo, a classe Pessoa possui um construtor que define as propriedades nome e idade, além do método saudacao.
+
+A orientação a objetos em JavaScript permite criar código mais organizado, reutilizável e de fácil manutenção, pois encapsula propriedades e comportamentos relacionados em objetos e classes.
