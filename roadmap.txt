@@ -1,0 +1,23 @@
+> Operadores Lógicos e Matemáticos	
+     -Variáveis e Constantes     
+     -Estruturas de dados
+     -Tipos de dados
+     -Condicionais (if e else)
+     -Laços de Repetição (for e Whiles)
+
+=> DOM - Document Object Model
+     -Seletores
+     -Maninupular o CSS (através do JS)
+     -Eventos
+     -array ( map, filter, reduce, sort)
+     -Funções
+
+=> Dicas de Projetos
+     -Cronometro
+     -Lista de Tarefas
+     -Calculadora
+
+=> Programação Assíncrona
+     -Fetch
+     -Promises
+     -Async/await
