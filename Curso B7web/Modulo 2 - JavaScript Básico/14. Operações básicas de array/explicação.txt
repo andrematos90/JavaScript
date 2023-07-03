@@ -43,3 +43,39 @@ array.forEach(element => {
   console.log(element);
 });
 
+--------------------------------------------------------------------------------------
+
+Em JavaScript, os métodos map, filter e forEach são usados para manipular e iterar sobre elementos em um array, mas possuem finalidades diferentes:
+
+map: O método map é usado para iterar sobre cada elemento de um array e criar um novo array com base nas transformações aplicadas a cada elemento. Ele retorna um novo array contendo os resultados das transformações. A função de callback passada para o map deve retornar um valor que será adicionado ao novo array. A principal característica do map é que ele mantém a mesma quantidade de elementos no novo array.
+Exemplo:
+
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map((num) => num * 2);
+console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+
+
+
+filter: O método filter é usado para iterar sobre cada elemento de um array e criar um novo array contendo apenas os elementos que atendem a uma determinada condição. A função de callback passada para o filter deve retornar um valor booleano (true ou false), indicando se o elemento deve ser incluído ou não no novo array. O filter retorna um novo array contendo apenas os elementos que passam na condição.
+Exemplo:
+
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter((num) => num % 2 === 0);
+console.log(evenNumbers); // [2, 4]
+
+forEach: O método forEach é usado para iterar sobre cada elemento de um array e executar uma função de callback para cada elemento. Diferentemente do map e do filter, o forEach não cria um novo array com os resultados, ele apenas itera sobre os elementos existentes e executa a função de callback.
+Exemplo:
+
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach((num) => {
+  console.log(num);
+});
+// Output:
+// 1
+// 2
+// 3
+// 4
+// 5
+
+
+Em resumo, a diferença entre os métodos map, filter e forEach está na sua finalidade e no que eles retornam. O map retorna um novo array com os resultados das transformações aplicadas a cada elemento, o filter retorna um novo array com os elementos que atendem a uma determinada condição e o forEach apenas itera sobre os elementos existentes e executa uma função para cada um deles.
