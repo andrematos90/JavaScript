@@ -22,5 +22,4 @@ let pessoa = {
 idadeAtual =  pessoa['idade']
 pessoa['profissao'] = 'Desenvolvedor'
 pessoa ['cidade'] = 'Sao Paulo'
-
 console.log(pessoa)
