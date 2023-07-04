@@ -25,4 +25,5 @@ num % 2 retorna o resto da divisão de num por 2.
 == 0 verifica se o resto da divisão é igual a zero, ou seja, se o número é par.
 Dessa forma, a função de callback retorna true se o número for par e false caso contrário. O filter utiliza esses valores booleanos para filtrar apenas os números pares.
 
+
 O filter retorna um novo array contendo apenas os números pares.*/
