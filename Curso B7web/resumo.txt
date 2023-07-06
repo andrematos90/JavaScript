@@ -86,4 +86,32 @@ before()
 é o mesmo que O método after() mas adiciona antes.
 
 
+-----------------------------------------------------------------------------------------------------------------
 
+SELECIONANDO E MANIPULANDO ATRIBUTOS
+
+
+getAttribute
+
+obtem o valor de um atributo específico de um elemento HTML ou nó em uma estrutura de documento, como uma árvore DOM (Modelo de Objeto de Documento).
+
+sintaxe:
+// Obter o valor do atributo "src"
+var valor = elemento.getAttribute("src");
+
+setAttribute
+o método "setAttribute" é comumente usado para definir o valor de um atributo específico em um elemento HTML. Ele recebe dois argumentos: o primeiro é o nome do atributo que você deseja definir ou modificar, e o segundo é o valor que você deseja atribuir a esse atributo.
+
+sintaxe:
+// Definir o atributo "data-info" com o valor "exemplo"
+elemento.setAttribute("data-info", "exemplo");
+
+
+hasAttribute
+ o método "hasAttribute" é comumente usado para verificar se um elemento possui um determinado atributo. Ele recebe um argumento que corresponde ao nome do atributo que você deseja verificar e retorna um valor booleano (true ou false) indicando se o atributo está presente no elemento.
+
+ sintaxe:
+ // Verificar se o elemento possui o atributo "data-info"
+var temAtributo = elemento.hasAttribute("data-info");
+
+----------------------------------------------------------------------------------------------------------------
