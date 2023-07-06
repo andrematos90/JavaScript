@@ -1,0 +1,15 @@
+SELEÇÃO DE ELEMENTOS
+
+queryselector seleciona o primeiro encontrado
+ou pode-se especificar como se fosse no css com # ou ponto
+
+tambem pode se selecionar entrando em camadas e especificando qual elemento quero como no css:
+queryselectoAll ("#exemplo ul li)
+
+queryselectorAll e os outros seletores que tem "elements" no nome retornam um array com os itens
+e o query selector retorna o item direto
+
+----------------------------------------------------------------------------------------------------
+
+innerHTMl permite obter ou definir o conteúdo HTML de um elemento
+Ela retorna uma representação em forma de string do conteúdo HTML presente dentro de um elemento, incluindo as tags HTML e seu conteúdo.Ao usar innerHTML para obter o conteúdo de um elemento, ele retorna todo o HTML contido dentro desse elemento, incluindo as tags de abertura e fechamento.
