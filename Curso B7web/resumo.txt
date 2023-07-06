@@ -68,3 +68,22 @@ newLi.innerText = 'conteudo da tag'
 
 adicionar tag e seu conteudo criados ao elemento pai
 ul.appendChild(newLi);
+
+
+-----------------------------------------------------------------------------------------------------------------
+ADICIONANDO ITENS ANTES OU DEPOIS DE UM 
+
+after()
+O método after() em jQuery é uma função que permite inserir elementos ou conteúdo deois dos elementos selecionados.
+
+Aqui está um exemplo de uso do método after() em jQuery:
+
+// Inserindo um elemento após outro elemento
+$('#elemento-alvo').after('<div>Novo elemento</div>');
+
+
+before()
+é o mesmo que O método after() mas adiciona antes.
+
+
+
