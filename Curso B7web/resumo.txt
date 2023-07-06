@@ -31,15 +31,24 @@ permite obter ou definir o conteúdo HTML de um elemento
 Ela retorna uma representação em forma de string do conteúdo HTML presente dentro de um elemento, incluindo as tags HTML e seu conteúdo.Ao usar innerHTML para obter o conteúdo de um elemento, ele retorna todo o HTML contido dentro desse elemento, incluindo as tags de abertura e fechamento.Para adicionar um novo conteudo ele substititui todo o conteudo HTML
 existente e adiciona novamente, junto do novo conteudo.
 
+innerText
+ a propriedade innerText retorna o texto visível dentro de um elemento, removendo qualquer formatação ou estilo aplicado a ele. Isso significa que o innerText retorna apenas o texto que seria exibido na tela se o elemento fosse renderizado no momento. Além disso, o innerText também retorna apenas o texto dentro do elemento pai, excluindo qualquer texto de elementos filhos que sejam ocultados por CSS, como por meio do uso da propriedade display: none.
+
+textContent
+a propriedade textContent retorna todo o texto dentro de um elemento, incluindo qualquer texto de elementos filhos, mesmo que estejam ocultos por CSS. Isso significa que o textContent retorna o texto "bruto" do elemento, sem levar em consideração o estilo ou a visibilidade.
 
 Método append
-permite adicionar um ou mais elementos ou conteúdo ao final de um elemento pai. Ele pode ser usado para adicionar novos elementos (apenas textos). Não Substitui o conteudo HTML apenas adiciona.
+O método append() em JavaScript é uma função que pertence aos objetos do tipo Node e é usada para adicionar um ou mais novos nós filhos ao final da lista de filhos de um elemento pai específico. Esse novo nó pode ser um elemento HTML, um texto ou outro tipo de nó.
+
+Aqui está a sintaxe básica do método append():
+elementoPai.append(nodoFilho1, nodoFilho2, ..., nodoFilhoN);
+
 
 Método prepend
-permite adicionar um ou mais elementos ou conteúdo no inicio de um elemento pai. Ele pode ser usado para adicionar novos elementos (apenas textos). Não Substitui o conteudo HTML apenas adiciona.
+mesma coisa que o append mas adiciona no inicio
 
  appendChild(): 
- É um método que adiciona um elemento filho a um elemento pai existente. Primeiro é preciso criar um elemento e depois adicioná-lo ao elemento pai. Por exemplo, parentElement.appendChild(childElement) adiciona o childElement como um novo filho do parentElement. O método appendChild() retorna o elemento filho que foi adicionado.
+ É um método que adiciona um uníco elemento filho a um elemento pai existente. Primeiro é preciso criar um elemento e depois adicioná-lo ao elemento pai. Por exemplo, parentElement.appendChild(childElement) adiciona o childElement como um novo filho do parentElement. O método appendChild() retorna o elemento filho que foi adicionado.
 
 createElement()
  O método createElement() é uma função do JavaScript que permite criar um novo elemento HTML no DOM (Document Object Model). Ele recebe como argumento uma string que representa o tipo do elemento que você deseja criar, como "div", "p", "span", "img", entre outros.
