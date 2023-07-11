@@ -1,0 +1,13 @@
+Os termos "síncrono" e "assíncrono" são usados para descrever o comportamento de uma operação em relação à execução de outras operações.
+
+Síncrono: Quando uma operação é síncrona, significa que ela é executada em sequência, uma após a outra, e o código aguarda o término dessa operação antes de continuar para a próxima. Em outras palavras, o fluxo de execução é bloqueado até que a operação síncrona seja concluída.
+
+Assíncrono: Uma operação assíncrona, por outro lado, não bloqueia o fluxo de execução principal do código. Ela é iniciada e continua sendo executada em paralelo com outras operações, permitindo que o código continue sua execução sem esperar o término da operação assíncrona. Quando a operação assíncrona é concluída, é realizada uma ação (como uma chamada de retorno/callback) para lidar com o resultado dessa operação.
+
+Para entender melhor, considere um exemplo prático:
+
+Imagine que você esteja fazendo uma chamada para uma API para obter dados. Se você fizer uma chamada síncrona, seu código ficará bloqueado até que a resposta da API seja recebida. Isso significa que seu programa ficará inativo, não executando nenhuma outra tarefa, até que a resposta seja obtida.
+
+Por outro lado, se você fizer uma chamada assíncrona, seu código poderá continuar executando outras tarefas enquanto aguarda a resposta da API. Assim que a resposta for recebida, uma função de retorno de chamada (callback) será acionada para lidar com os dados retornados.
+
+As operações assíncronas são frequentemente usadas em situações em que a resposta pode levar algum tempo para ser obtida, como chamadas de rede, acesso a bancos de dados ou leitura/gravação de arquivos. O uso de operações assíncronas ajuda a evitar bloqueios no fluxo de execução e permite que o código seja mais eficiente e responsivo, especialmente em aplicações que envolvem muitas operações simultâneas.
