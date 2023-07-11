@@ -1,23 +1,71 @@
-> Operadores Lógicos e Matemáticos	
-     -Variáveis e Constantes     
-     -Estruturas de dados
-     -Tipos de dados
-     -Condicionais (if e else)
-     -Laços de Repetição (for e Whiles)
+Conceitos básicos de programação:
 
-=> DOM - Document Object Model
-     -Seletores
-     -Maninupular o CSS (através do JS)
-     -Eventos
-     -array ( map, filter, reduce, sort)
-     -Funções
+Variáveis e tipos de dado ok
+Operadores ok
+Estruturas de controle (condicionais e loops) ok
+Funções ok
+Arrays e objetos ok
+Manipulação do DOM (Document Object Model): 
 
-=> Dicas de Projetos
-     -Cronometro
-     -Lista de Tarefas
-     -Calculadora
+Selecionar elementos HTML ok
+Manipular atributos, conteúdo e estilos ok
+Manipular eventos ok
 
-=> Programação Assíncrona
-     -Fetch
-     -Promises
-     -Async/await
+Trabalhar com funções assíncronas:
+
+Promises
+Callbacks
+Async/await
+Manipulação de Strings:
+
+Concatenação e interpolação
+Métodos de manipulação de strings
+Manipulação de Arrays:
+
+Iteração de arrays
+Métodos de array (map, filter, reduce, etc.)
+Array spread e destructuring
+Programação orientada a objetos (POO) em JavaScript:
+
+Construtores e protótipos
+Classes e herança
+Encapsulamento, polimorfismo e abstração
+Trabalhar com módulos:
+
+Exportar e importar módulos
+Módulos nativos e de terceiros
+Manipulação de erros e exceções:
+
+Tratamento de erros (try...catch)
+Lançamento de exceções personalizadas
+Trabalhar com APIs e requisições HTTP:
+
+Consumir APIs RESTful
+Requisições assíncronas (AJAX, Fetch API)
+Manipulação de eventos avançada:
+
+Eventos de teclado, mouse e touch
+Delegação de eventos
+Manipulação de formulários:
+
+Validação de entrada
+Envio de dados via formulário
+Armazenamento de dados:
+
+Cookies
+LocalStorage e SessionStorage
+IndexedDB
+Conceitos avançados:
+
+Closures
+Hoisting
+Contexto (this)
+Operadores ternários
+Métodos de iteração (forEach, map, filter, reduce)
+Debouncing e throttling
+Frameworks e bibliotecas populares:
+
+React
+Angular
+Vue.js
+Node.js (para desenvolvimento server-side)

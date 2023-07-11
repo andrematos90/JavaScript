@@ -1,0 +1,19 @@
+Em JavaScript, as requisições referem-se ao processo de enviar solicitações para um servidor web a fim de obter ou enviar dados. Essas solicitações podem ser usadas para carregar informações de um servidor, enviar dados para o servidor ou interagir com uma API (Application Programming Interface).
+
+As requisições em JavaScript são geralmente feitas usando a tecnologia AJAX (Asynchronous JavaScript and XML) ou a API Fetch, que são recursos nativos da linguagem.
+
+Com as requisições, você pode:
+
+Recuperar dados de um servidor: Você pode enviar uma requisição HTTP GET para buscar dados em um servidor. Por exemplo, obter informações de um banco de dados ou solicitar dados de um serviço de API.
+
+Enviar dados para um servidor: Você pode usar uma requisição HTTP POST para enviar dados para um servidor. Isso é útil ao enviar formulários preenchidos pelos usuários ou ao fazer upload de arquivos.
+
+Atualizar dados no servidor: Usando uma requisição HTTP PUT ou PATCH, você pode atualizar dados existentes no servidor. Isso é comumente usado em sistemas de gerenciamento de conteúdo ou em aplicativos que permitem a edição de informações.
+
+Excluir dados no servidor: Usando uma requisição HTTP DELETE, você pode solicitar a exclusão de dados no servidor. Isso é usado quando você deseja remover informações específicas do banco de dados ou outro armazenamento.
+
+As requisições em JavaScript podem ser assíncronas, o que significa que elas não bloqueiam a execução do restante do código. Isso permite que você envie uma solicitação ao servidor e continue executando outras tarefas enquanto aguarda a resposta.
+
+Para fazer requisições em JavaScript, você pode usar as APIs nativas, como XMLHttpRequest, ou a API Fetch, que é mais moderna e fornece uma interface simplificada para lidar com requisições e respostas.
+
+Essas APIs permitem configurar cabeçalhos HTTP, enviar dados em diferentes formatos (JSON, formulários, etc.), lidar com autenticação e tratar os diferentes status de resposta do servidor.
