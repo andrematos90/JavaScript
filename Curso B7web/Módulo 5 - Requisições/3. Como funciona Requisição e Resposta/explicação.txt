@@ -1,0 +1,36 @@
+A Web funciona com base em um modelo cliente-servidor, onde os clientes (geralmente navegadores da web) fazem solicitações aos servidores e os servidores respondem a essas solicitações.
+
+Aqui está um resumo do processo de requisição e resposta na Web:
+
+O cliente (navegador) inicia uma solicitação fazendo uma requisição HTTP (Hypertext Transfer Protocol) a um servidor. A solicitação inclui um método (como GET, POST, PUT, DELETE), a URL do recurso solicitado e outros cabeçalhos opcionais, como cabeçalhos de autenticação.
+
+A solicitação é enviada pela rede para o servidor identificado pela URL. A URL geralmente inclui o esquema (como "http://" ou "https://"), o nome do domínio (como "www.example.com") e o caminho do recurso específico no servidor (como "/pagina.html").
+
+O servidor recebe a solicitação e interpreta os dados. Ele pode executar ações como buscar informações de um banco de dados, processar formulários, ler arquivos etc.
+
+O servidor gera uma resposta HTTP. A resposta inclui um código de status (como 200 para "OK", 404 para "não encontrado", 500 para "erro do servidor"), cabeçalhos com informações adicionais (como tipo de conteúdo, data de modificação, cookies) e opcionalmente um corpo com os dados da resposta.
+
+A resposta é enviada pelo servidor de volta ao cliente através da rede.
+
+O cliente (navegador) recebe a resposta e interpreta os dados. Ele exibe o conteúdo da resposta para o usuário, renderizando HTML, executando scripts, exibindo imagens etc.
+
+Esse ciclo de requisição e resposta ocorre continuamente enquanto o usuário navega na Web, clicando em links, enviando formulários e interagindo com os recursos disponíveis nos servidores.
+
+É importante mencionar que existem vários outros protocolos, além do HTTP, que podem ser usados na Web, como HTTPS para comunicação segura, WebSocket para comunicação bidirecional em tempo real e FTP para transferência de arquivos. No entanto, o HTTP é o protocolo mais comumente usado para a comunicação cliente-servidor na Web.
+
+
+
+                                               resumo
+
+
+                                               O cliente (navegador) inicia uma solicitação fazendo uma requisição HTTP (Hypertext Transfer Protocol) a um servidor. A solicitação pode ser iniciada ao digitar uma URL na barra de endereço do navegador, clicar em um link em uma página da web ou enviar um formulário.
+
+A solicitação é enviada pelo cliente através da rede para o servidor identificado pela URL. A URL contém o esquema (como "http://" ou "https://"), o nome do domínio (como "www.example.com") e o caminho do recurso específico no servidor (como "/pagina.html").
+
+O servidor recebe a solicitação e interpreta os dados. Ele verifica o método da requisição (como GET, POST, PUT, DELETE) e o caminho do recurso solicitado. O servidor pode executar várias ações, dependendo da lógica da aplicação e do objetivo da requisição. Isso pode incluir buscar informações em um banco de dados, processar formulários, autenticar o cliente, realizar cálculos, acessar sistemas externos, entre outros.
+
+Com base na solicitação, o servidor gera uma resposta HTTP. A resposta inclui um código de status que indica o resultado da solicitação (como 200 para "OK", 404 para "não encontrado", 500 para "erro do servidor"). Além disso, a resposta pode conter cabeçalhos com informações adicionais, como tipo de conteúdo (por exemplo, texto, HTML, JSON), tamanho do conteúdo, data de modificação, cookies, entre outros. O servidor também pode incluir um corpo na resposta, que contém os dados propriamente ditos, como uma página HTML, uma imagem ou uma resposta JSON.
+
+A resposta é enviada pelo servidor de volta ao cliente através da rede.
+
+O cliente (navegador) recebe a resposta e interpreta os dados. Ele verifica o código de status para determinar se a solicitação foi bem-sucedida, redirecionada ou encontrou um erro. Em seguida, o cliente processa os cabeçalhos e o corpo da resposta para extrair as informações necessárias. Dependendo do tipo de resposta, o navegador pode renderizar o conteúdo HTML, exibir uma imagem, executar scripts embutidos ou tratar os dados de outra forma.
