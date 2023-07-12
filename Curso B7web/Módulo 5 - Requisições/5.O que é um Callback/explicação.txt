@@ -1,0 +1,27 @@
+Em JavaScript, um callback é uma função que é passada como argumento para outra função e é executada em algum momento posterior dentro dessa função. Em outras palavras, o callback é uma função que será chamada de volta após a conclusão de uma operação assíncrona ou de um evento específico.
+
+Normalmente, os callbacks são usados em situações em que uma função precisa esperar por uma tarefa assíncrona ser concluída antes de prosseguir com a execução do código. Em vez de bloquear a execução, o código continua sua execução e registra o callback para ser executado quando a tarefa assíncrona for finalizada.
+
+Aqui está um exemplo simples de um callback em JavaScript:
+
+function calcularSoma(a, b, callback) {
+  const resultado = a + b;
+  callback(resultado);
+}
+
+function exibirResultado(res) {
+  console.log('O resultado é: ' + res);
+}
+
+calcularSoma(5, 3, exibirResultado);
+
+
+Neste exemplo, a função calcularSoma recebe dois números (a e b) e um callback como parâmetros. Ela calcula a soma dos números e, em seguida, chama o callback passando o resultado como argumento. A função exibirResultado é definida separadamente e serve como o callback que será executado, neste caso, para exibir o resultado no console.
+
+Os callbacks são amplamente utilizados em JavaScript para lidar com operações assíncronas, como chamadas de API, manipulação de eventos e temporizadores. Eles permitem que o código seja executado de forma não bloqueante, garantindo que determinadas ações sejam realizadas somente após a conclusão de uma tarefa específica.
+
+-------------------------------------------------------------------------------------------------------------
+
+callback não tem relação exclusiva com requisções se aplicia aos eventos de click, teclado, etc... e também a requisições
+
+Portanto, em resumo, um callback em JavaScript é uma função que é passada como argumento para outra função e é executada quando essa função é concluída, quando se tem a resposta de uma requisição ou quando um evento ocorre.
