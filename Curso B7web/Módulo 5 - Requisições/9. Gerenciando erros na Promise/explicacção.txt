@@ -1,0 +1,49 @@
+Em JavaScript, você pode gerenciar erros em Promises usando os métodos then() e catch(). As Promises fornecem uma forma mais elegante e eficiente de lidar com erros em operações assíncronas do que callbacks aninhados.
+
+Quando você chama um método que retorna uma Promise, você pode encadear chamadas then() para lidar com o resultado bem-sucedido da Promise e catch() para tratar qualquer erro que ocorra durante a execução da Promise.
+
+Aqui está um exemplo básico de como gerenciar erros em uma Promise:
+
+minhaPromise.then(resultado => {
+  // Manipule o resultado bem-sucedido da Promise aqui
+}).catch(erro => {
+  // Trate o erro que ocorreu durante a execução da Promise aqui
+});
+
+No exemplo acima, minhaPromise é a Promise que você deseja executar. O método then() é chamado quando a Promise é resolvida com sucesso e recebe o resultado como argumento. Dentro da função de retorno de chamada do then(), você pode manipular o resultado da Promise conforme necessário.
+
+Se ocorrer algum erro durante a execução da Promise, o método catch() será chamado e receberá o objeto de erro como argumento. Dentro da função de retorno de chamada do catch(), você pode tratar o erro de acordo com suas necessidades.
+
+Vale ressaltar que você também pode encadear vários métodos then() para lidar com transformações adicionais nos dados retornados pela Promise antes de chegar ao bloco catch(). Isso permite que você execute uma série de operações assíncronas em sequência.
+
+Além disso, se você estiver trabalhando com várias Promises e desejar aguardar a resolução ou rejeição de todas elas, você pode usar o método Promise.all() em conjunto com o catch() para lidar com quaisquer erros que ocorram em qualquer uma das Promises.
+
+
+
+FINALLY
+
+O método finally() é um método que pode ser encadeado em uma Promise em JavaScript. Ele permite que você execute uma ação, independentemente de a Promise ter sido resolvida ou rejeitada.
+
+A função de retorno de chamada passada para o finally() será executada sempre que a Promise for finalizada, seja com sucesso (resolvida) ou com erro (rejeitada). Essa função não recebe nenhum argumento, ou seja, não tem acesso ao resultado ou ao motivo da rejeição da Promise.
+
+Aqui está um exemplo de como usar o método finally() em uma Promise:
+
+minhaPromise
+  .then(resultado => {
+    // Manipule o resultado bem-sucedido da Promise aqui
+  })
+  .catch(erro => {
+    // Trate o erro que ocorreu durante a execução da Promise aqui
+  })
+  .finally(() => {
+    // Execute esta ação independentemente de a Promise ter sido resolvida ou rejeitada
+  });
+
+
+No exemplo acima, a função de retorno de chamada do finally() será executada após o then() ou o catch() terem concluído sua execução. Ela é útil para executar ações que devem ocorrer independentemente do resultado da Promise, como fechar recursos abertos, redefinir variáveis, limpar dados temporários, etc.
+
+É importante notar que o finally() não interrompe a propagação da Promise. Ou seja, qualquer valor retornado dentro do finally() não afetará o resultado da Promise. Se você retornar uma nova Promise dentro do finally(), ela não substituirá o resultado anterior da Promise encadeada.
+
+O método finally() é opcional e pode não estar disponível em todas as implementações de Promises em JavaScript. Portanto, verifique a compatibilidade da plataforma ou considere usar uma biblioteca ou polyfill para garantir a funcionalidade em todos os ambientes.
+
+Em resumo, o finally() permite que você especifique uma ação a ser executada independentemente do resultado da Promise, seja bem-sucedida ou rejeitada.
