@@ -1,0 +1,49 @@
+Em JavaScript, uma Promise (promessa) é um objeto que representa a eventual conclusão (ou falha) de uma operação assíncrona e a entrega do seu resultado. Ela é usada para tratar fluxos de trabalho assíncronos de maneira mais eficiente e lidar com operações que levam tempo, como solicitações de rede, acesso a bancos de dados e outras tarefas que não são executadas imediatamente.
+
+Uma Promise pode estar em três estados diferentes:
+
+Pendente: É o estado inicial da Promise, indicando que a operação ainda está em andamento e não foi concluída.
+
+Resolvida: Significa que a operação foi concluída com sucesso e o resultado está disponível. Nesse estado, a Promise é considerada "cumprida".
+
+Rejeitada: Indica que a operação falhou e um motivo (geralmente um erro) é fornecido para indicar o motivo da falha.
+
+A estrutura de uma Promise consiste em duas partes principais: a função executora e as funções de tratamento.
+
+A função executora recebe dois parâmetros: resolve (função a ser chamada quando a operação for concluída com sucesso) e reject (função a ser chamada quando a operação falhar). Dentro da função executora, você realiza a operação assíncrona desejada e chama a função resolve quando for bem-sucedida ou a função reject quando ocorrer um erro.
+
+As funções de tratamento são definidas usando os métodos then() e catch() da Promise. O método then() é usado para manipular o resultado quando a Promise é resolvida, enquanto o método catch() é usado para lidar com erros quando a Promise é rejeitada.
+
+Por exemplo, considere o seguinte código que simula uma operação assíncrona usando uma Promise:
+
+const minhaPromise = new Promise((resolve, reject) => {
+  // Simulando uma operação assíncrona
+  setTimeout(() => {
+    const resultado = Math.random();
+    if (resultado > 0.5) {
+      resolve(resultado); // Operação concluída com sucesso
+    } else {
+      reject(new Error("Falha na operação")); // Operação falhou
+    }
+  }, 2000);
+});
+
+minhaPromise.then((res) => {
+  console.log("Resultado:", res);
+}).catch((err) => {
+  console.error("Erro:", err);
+});
+
+
+Neste exemplo, uma Promise é criada para simular uma operação assíncrona que retorna um número aleatório após 2 segundos. Se o número for maior que 0.5, a Promise é resolvida com o resultado. Caso contrário, é rejeitada com um erro.
+
+O método then() é usado para manipular o resultado quando a Promise é resolvida, e o método catch() é usado para lidar com erros quando a Promise é rejeitada.
+
+As Promises fornecem uma maneira mais estruturada e legível de lidar com operações assíncronas em JavaScript, facilitando o encadeamento de várias operações e o tratamento de erros de forma mais eficiente.
+
+
+----------------------------------------------------------------------------------------------------------
+
+toda função fetch() retorna uma promessa
+quando a promessa se concretiza 
+a função then() é executada
