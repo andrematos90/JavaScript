@@ -1,0 +1,13 @@
+Para visualizar as requisições que ocorrem no navegador, você pode usar as ferramentas de desenvolvedor embutidas nos navegadores modernos. Cada navegador oferece uma maneira de acessar essas ferramentas. Abaixo, vou listar alguns dos navegadores mais populares e como você pode acessar as ferramentas de desenvolvedor neles:
+
+Google Chrome: Para abrir as ferramentas de desenvolvedor no Google Chrome, você pode clicar com o botão direito do mouse em qualquer lugar em uma página da web e selecionar "Inspecionar" ou "Inspecionar elemento". Ou você pode pressionar as teclas "Ctrl + Shift + I" (ou "Cmd + Option + I" em um Mac). Em seguida, vá para a guia "Network" (Rede) nas ferramentas de desenvolvedor para ver todas as requisições feitas pela página.
+
+Mozilla Firefox: No Firefox, você pode abrir as ferramentas de desenvolvedor clicando com o botão direito do mouse em qualquer lugar em uma página da web e selecionando "Inspecionar elemento" ou pressionando as teclas "Ctrl + Shift + I" (ou "Cmd + Option + I" em um Mac). Em seguida, vá para a guia "Network" (Rede) nas ferramentas de desenvolvedor para visualizar as requisições.
+
+Microsoft Edge: Para abrir as ferramentas de desenvolvedor no Microsoft Edge, clique com o botão direito do mouse em uma página da web e selecione "Inspecionar elemento" ou pressione as teclas "Ctrl + Shift + I". Em seguida, vá para a guia "Network" (Rede) nas ferramentas de desenvolvedor para ver as requisições.
+
+Safari: No Safari, você pode habilitar as ferramentas de desenvolvedor indo para "Preferências" (no menu Safari), clicando na guia "Avançado" e marcando a opção "Mostrar menu 'Desenvolver' na barra de menus". Depois de habilitar as ferramentas de desenvolvedor, você pode clicar em "Desenvolver" na barra de menus e selecionar "Mostrar console de erros" para abrir as ferramentas. Em seguida, vá para a guia "Network" (Rede) para ver as requisições.
+
+Ao abrir a guia "Network" nas ferramentas de desenvolvedor do navegador, você verá uma lista de todas as requisições feitas pela página da web, incluindo os recursos carregados, as solicitações HTTP, os tempos de carregamento, os códigos de status e muito mais. Você pode filtrar, classificar e inspecionar as requisições para obter mais detalhes sobre elas.
+
+Essas são apenas instruções básicas para acessar as ferramentas de desenvolvedor e ver as requisições no navegador. Cada navegador pode ter pequenas diferenças no nome ou localização dessas ferramentas, mas geralmente elas estão disponíveis nas opções de desenvolvedor do navegador.
