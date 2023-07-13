@@ -1,30 +1,30 @@
 Conceitos básicos de programação:
 
-Variáveis e tipos de dado ok
+Variáveis e tipos de dado 
 Operadores ok
 Estruturas de controle (condicionais e loops) ok
 Funções ok
 Arrays e objetos ok
-Manipulação do DOM (Document Object Model): 
 
+Manipulação do DOM (Document Object Model): 
 Selecionar elementos HTML ok
 Manipular atributos, conteúdo e estilos ok
 Manipular eventos ok
 
 Trabalhar com funções assíncronas:
+Promises ok
+Callbacks ok
+Async/await ok
 
-Promises
-Callbacks
-Async/await
 Manipulação de Strings:
+Concatenação e interpolação ok
+Métodos de manipulação de strings ok
+Manipulação de Arrays: ok
 
-Concatenação e interpolação
-Métodos de manipulação de strings
-Manipulação de Arrays:
-
-Iteração de arrays
-Métodos de array (map, filter, reduce, etc.)
+Iteração de arrays  ok
+Métodos de array (map, filter, reduce, etc.) ok
 Array spread e destructuring
+
 Programação orientada a objetos (POO) em JavaScript:
 
 Construtores e protótipos

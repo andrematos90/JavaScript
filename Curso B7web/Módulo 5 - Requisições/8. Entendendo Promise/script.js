@@ -42,4 +42,4 @@ Dentro do primeiro método then(), a resposta da requisição é convertida em f
 
 Após a chamada do fetch(), temos a linha alert('opa clicou');, que também é uma operação síncrona e é executada imediatamente após a chamada do fetch(). Portanto, esse alerta será exibido antes de a resposta da requisição estar disponível.
 
-Em resumo, a parte síncrona do código é a adição do evento de clique, enquanto a parte assíncrona é a função carregaPost() que realiza a requisição assíncrona e manipula a resposta usando Promises.
+Em resumo, a parte síncrona do código é a adição do evento de clique, enquanto a parte assíncrona é a função carregaPost() que realiza a requisição assíncrona e manipula a resposta usando Promises. */
