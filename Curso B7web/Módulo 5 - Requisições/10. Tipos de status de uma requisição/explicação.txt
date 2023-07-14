@@ -1,0 +1,17 @@
+Existem vários tipos de status de uma requisição HTTP, cada um com um significado específico. Os status de resposta são representados por um código numérico de três dígitos. Aqui estão alguns dos status mais comuns:
+
+1xx (Informational): Indica que a requisição foi recebida e o servidor continua processando-a.
+2xx (Success): Indica que a requisição foi bem-sucedida e o servidor conseguiu processá-la.
+200 OK: A requisição foi bem-sucedida.
+201 Created: A requisição foi bem-sucedida e um novo recurso foi criado como resultado.
+204 No Content: A requisição foi bem-sucedida, mas não há conteúdo para retornar.
+3xx (Redirection): Indica que a requisição precisa de ações adicionais para ser concluída.
+301 Moved Permanently: O recurso solicitado foi movido permanentemente para uma nova localização.
+302 Found: O recurso solicitado foi temporariamente movido para uma nova localização.
+4xx (Client Error): Indica que ocorreu um erro por parte do cliente ao fazer a requisição.
+400 Bad Request: A requisição foi malformada ou contém parâmetros inválidos.
+401 Unauthorized: O cliente não possui autenticação válida para acessar o recurso.
+404 Not Found: O recurso solicitado não foi encontrado no servidor.
+5xx (Server Error): Indica que ocorreu um erro no servidor ao processar a requisição.
+500 Internal Server Error: O servidor encontrou uma condição inesperada que o impediu de atender à requisição.
+503 Service Unavailable: O servidor não está disponível no momento devido a sobrecarga ou manutenção.
