@@ -1,0 +1,41 @@
+Promises com async/await são recursos do JavaScript que tornam mais fácil e legível trabalhar com código assíncrono.
+
+Promises são objetos que representam a conclusão (ou falha) de uma operação assíncrona e podem ter um valor resolvido ou um motivo de rejeição. Elas são usadas para lidar com operações assíncronas de uma maneira mais estruturada. Uma Promise pode estar em um dos seguintes estados: pendente (pending), resolvida (fulfilled) ou rejeitada (rejected).
+
+O async/await é uma sintaxe do JavaScript que permite escrever código assíncrono de forma mais síncrona, tornando-o mais legível e fácil de entender. A palavra-chave async é usada para declarar uma função assíncrona, que retorna uma Promise. Dentro dessa função, podemos usar a palavra-chave await antes de uma Promise para pausar a execução da função até que a Promise seja resolvida ou rejeitada.
+
+Ao usar o async/await, podemos evitar o encadeamento excessivo de callbacks ou o uso excessivo de métodos then() em Promises, o que pode resultar em um código mais complexo e difícil de manter.
+
+Aqui está um exemplo de como usar Promises com async/await:
+
+async function minhaFuncaoAssincrona() {
+  try {
+    const resultado1 = await minhaPromiseAssincrona1();
+    const resultado2 = await minhaPromiseAssincrona2();
+    console.log(resultado1, resultado2);
+  } catch (erro) {
+    console.error(erro);
+  }
+}
+
+
+sem o uso de async/await o mesmo código, utilizando apenas Promises e encadeando os métodos then() para lidar com ações assíncronas.:
+
+function minhaFuncaoAssincrona() {
+  minhaPromiseAssincrona1()
+    .then(resultado1 => {
+      return minhaPromiseAssincrona2()
+        .then(resultado2 => {
+          console.log(resultado1, resultado2);
+        });
+    })
+    .catch(erro => {
+      console.error(erro);
+    });
+}
+
+
+
+Nesse exemplo, a função minhaFuncaoAssincrona() é declarada com a palavra-chave async. Dentro dela, usamos a palavra-chave await antes de cada Promise que queremos aguardar. O código pausa a execução nesses pontos até que a Promise seja resolvida ou rejeitada. Se ocorrer um erro em qualquer uma das Promises, ele será capturado pelo bloco catch.
+
+O uso de async/await facilita a leitura e o tratamento de erros em código assíncrono, tornando o fluxo do código mais linear e sem a necessidade de callbacks aninhados.
