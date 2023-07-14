@@ -1,0 +1,37 @@
+Em JavaScript, você pode enviar requisições HTTP usando o objeto XMLHttpRequest ou a função fetch(). Aqui estão os métodos de envio de requisição mais comuns:
+
+GET: Recupera dados de um servidor. É o método padrão usado pelo navegador ao fazer uma requisição.
+POST: Envia dados para serem processados por um servidor. É frequentemente usado para enviar formulários ou enviar dados no corpo da requisição.
+PUT: Substitui todos os dados de um recurso existente ou cria um novo recurso se ele não existir.
+DELETE: Remove um recurso específico.
+PATCH: Atualiza parcialmente um recurso existente.
+HEAD: Retorna apenas os cabeçalhos de resposta, sem o corpo da resposta.
+OPTIONS: Retorna os métodos HTTP suportados pelo servidor para um determinado recurso.
+Aqui está um exemplo de uso do objeto XMLHttpRequest para enviar uma requisição GET:
+
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://api.example.com/data', true);
+xhr.onreadystatechange = function() {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    var response = JSON.parse(xhr.responseText);
+    console.log(response);
+  }
+};
+xhr.send();
+
+
+E aqui está um exemplo usando a função fetch() para enviar uma requisição POST com JSON como corpo da requisição:
+
+fetch('https://api.example.com/endpoint', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ data: 'example' })
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+
+Esses são apenas exemplos básicos. Ambos XMLHttpRequest e fetch() oferecem mais opções e recursos para personalizar as requisições e lidar com respostas.
