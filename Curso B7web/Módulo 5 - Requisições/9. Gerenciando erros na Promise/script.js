@@ -15,8 +15,8 @@ function carregaPost() {
             
             alert(`Título do primeiro post: ${json[0].title}`); // exibe o título do primeiro post em um alerta
         })
-        .catch(() => {   // Em caso de erro na requisição, exibe um alerta informando o erro
-           
+        .catch((error) => {   // Em caso de erro na requisição, exibe um alerta informando o erro
+           console.log(error); //exibi mais informações sobre o erro ocorrido
             alert('Erro na requisição');
         })
 
