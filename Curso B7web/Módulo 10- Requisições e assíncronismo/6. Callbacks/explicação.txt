@@ -8,7 +8,6 @@ i'm gonna call you back  (eu te ligo de volta)
 é uma função que fica esperando o resultado de outra para ser executada
 
 ex:
-
 aguarda dois segundo e executa a função "alertar"
 
 function alertar(){
