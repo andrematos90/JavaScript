@@ -1,10 +1,21 @@
-O que sâo requisições?
+Uma requisição em JavaScript é uma ação realizada pelo navegador ou servidor para obter informações de uma URL específica ou interagir com um serviço externo. Geralmente, é usada para buscar ou enviar dados em formato JSON, XML ou HTML para atualizar dinamicamente o conteúdo de uma página da web. As requisições são feitas por meio das funções AJAX, fetch ou outras bibliotecas, permitindo que a página comunique-se com APIs ou servidores, obtendo e exibindo informações em tempo real. O resultado da requisição pode ser processado por meio de callbacks ou Promises para manipular os dados recebidos e atualizar a interface do usuário conforme necessário.
 
-é um "pedido" 
+AJAX
+AJAX (Asynchronous JavaScript and XML) é uma técnica de programação em JavaScript que permite que páginas da web façam requisições assíncronas ao servidor para buscar, enviar ou atualizar dados sem a necessidade de recarregar toda a página. Em vez disso, as informações são recuperadas e exibidas dinamicamente, possibilitando interações mais rápidas e suaves com o usuário.
+
+Apesar do nome "XML" na sigla, as requisições AJAX podem trabalhar com diversos formatos de dados, como JSON, HTML ou texto puro. Essa tecnologia é amplamente utilizada para criar aplicativos web mais responsivos e interativos, como caixas de busca com sugestões, atualizações em tempo real de feeds de notícias ou carregamento de conteúdo adicional em páginas sem precisar recarregar a página inteira. Para implementar AJAX, é comum utilizar a função XMLHttpRequest ou, mais recentemente, a API fetch em JavaScript.
+
+fetch
+A função fetch é uma API introduzida no JavaScript moderno para realizar requisições assíncronas de recursos através da rede. Ela oferece uma maneira mais simples e elegante de fazer requisições HTTP do que a tradicional XMLHttpRequest.
+
+O fetch permite enviar solicitações GET, POST, PUT, DELETE e outras, permitindo interações com APIs e serviços web. Além disso, ele utiliza Promises, o que facilita o tratamento de respostas e erros de forma assíncrona e mais legível.
+
+Um exemplo básico de uso do fetch é o seguinte:
+
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Ocorreu um erro:', error));
 
 
-
----------------------------------------------------------------------------------------------------------
-
-
----------------------------------------------------------------------------------------------------------
+Nesse exemplo, o fetch faz uma requisição GET para a URL 'https://api.example.com/data', recebe a resposta do servidor, converte o conteúdo em formato JSON e exibe os dados no console. Se houver algum erro durante a requisição, ele será capturado no bloco catch. Isso permite que o código trate a resposta do servidor ou erros de forma mais elegante e controlada.
