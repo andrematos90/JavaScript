@@ -1,3 +1,29 @@
+JSON.stringify() é uma função nativa em JavaScript que permite converter um objeto JavaScript em uma string JSON. Ela é usada para "serializar" os dados no formato JSON, tornando-os adequados para serem enviados para um servidor, armazenados em arquivos ou transmitidos para outros sistemas.
+
+Quando você possui um objeto ou array em JavaScript e deseja transmiti-lo ou salvar em um formato mais universal, como o JSON, você pode usar a função JSON.stringify() para transformar os dados em uma string JSON.
+
+Exemplo de uso do JSON.stringify():
+
+const obj = {
+  nome: "João",
+  idade: 30,
+  casado: false
+};
+
+const jsonString = JSON.stringify(obj);
+console.log(jsonString); // Output: '{"nome":"João","idade":30,"casado":false}'
+
+
+Neste exemplo, temos um objeto JavaScript obj que possui três propriedades: "nome", "idade" e "casado". Ao aplicar JSON.stringify() no objeto, ele é convertido em uma string JSON chamada jsonString, que pode ser enviada através de requisições HTTP, armazenada em bancos de dados ou utilizada em outras partes do código que requerem dados em formato JSON.
+
+Vale ressaltar que alguns tipos de dados em JavaScript não podem ser diretamente representados em JSON, como funções ou referências a objetos específicos. Nesses casos, a função JSON.stringify() os ignorará ou os transformará em null. Além disso, a ordem das propriedades em um objeto não é garantida na especificação JSON, então a ordem na string JSON resultante pode variar.
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------
 A função Stringify é o contrario da parse
 é passado um JSON que é convertido para string
 ---------------------------------------------------------------------------------------------------------
