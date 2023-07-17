@@ -20,5 +20,4 @@ let sobrenome = 'lacerda';
 let temperatura = Maquininha.pegarTemperatura(); //assincrona, essa linha levar um certo tempo para fazer a leitura mas o codigo nao espera isso para passar a executar a proxima
 let completo = nome+' '+sobrenome;
 
-
 toda requisição interna é uma requisição assincrona
