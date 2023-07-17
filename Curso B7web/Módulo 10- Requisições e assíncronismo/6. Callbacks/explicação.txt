@@ -2,8 +2,7 @@
 ---------------------------------------------------------------------------------------------------------
 CALLBACKS
 
-em javascript é uma função criada que é mandada para outra execução, geralmente assincrona
-quando determinada coisa acontecer executa tal função
+é uma função que é passada como parametro para outra e quando essa outra função for finalizada ela é executada
 i'm gonna call you back  (eu te ligo de volta)
 é uma função que fica esperando o resultado de outra para ser executada
 
