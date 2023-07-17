@@ -1,3 +1,26 @@
+JSON.parse() é uma função nativa em JavaScript que permite converter uma string JSON em um objeto JavaScript. Ela é usada para "desserializar" os dados no formato JSON, tornando-os utilizáveis dentro do código como objetos JavaScript.
+
+Quando você recebe dados em formato JSON de uma API, servidor ou arquivo, esses dados são transmitidos como uma string. Para manipular esses dados de forma adequada em seu código JavaScript, você precisa convertê-los em objetos ou arrays. É aí que entra o JSON.parse().
+
+Exemplo de uso do JSON.parse()
+
+
+
+const jsonString = '{"nome": "João", "idade": 30, "casado": false}';
+const obj = JSON.parse(jsonString);
+
+console.log(obj.nome); // Output: João
+console.log(obj.idade); // Output: 30
+console.log(obj.casado); // Output: false
+
+
+
+Neste exemplo, temos uma string JSON representando um objeto com os atributos "nome", "idade" e "casado". Ao aplicar JSON.parse() na string, ela é convertida em um objeto JavaScript chamado obj, e podemos acessar seus valores normalmente através das propriedades do objeto.
+
+Lembrando que, para que o JSON.parse() funcione corretamente, a string JSON precisa estar bem formatada, caso contrário, uma exceção será lançada. Certifique-se de que a string seja válida e corresponda ao formato esperado para evitar erros de parsing.
+
+
+-------------------------------------------------------------------------------------------------------
 Quando se faz uma requisição 
 se recebe um json "puro" , ou seja uma string e dentro dessa string tem um json
 
