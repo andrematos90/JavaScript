@@ -30,6 +30,7 @@ const userName = 'andrematos90';
 fetch(`https://api.github.com/users/${userName}`, {
 
 
+
    method: 'GET',
    headers: {
       Accpet: 'application/vnd.github.v3+json',
