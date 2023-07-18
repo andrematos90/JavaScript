@@ -36,3 +36,61 @@ temp.then(function(resultado){   //pega a temperatura e quando(then)derc certo e
 tempo.catch(function(error){                  // catch quando da erro executa outra mensagem na tela 
     console.log("erro na leitura");
 });
+
+
+
+
+ANALOGÍA
+
+
+Imagine que você está em um restaurante e faz um pedido ao garçom. No momento em que você faz o pedido, ele lhe dá um número de identificação e diz que vai levar algum tempo para preparar a sua comida. Enquanto a cozinha está preparando o seu prato, você não precisa ficar esperando na mesa sem fazer nada. Em vez disso, você pode continuar conversando com seus amigos, olhando o cardápio ou até mesmo fazer outras coisas enquanto espera.
+
+Aqui está a analogia:
+
+Você é o código JavaScript que precisa fazer uma operação assíncrona (por exemplo, uma requisição a um servidor).
+
+O garçom é a função que inicia a operação assíncrona, que retorna uma Promise.
+
+O número de identificação que você recebe é a Promise que você pode guardar para lidar com o resultado futuro da operação.
+
+A cozinha do restaurante é a operação assíncrona em si, que levará algum tempo para ser concluída (por exemplo, a requisição ao servidor que pode demorar para retornar).
+
+Enquanto a cozinha prepara o seu prato, você não precisa ficar esperando inativamente na mesa, você pode continuar fazendo outras coisas (executando mais código JavaScript).
+
+Quando a cozinha terminar de preparar o prato (a operação assíncrona é concluída), o garçom retorna com o prato (a Promise é resolvida).
+
+Se tudo correr bem, você recebe o prato e pode comer (a Promise entra no estado "fulfilled" e você pode acessar o resultado).
+
+Se algo der errado na cozinha (o prato queimou ou falta algum ingrediente), o garçom retorna informando o problema (a Promise entra no estado "rejected" e você pode lidar com o motivo do erro).
+
+Essa analogia ilustra como a Promise permite que você continue executando outras tarefas enquanto aguarda a conclusão de uma operação assíncrona, e depois, você pode tratar o resultado (bem-sucedido ou erro) quando ele estiver disponível. Essa abordagem torna o código mais organizado, legível e eficiente quando lidamos com operações que levam algum tempo para serem concluídas.
+
+
+Uma Promise é como uma "identificação" ou "recibo" de uma operação assíncrona que pode estar em três estados: pendente, realizada (fulfilled) ou rejeitada (rejected). A operação assíncrona pode ser, por exemplo, uma requisição de rede, a leitura de um arquivo ou qualquer outra tarefa que leve algum tempo para ser concluída.
+
+Quando você cria uma Promise em JavaScript, ela representa a eventual conclusão (ou falha) daquela operação e o valor resultante dessa conclusão.
+
+Você pode associar diferentes funções, chamadas de callbacks, para serem executadas dependendo do resultado da Promise. Essas funções podem ser definidas usando os métodos .then() para o caso de sucesso (fulfilled) e .catch() para o caso de erro (rejected).
+
+Exemplo:
+
+const promise = new Promise((resolve, reject) => {
+  // Simulação de uma operação assíncrona
+  const resultado = Math.random();
+
+  // Simulação de sucesso ou falha da operação
+  if (resultado > 0.5) {
+    resolve(resultado); // Se o resultado for maior que 0.5, a Promise é realizada (fulfilled)
+  } else {
+    reject("Erro!"); // Se o resultado for menor ou igual a 0.5, a Promise é rejeitada (rejected)
+  }
+});
+
+promise
+  .then(valor => console.log("Sucesso! Valor: " + valor))
+  .catch(erro => console.error("Erro: " + erro));
+
+
+Neste exemplo, criamos uma Promise que simula uma operação assíncrona, gerando um resultado aleatório. Se o resultado for maior que 0.5, a Promise é resolvida (realizada) e o valor é passado para a função associada ao .then(). Se o resultado for menor ou igual a 0.5, a Promise é rejeitada e o motivo do erro é passado para a função associada ao .catch().
+
+Essa abordagem permite que você lide de forma estruturada com o resultado futuro de uma operação assíncrona e tome ações apropriadas dependendo do sucesso ou falha da tarefa.
