@@ -1,5 +1,5 @@
 function loadPosts(){
-   document.getElementById("post").innerHTML = 'carregando...';   // ao clicar no botao aparece o texto carregando
+   document.getElementById("posts").innerHTML = 'carregando...';   // ao clicar no botao aparece o texto carregando
 
     fetch('https://jsonplaceholder.typicode.com/posts')  // faz a requisição
      .then(function(resultado){          
