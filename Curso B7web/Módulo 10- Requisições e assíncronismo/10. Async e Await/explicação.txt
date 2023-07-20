@@ -1,3 +1,49 @@
+
+
+
+
+
+Async e Await são recursos do JavaScript introduzidos no ES2017 (também conhecido como ES8) para facilitar o trabalho com operações assíncronas, como requisições HTTP, leitura/escrita de arquivos, ou qualquer tarefa que envolva promessas ou funções assíncronas.
+
+async: O operador async é utilizado para declarar uma função assíncrona. Quando uma função é declarada com o async, ela retorna uma promessa implicitamente. Isso significa que a função pode conter operações assíncronas, e seu valor de retorno será resolvido em uma promessa, mesmo que a função não utilize explicitamente a palavra-chave return.
+Exemplo de função assíncrona com async:
+
+async function minhaFuncaoAssincrona() {
+  // Código assíncrono aqui
+  return "Resultado";
+}
+
+
+await: O operador await só pode ser usado dentro de uma função assíncrona declarada com o async. Ele é utilizado para pausar a execução da função assíncrona até que a promessa seja resolvida. Isso torna o código mais legível e facilita o tratamento de resultados assíncronos, pois permite trabalhar com o resultado de uma promessa como se fosse um valor síncrono.
+Exemplo de uso do await:
+
+async function exemploAwait() {
+  const resultado = await minhaFuncaoAssincrona();
+  console.log(resultado); // O resultado é exibido quando a promessa é resolvida
+}
+
+
+No exemplo acima, a função exemploAwait chama minhaFuncaoAssincrona() usando await, o que fará com que a execução seja pausada até que a promessa seja resolvida com um valor. Quando a promessa é resolvida, o valor é atribuído à variável resultado, e o código continua a ser executado.
+
+É importante notar que, ao usar o await, a execução da função assíncrona é pausada, mas não bloqueia a thread principal do JavaScript. Isso permite que outras tarefas assíncronas ou processamento ocorram em paralelo.
+
+O uso combinado de async e await torna o código assíncrono mais fácil de escrever, ler e entender, tornando a programação assíncrona em JavaScript mais intuitiva e menos propensa a erros relacionados a promessas.
+
+
+ANALOGÍA
+
+
+
+Imagine que você está em um restaurante e fez um pedido ao garçom. O garçom anota seu pedido e entrega o ticket do pedido para a cozinha, mas ele não pode esperar lá até que seu pedido seja preparado, pois existem outros clientes para atender. Em vez disso, ele diz: "Aguarde um momento, assim que o seu pedido estiver pronto, eu o chamarei para buscá-lo".
+
+Nesse cenário:
+
+async é como se você dissesse ao garçom: "Por favor, coloque meu pedido na cozinha e me avise assim que estiver pronto".
+
+await é como o garçom lhe dizendo: "Vou colocar o seu pedido na cozinha. Enquanto isso, continuarei atendendo outros clientes, mas assim que estiver pronto, eu o chamarei para buscá-lo".
+
+Em resumo, async permite que a função assíncrona inicie uma operação assíncrona (como uma Promise) e retorne uma Promise implicitamente. Enquanto isso, o await é usado dentro da função assíncrona para "esperar" o resultado da Promise. O await pausa a execução da função até que a Promise seja resolvida ou rejeitada, permitindo que o código assíncrono seja tratado de maneira mais síncrona e legível, sem bloquear a execução de outras tarefas no programa.
+
 ---------------------------------------------------------------------------------------------------------
 
 ASYNC E AWAIT
@@ -13,7 +59,7 @@ obriga o codigo a espera o resultado
 
 
 ---------------------------------------------------------------------------------------------------------
-async function loadPosts(){  // diz que dento desta função estara sendo usado o await
+async function loadPosts(){  // diz que dentro desta função estara sendo usado o await
    document.getElementById("post").innerHTML = 'carregando...';   // ao clicar no botao aparece o texto carregando
 
 
@@ -51,5 +97,7 @@ function montarBlog(lista) {
    }
 
    document.getElementById("posts").innerHTML = html;
+
+}
 
 ---------------------------------------------------------------------------------------------------------
