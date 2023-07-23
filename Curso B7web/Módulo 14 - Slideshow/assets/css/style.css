@@ -1,0 +1,91 @@
+/* Define o modelo de caixa "border-box", onde a largura e altura dos elementos incluem o preenchimento e a borda, mas não a margem. */
+* {
+    box-sizing: border-box;
+}
+
+/* Remove a margem padrão do elemento body. */
+body {
+    margin: 0;
+}
+
+/* Remove a margem do elemento header e define a direção dos elementos filhos como uma coluna. */
+header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Define a altura do elemento com a classe "header" como 50px e a cor de fundo como preto (#000). */
+.header {
+    height: 50px;
+    background-color: #000;
+}
+
+/* Define a largura do elemento com a classe "slider" como 100% da largura visível da janela (viewport) e a altura como 400px. 
+   O conteúdo que exceder a largura ou altura será oculto. */
+.slider {
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* Define a altura do elemento com a classe "slider--width" como 100% da altura do pai (slider) e define o elemento como um flex container.
+   A propriedade "transition" especifica a duração e o tipo de transição para todas as propriedades animadas. */
+.slider--width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+}
+
+/* Define a largura do elemento com a classe "slider--item" como 100% da largura visível da janela (viewport) e a altura como a altura herdada do elemento pai.
+   "background-position" define o posicionamento da imagem de fundo no centro, e "background-size" define o dimensionamento da imagem de fundo para cobrir o elemento.
+   "display: flex;" torna o elemento um flex container e "justify-content: center;" e "align-items: flex-end;" centralizam e alinham os itens filho no centro e na parte inferior, respectivamente.
+   Também define a cor do texto como branco (#FFF), adiciona uma sombra de texto para melhor legibilidade e define o tamanho da fonte como 50px. */
+.slider--item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #FFF;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 50px;
+}
+
+/* Define o alinhamento dos itens filho do elemento com o ID "slider--item-2" para ficarem alinhados no topo. */
+#slider--item-2{
+    align-items: flex-start;
+}
+
+/* Define a posição como "absoluta", permitindo o posicionamento relativo a elementos pai posicionados.
+   "z-index" define a ordem de empilhamento do elemento. Quanto maior o valor, maior a prioridade na sobreposição.
+   "display: flex;" torna o elemento um flex container e "justify-content: space-between;" alinha os itens filho com espaçamento igual entre eles horizontalmente.
+   "align-items: center;" centraliza os itens filho verticalmente. */
+.slider--controls {
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Define a largura do elemento com a classe "slider--control" como 70px, a altura como 30px e a cor de fundo como branco (#FFF).
+   "border-radius: 10px;" define o raio dos cantos do elemento, criando bordas arredondadas.
+   "overflow: hidden;" esconde qualquer conteúdo que exceda os limites do elemento.
+   "cursor: pointer;" define o cursor do mouse como um ponteiro para indicar interatividade.
+   "margin: 10px;" adiciona margem externa de 10px em todos os lados do elemento.
+   "padding: 10px;" adiciona preenchimento interno de 10px em todos os lados do elemento.
+   "font-size: 10px;" define o tamanho da fonte como 10px. */
+.slider--control {
+    width: 70px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    font-size: 10px;
+}
