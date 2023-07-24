@@ -30,5 +30,6 @@ function calInvestimento(P, r, n){
 // Chama a função calInvestimento() com os valores fornecidos pelo usuário e armazena o resultado em resultado.
 let resultado = calInvestimento(valorInicial, taxaJuros, periodo);
 
+
 // Exibe um alerta mostrando o resultado do investimento com duas casas decimais após a vírgula.
 alert('O valor futuro do investimento é de R$ ' + resultado.toFixed(2));
