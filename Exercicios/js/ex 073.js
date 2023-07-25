@@ -7,6 +7,7 @@ let botao = document.querySelector("#botao");
 // Adiciona um ouvinte de evento ao botão. Quando o botão é clicado, a função "geraConselho" será chamada.
 botao.addEventListener("click", geraConselho);
 
+
 // Função que gera o conselho, fazendo uma requisição para a API Advice Slip.
 function geraConselho() {
     // Faz uma requisição para a API Advice Slip usando o método "fetch".
