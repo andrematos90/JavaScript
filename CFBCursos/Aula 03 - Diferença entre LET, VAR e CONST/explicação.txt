@@ -16,7 +16,6 @@ function example() {
   console.log(x); // x é acessível aqui fora do bloco if (escopo de função)
 }
 
-
 let:
 
 let foi introduzido com o ECMAScript 6 (ES6) e é preferível em relação a var em muitos cenários.
