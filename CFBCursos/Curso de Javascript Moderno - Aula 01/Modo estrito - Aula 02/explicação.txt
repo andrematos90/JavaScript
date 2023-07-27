@@ -1,0 +1,61 @@
+Em JavaScript, o "modo estrito" (strict mode em inglês) é uma funcionalidade que permite que você opte por uma versão restrita e mais segura do JavaScript. Quando o modo estrito é ativado, certas práticas propensas a erros são proibidas, e algumas regras mais rigorosas são aplicadas ao código.
+
+Para habilitar o modo estrito em um arquivo ou em uma função específica, você deve adicionar a diretiva 'use strict'; no início do código. Por exemplo:
+
+'use strict';
+
+// Seu código aqui
+
+
+Quando o modo estrito está ativado, as seguintes mudanças são aplicadas:
+
+-------------------------------------------------------------------------------------------------
+Variáveis não declaradas não são permitidas:
+
+'use strict';
+x = 10; // Erro, "x" não foi declarada
+
+-------------------------------------------------------------------------------------------------
+Atribuição a propriedades de objetos somente leitura ou não configuráveis resulta em erro:
+
+'use strict';
+const obj = {};
+Object.defineProperty(obj, 'prop', { value: 42, writable: false });
+
+obj.prop = 100; // Erro, a propriedade "prop" é somente leitura
+
+--------------------------------------------------------------------------------------------------
+
+Deletar variáveis, funções ou argumentos não é permitido:
+
+'use strict';
+let x = 10;
+delete x; // Erro, não é possível deletar a variável "x"
+
+--------------------------------------------------------------------------------------------------
+
+Parâmetros de função duplicados não são permitidos:
+
+'use strict';
+function foo(a, b, a) { // Erro, parâmetro "a" duplicado
+  // código aqui
+}
+
+--------------------------------------------------------------------------------------------------
+this em funções não é mais vinculado ao objeto global (como window no navegador), mas sim a undefined no contexto global ou a um valor específico, dependendo de como a função é chamada. Isso ajuda a evitar erros comuns relacionados ao uso de this no JavaScript.
+
+--------------------------------------------------------------------------------------------------
+
+Algumas palavras reservadas para possíveis futuras versões do JavaScript não podem ser usadas como identificadores.
+
+--------------------------------------------------------------------------------------------------
+
+O modo estrito é útil porque ajuda a evitar erros comuns e a tornar o código mais seguro e menos propenso a problemas. É recomendável que os desenvolvedores usem o modo estrito em todos os seus projetos JavaScript modernos para se beneficiarem dessas vantagens.
+
+
+
+
+
+
+
+
