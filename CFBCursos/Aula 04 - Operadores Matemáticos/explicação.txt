@@ -1,0 +1,70 @@
+Em JavaScript, existem vários operadores matemáticos que permitem realizar diversas operações aritméticas. Abaixo estão os principais operadores matemáticos em JavaScript, acompanhados de suas explicações:
+
++ (Adição):
+
+Utilizado para somar dois valores ou concatenar strings.
+Se ambos os operandos forem números, a soma é realizada.
+Se um dos operandos (ou ambos) for uma string, ocorre a concatenação dos valores.
+Exemplo:
+
+const a = 5;
+const b = 10;
+const c = a + b; // c terá o valor 15
+
+const str1 = "Hello";
+const str2 = " World!";
+const result = str1 + str2; // result terá o valor "Hello World!"
+
+
+- (Subtração):
+
+Utilizado para subtrair o operando à direita do operando à esquerda.
+Exemplo:
+
+const x = 10;
+const y = 5;
+const z = x - y; // z terá o valor 5
+
+
+* (Multiplicação):
+
+Utilizado para multiplicar os dois operandos.
+Exemplo:
+
+const a = 3;
+const b = 4;
+const result = a * b; // result terá o valor 12
+
+
+/ (Divisão):
+
+Utilizado para dividir o operando à esquerda pelo operando à direita.
+Exemplo:
+
+const x = 20;
+const y = 5;
+const result = x / y; // result terá o valor 4
+
+% (Módulo):
+
+Retorna o restante da divisão do operando à esquerda pelo operando à direita.
+É usado principalmente para verificar se um número é divisível por outro.
+Exemplo:
+
+const a = 10;
+const b = 3;
+const remainder = a % b; // remainder terá o valor 1 (10 ÷ 3 = 3 com 1 de resto)
+
+
+** (Potenciação):
+
+Utilizado para elevar o operando à esquerda à potência do operando à direita.
+Introduzido no ECMAScript 2016 (ES7).
+Exemplo:
+
+const base = 2;
+const exponent = 3;
+const result = base ** exponent; // result terá o valor 8 (2 elevado a 3)
+
+
+Esses são os principais operadores matemáticos em JavaScript. Eles permitem que você realize operações aritméticas e cálculos matemáticos em seus programas. Além desses, também existem operadores de incremento (++) e decremento (--), que são usados para aumentar ou diminuir o valor de uma variável por uma unidade.
