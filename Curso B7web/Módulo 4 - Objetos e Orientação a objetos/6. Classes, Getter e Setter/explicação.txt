@@ -1,0 +1,98 @@
+Em JavaScript, as classes, getters e setters são recursos que permitem criar objetos com propriedades controladas e métodos específicos para acessar e modificar essas propriedades. Isso ajuda a garantir a encapsulação e a segurança dos dados, permitindo que você defina comportamentos personalizados para o acesso e a atribuição de valores a essas propriedades.
+
+Vamos explicar cada conceito separadamente:
+
+Classes:
+As classes são uma forma de criar objetos em JavaScript usando a sintaxe de classe. As classes podem conter propriedades e métodos, e você pode criar instâncias delas para criar objetos específicos. A declaração de uma classe segue a seguinte estrutura:
+
+class NomeDaClasse {
+  constructor(propriedade1, propriedade2, ...) {
+    // Definição das propriedades da classe
+    this.propriedade1 = propriedade1;
+    this.propriedade2 = propriedade2;
+    // ...
+  }
+
+  // Métodos da classe
+  metodo1() {
+    // Implementação do método
+  }
+
+  metodo2() {
+    // Implementação do método
+  }
+
+  // ...
+}
+
+
+Getter:
+Um getter é um método especial dentro de uma classe que é usado para obter o valor de uma propriedade específica. Eles são identificados pelo uso da palavra-chave get antes do nome do método. Quando você tenta acessar a propriedade, o método getter é chamado automaticamente e seu retorno é considerado o valor da propriedade.
+Exemplo de um getter:
+
+class Exemplo {
+  constructor(nome) {
+    this._nome = nome;
+  }
+
+  get nome() {
+    return this._nome;
+  }
+}
+
+const exemploObj = new Exemplo('João');
+console.log(exemploObj.nome); // Saída: "João"
+
+Observe que, no exemplo acima, o getter nome é usado para obter o valor da propriedade _nome. Por convenção, é comum usar o prefixo _ para indicar que a propriedade deve ser tratada como privada e não acessada diretamente.
+
+Setter:
+Um setter é outro método especial dentro de uma classe que é usado para atribuir um valor a uma propriedade específica. Eles são identificados pelo uso da palavra-chave set antes do nome do método. Quando você tenta atribuir um valor à propriedade, o método setter é chamado automaticamente, permitindo que você defina regras ou condições antes de modificar a propriedade.
+Exemplo de um setter:
+
+class Exemplo {
+  constructor() {
+    this._nome = '';
+  }
+
+  get nome() {
+    return this._nome;
+  }
+
+  set nome(novoNome) {
+    if (typeof novoNome === 'string') {
+      this._nome = novoNome;
+    } else {
+      console.log('Erro: O nome deve ser uma string.');
+    }
+  }
+}
+
+const exemploObj = new Exemplo();
+exemploObj.nome = 'Maria'; // A chamada do setter ocorre aqui
+console.log(exemploObj.nome); // Saída: "Maria"
+
+exemploObj.nome = 42; // Tentando atribuir um valor inválido
+// Saída: "Erro: O nome deve ser uma string."
+
+
+No exemplo acima, o setter nome é usado para definir o valor da propriedade _nome. Antes de atribuir o valor, o setter verifica se o novo nome é uma string; caso contrário, ele emite uma mensagem de erro.
+
+Em resumo, as classes, getters e setters são recursos poderosos que permitem criar objetos JavaScript com propriedades controladas e personalizadas, melhorando a modularidade e segurança do código.
+
+Os getters e setters servem para definir propriedades de objetos de acordo com regras específicas criadas nesses métodos. Eles permitem que você tenha um maior controle sobre o acesso e a atribuição de valores às propriedades de uma classe.
+
+Ao utilizar getters e setters, você pode implementar lógicas adicionais, como validações, tratamentos ou cálculos, antes de obter ou definir o valor de uma propriedade. Isso ajuda a garantir a consistência e a integridade dos dados armazenados nos objetos.
+
+Alguns exemplos de como os getters e setters podem ser úteis:
+
+Validação de valores: Você pode verificar se um valor atribuído a uma propriedade é válido antes de permitir que ele seja definido.
+
+Cálculos automáticos: É possível calcular e retornar valores com base em outras propriedades da classe.
+
+Encapsulamento: Os getters e setters permitem ocultar os detalhes de implementação das propriedades e fornecer uma interface mais simples para o uso das classes.
+
+Controle de acesso: É possível restringir o acesso a determinadas propriedades, tornando-as somente leitura ou privadas.
+
+Dependências observáveis: Em algumas bibliotecas e frameworks, os getters e setters podem ser usados para criar dependências observáveis entre as propriedades, permitindo que outras partes do código sejam notificadas quando uma propriedade é alterada.
+
+Esses são apenas alguns exemplos das possibilidades que os getters e setters oferecem. Ao usar esses recursos, você pode criar classes mais seguras, modulares e flexíveis em JavaScript.
