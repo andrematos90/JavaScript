@@ -1,0 +1,89 @@
+Na programação orientada a objetos (POO), a herança é um conceito fundamental que permite que uma classe (ou objeto) herde as características e comportamentos de outra classe (ou objeto) já existente. Isso significa que a classe herdeira pode reutilizar os atributos e métodos da classe pai, bem como adicionar novos atributos e métodos específicos a si mesma.
+
+Em JavaScript, a herança é baseada em protótipos. Cada objeto em JavaScript tem um protótipo, que é uma referência para outro objeto. Quando você acessa uma propriedade ou método em um objeto, o mecanismo de busca de propriedades do JavaScript irá primeiro procurar essa propriedade no próprio objeto e, se não a encontrar, irá procurar no protótipo do objeto. Essa busca continua em cadeia até chegar ao objeto base (normalmente o objeto Object.prototype), criando assim uma cadeia de protótipos.
+
+Vamos ver um exemplo prático de como implementar herança em JavaScript:
+
+// Classe Pai (ou Superclasse)
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  eat() {
+    console.log(`${this.name} está comendo.`);
+  }
+}
+
+// Classe Filha (ou Subclasse) que herda de Animal
+class Dog extends Animal {
+  constructor(name, breed) {
+    // Chama o construtor da classe pai usando a função 'super'
+    super(name);
+    this.breed = breed;
+  }
+
+  bark() {
+    console.log(`${this.name} está latindo.`);
+  }
+}
+
+// Criando uma instância da classe Dog
+const myDog = new Dog('Fido', 'Labrador');
+myDog.eat(); // Resultado: Fido está comendo.
+myDog.bark(); // Resultado: Fido está latindo.
+
+
+Neste exemplo, temos uma classe Animal que possui um construtor para definir o nome do animal e um método eat() para exibir uma mensagem de que o animal está comendo. Em seguida, temos uma classe Dog, que herda da classe Animal usando a sintaxe extends. A classe Dog possui um construtor que chama o construtor da classe pai (super(name)) e também tem um método bark() para exibir uma mensagem de que o cão está latindo.
+
+Dessa forma, a classe Dog herda todas as propriedades e métodos da classe Animal, permitindo a reutilização do código e a extensão com novos comportamentos específicos para cães.
+
+Lembre-se de que a herança deve ser usada com cuidado e parcimônia, pois o acoplamento excessivo entre classes pode levar a um código menos flexível e mais difícil de manter. Em muitos casos, a composição (usando outros objetos como propriedades) ou outras técnicas de design orientado a objetos podem ser preferíveis à herança direta.
+
+
+SOBREESCREEVNDO MÉTODOS 
+
+é possível sobrescrever um método criado na classe base (superclasse) na classe filha (subclasse) em JavaScript, assim como em outras linguagens de programação orientada a objetos.
+
+Quando uma classe filha herda um método de sua classe base, ela pode substituir (ou sobrescrever) esse método fornecendo uma nova implementação na própria classe filha. Isso significa que o método na classe filha terá prioridade sobre o método com o mesmo nome na classe base quando for chamado para objetos da classe filha.
+
+Vamos exemplificar a sobrescrita de um método:
+
+// Classe Pai (ou Superclasse)
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  // Método na classe pai
+  makeSound() {
+    console.log("Som genérico de animal.");
+  }
+}
+
+// Classe Filha (ou Subclasse) que herda de Animal
+class Dog extends Animal {
+  constructor(name, breed) {
+    super(name);
+    this.breed = breed;
+  }
+
+  // Sobrescrevendo o método makeSound() na classe filha
+  makeSound() {
+    console.log("Latindo: Au au!");
+  }
+}
+
+// Criando instâncias de Animal e Dog
+const genericAnimal = new Animal("Animal");
+const myDog = new Dog("Fido", "Labrador");
+
+// Chamando o método makeSound() nas duas instâncias
+genericAnimal.makeSound(); // Resultado: Som genérico de animal.
+myDog.makeSound();        // Resultado: Latindo: Au au!
+
+No exemplo acima, temos a classe base Animal com um método makeSound(), que imprime um som genérico de animal. Na classe Dog, a subclasse que herda de Animal, sobrescrevemos o método makeSound() para que ele exiba a mensagem "Latindo: Au au!".
+
+Quando chamamos o método makeSound() na instância genericAnimal, ele usa a implementação da classe Animal, enquanto na instância myDog, o método sobrescrito da classe Dog é executado, exibindo uma saída diferente.
+
+Essa capacidade de sobrescrever métodos permite que a classe filha personalize o comportamento herdado da classe base para se adequar melhor às suas próprias características e necessidades específicas.
