@@ -96,3 +96,26 @@ Controle de acesso: É possível restringir o acesso a determinadas propriedades
 Dependências observáveis: Em algumas bibliotecas e frameworks, os getters e setters podem ser usados para criar dependências observáveis entre as propriedades, permitindo que outras partes do código sejam notificadas quando uma propriedade é alterada.
 
 Esses são apenas alguns exemplos das possibilidades que os getters e setters oferecem. Ao usar esses recursos, você pode criar classes mais seguras, modulares e flexíveis em JavaScript.
+
+
+-----------------------------------------------------------------------------------------
+
+O getter é um método que cria "verificações" para permitir o acesso a uma propriedade da classe. Ele é responsável por retornar o valor da propriedade quando essa propriedade é acessada externamente. O objetivo principal do getter é permitir que você controle como o valor da propriedade é obtido e, se necessário, realizar algum processamento ou lógica adicional antes de retornar o valor.
+
+Por exemplo, um getter pode ser usado para formatar ou calcular um valor com base em outras propriedades da  antes de retorná-lo. Isso torna a obtenção do valor mais flexível e dinâmica, sem a necessidade de expor diretamente a propriedade em si.
+
+Por outro lado, o setter é um método que cria "validações" para permitir a alteração de uma propriedade específica de um objeto criado a partir da classe. Ele não atua na classe em si, mas sim nos objetos individuais (instanciados) que são criados a partir da classe.. Ele é responsável por definir o valor de uma propriedade quando essa propriedade é atribuída externamente.  Cada objeto terá seu próprio setter para essa propriedade, o que significa que as validações aplicadas no setter serão específicas para cada objeto individual.. O objetivo principal do setter é permitir que você controle como o valor é definido, aplicando regras e validações antes de efetivamente modificar o valor da propriedade.
+
+Por exemplo, um setter pode ser usado para verificar se o novo valor atribuído é válido, e somente permitir a modificação da propriedade se ele atender a determinadas condições. Isso garante que o estado interno do objeto seja consistente e que não ocorram alterações indesejadas ou incorretas.
+
+Em resumo, o getter e o setter são métodos que trabalham juntos para fornecer uma interface controlada para acessar e modificar as propriedades de uma classe. Eles ajudam a garantir o encapsulamento dos dados, fornecendo uma camada de proteção e controle sobre o acesso e a manipulação das propriedades dos objetos.
+
+
+quando se usao o método set a atribuição de valor funciona como se fosse uma atribuição
+normal de uma váriavel:
+
+
+
+carro.combustivel = 100;;  pq na classe foi usado a método set
+
+carro.combustivel(100)  como seria se na classe não tivesse usado o set
