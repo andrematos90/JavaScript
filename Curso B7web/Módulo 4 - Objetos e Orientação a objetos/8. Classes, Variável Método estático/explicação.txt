@@ -1,0 +1,40 @@
+Em JavaScript, a palavra-chave static é usada para criar membros estáticos em uma classe. Membros estáticos pertencem à própria classe em vez de pertencer a instâncias individuais dessa classe. Isso significa que você pode acessá-los diretamente na classe, sem precisar criar uma instância dela.
+
+Existem dois tipos de membros estáticos que podem ser criados em uma classe: métodos estáticos e propriedades estáticas.
+
+Métodos estáticos:
+Um método estático é uma função que está associada à classe, não às instâncias criadas a partir dela. Isso significa que você pode chamar um método estático diretamente na classe, sem precisar criar um objeto a partir dela. Para definir um método estático em uma classe, você utiliza a palavra-chave static antes da declaração do método.
+Exemplo de método estático:
+
+class MathUtils {
+  static add(a, b) {
+    return a + b;
+  }
+}
+
+console.log(MathUtils.add(5, 3)); // Resultado: 8
+
+Propriedades estáticas:
+Uma propriedade estática é uma que  pertence à própria classe e não a uma instância específica. Para definir uma propriedade estática em uma classe, você pode atribuir um valor diretamente a ela dentro da classe, mas não dentro do construtor.
+Exemplo de propriedade estática:
+
+class Circle {
+  static pi = 3.14159;
+
+  constructor(radius) {
+    this.radius = radius;
+  }
+
+  getArea() {
+    return Circle.pi * this.radius * this.radius;
+  }
+}
+
+const circle1 = new Circle(5);
+console.log(circle1.getArea()); // Resultado: 78.53975
+console.log(Circle.pi);         // Resultado: 3.14159
+
+
+No exemplo acima, a classe MathUtils tem um método estático add(), que pode ser chamado diretamente na classe. Já a classe Circle possui uma propriedade estática pi que é usada dentro do método getArea(), mas é acessada diretamente na classe, não em uma instância.
+
+Os membros estáticos são úteis quando você precisa de funcionalidades que pertencem à classe em si, não a instâncias individuais dela. Eles são comumente usados para implementar utilitários, funções auxiliares ou constantes que são relevantes para a classe, mas não dependem do estado específico das instâncias.
