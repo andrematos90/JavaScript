@@ -1,0 +1,61 @@
+Em JavaScript, os operadores relacionais são utilizados para comparar valores e determinar a relação entre eles. Eles retornam um valor booleano (verdadeiro ou falso) com base na comparação. Abaixo estão todos os operadores relacionais em JavaScript, acompanhados de uma breve explicação:
+
+Igual (==): Verifica se os valores dos operandos são iguais. Se forem de tipos diferentes, JavaScript tentará converter um deles para igualar o tipo do outro antes de fazer a comparação.
+
+Não igual (!=): Verifica se os valores dos operandos são diferentes. Também pode ocorrer uma conversão de tipo antes da comparação.
+
+Estritamente igual (===): Testa igualdade de valores e tipos. Não há conversão de tipo; os operandos devem ser do mesmo tipo para retornar verdadeiro.
+
+Estritamente não igual (!==): Testa desigualdade de valores e tipos. Se os tipos forem diferentes ou os valores forem diferentes, o resultado será verdadeiro.
+
+Maior que (>): Verifica se o operando à esquerda é maior que o operando à direita.
+
+Maior ou igual (>=): Verifica se o operando à esquerda é maior ou igual ao operando à direita.
+
+Menor que (<): Verifica se o operando à esquerda é menor que o operando à direita.
+
+Menor ou igual (<=): Verifica se o operando à esquerda é menor ou igual ao operando à direita.
+
+Exemplos:
+
+let a = 5;
+let b = 10;
+let c = "5";
+
+console.log(a == b);    // false
+console.log(a != b);    // true
+console.log(a === c);   // false (número 5 não é estritamente igual a string "5")
+console.log(a !== c);   // true (número 5 não é estritamente igual a string "5")
+console.log(a > b);     // false
+console.log(a >= b);    // false
+console.log(a < b);     // true
+console.log(a <= b);    // true
+
+
+É importante usar os operadores relacionais corretamente, especialmente quando se trata de comparações estritas (usando === e !==). A comparação estrita é preferível em muitos casos, pois evita resultados inesperados devido a conversões de tipo implícitas.
+
+
+OPERADOR NOT!
+
+O operador "not" em JavaScript é representado pelo símbolo de exclamação (!). Ele é um operador unário que inverte o valor booleano de uma expressão. Em outras palavras, se uma expressão é verdadeira, o operador "not" a torna falsa, e vice-versa.
+
+Exemplo:
+
+let a = true;
+let b = false;
+
+console.log(!a);   // false (a é verdadeiro, mas o operador "not" o torna falso)
+console.log(!b);   // true (b é falso, mas o operador "not" o torna verdadeiro)
+
+
+O operador "not" também pode ser usado com outras expressões além de booleanos. Ele converterá o valor para booleano e, em seguida, inverterá o resultado. Qualquer valor que seja considerado "falsy" (como 0, null, undefined, NaN, ou uma string vazia) será tratado como falso, e qualquer outro valor será tratado como verdadeiro.
+
+Exemplo:
+
+let num = 42;
+let str = "";
+
+console.log(!num);  // false (42 é considerado verdadeiro, mas o operador "not" o torna falso)
+console.log(!str);  // true (a string vazia é considerada falsa, o operador "not" a torna verdadeira)
+
+O operador "not" é muito útil em diversas situações, como em instruções condicionais e loops, onde você deseja verificar ou inverter o valor de uma condição.
