@@ -1,0 +1,23 @@
+Em JavaScript, o pré-incremento e o pós-incremento são operadores unários usados para aumentar o valor de uma variável numérica em uma unidade. Ambos os operadores são representados pelo símbolo ++, mas sua posição em relação à variável faz diferença no momento em que o incremento ocorre.
+
+Pré-incremento:
+
+Sintaxe: ++variavel
+Funcionamento: O valor da variável é incrementado antes que qualquer outra operação seja realizada. Ou seja, o valor é aumentado em 1 antes que qualquer outro cálculo que possa usar esse valor seja feito.
+Exemplo:
+
+let num = 5;
+let resultado = ++num; // Incrementa "num" para 6 e, em seguida, atribui o valor 6 à variável "resultado"
+console.log(resultado); // Saída: 6
+
+Pós-incremento:
+
+Sintaxe: variavel++
+Funcionamento: O valor da variável é incrementado após a conclusão de todas as operações na instrução atual. Ou seja, o valor é usado em outras operações primeiro e, em seguida, é incrementado em 1.
+Exemplo:
+
+let num = 5;
+let resultado = num++; // Atribui o valor atual de "num" (5) à variável "resultado" e, em seguida, incrementa "num" para 6
+console.log(resultado); // Saída: 5
+
+No pré-incremento, a variável é incrementada antes de ser usada em outras operações, enquanto no pós-incremento, a variável é usada primeiro e, em seguida, é incrementada. Essa distinção pode ser relevante em situações onde o valor da variável é importante em cálculos subsequentes.
