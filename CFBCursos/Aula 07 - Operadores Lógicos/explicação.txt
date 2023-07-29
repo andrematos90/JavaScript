@@ -1,0 +1,31 @@
+Operador Lógico AND (&&):
+
+Símbolo: &&
+Uso: expressão1 && expressão2
+Explicação: O operador lógico AND retorna true somente se ambas as expressões forem verdadeiras. Caso contrário, ele retorna false. Se a primeira expressão for false, a segunda expressão nem será avaliada, pois o resultado final já será false.
+Operador Lógico OR (||):
+
+Símbolo: ||
+Uso: expressão1 || expressão2
+Explicação: O operador lógico OR retorna true se pelo menos uma das expressões for verdadeira. Ele retorna false apenas se ambas as expressões forem false. Similar ao AND, se a primeira expressão for true, a segunda expressão não será avaliada, pois o resultado final já será true.
+Operador Lógico NOT (!):
+
+Símbolo: !
+Uso: !expressão
+Explicação: O operador lógico NOT inverte o valor da expressão. Se a expressão for true, o NOT tornará o resultado false, e se a expressão for false, o NOT tornará o resultado true.
+Exemplo:
+
+let x = 10;
+let y = 5;
+
+// Exemplo do operador AND
+let resultadoAnd = (x > 5) && (y < 7); // Retorna true, pois ambas as expressões são verdadeiras
+
+// Exemplo do operador OR
+let resultadoOr = (x > 12) || (y < 3); // Retorna false, pois ambas as expressões são falsas
+
+// Exemplo do operador NOT
+let resultadoNot = !(x === 10); // Retorna false, pois a expressão original é true, e o NOT inverte para false
+
+
+Estes operadores lógicos são amplamente utilizados em estruturas de controle, como condicionais (if/else) e loops, para tomar decisões com base em expressões lógicas.
