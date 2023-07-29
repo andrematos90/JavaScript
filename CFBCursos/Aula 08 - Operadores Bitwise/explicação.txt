@@ -1,0 +1,58 @@
+Os operadores bitwise em JavaScript permitem manipular valores numéricos em um nível de bits, em vez de operar nos valores como um todo. Eles tratam os números como sequências de bits (0s e 1s) e permitem realizar operações bit a bit. Esses operadores são mais comumente usados em tarefas que envolvem manipulação de dados binários ou representação de flags.
+
+Aqui estão os principais operadores bitwise em JavaScript:
+
+Operador Bitwise AND (&):
+Símbolo: &
+Uso: valor1 & valor2
+Explicação: Realiza uma operação AND bit a bit entre os dois valores. Cada bit no resultado será 1 apenas se o bit correspondente nos dois valores de entrada também for 1. Caso contrário, o bit no resultado será 0.
+
+Operador Bitwise OR (|):
+Símbolo: |
+Uso: valor1 | valor2
+Explicação: Realiza uma operação OR bit a bit entre os dois valores. Cada bit no resultado será 1 se pelo menos um dos bits correspondentes nos valores de entrada for 1. Se ambos os bits forem 0, o bit no resultado será 0.
+
+
+
+Operador Bitwise XOR (^):
+Símbolo: ^
+Uso: valor1 ^ valor2
+Explicação: Realiza uma operação XOR (ou exclusivo) bit a bit entre os dois valores. Cada bit no resultado será 1 apenas se os bits correspondentes nos valores de entrada forem diferentes. Se ambos os bits forem iguais (ambos 0 ou ambos 1), o bit no resultado será 0.
+
+
+Operador Bitwise NOT (~):
+Símbolo: ~
+Uso: ~valor
+Explicação: Realiza uma operação NOT bit a bit, que inverte cada bit do valor. Ou seja, cada bit 1 será transformado em 0 e cada bit 0 será transformado em 1. O resultado é complementar ao valor original.
+
+
+Operador Bitwise Left Shift (<<):
+Símbolo: <<
+Uso: valor << quantidade
+Explicação: Desloca os bits do valor para a esquerda pelo número de posições especificado pela quantidade. Isso é equivalente a multiplicar o valor por 2 elevado à quantidade.
+
+
+Operador Bitwise Right Shift (>>):
+Símbolo: >>
+Uso: valor >> quantidade
+Explicação: Desloca os bits do valor para a direita pelo número de posições especificado pela quantidade. Isso é equivalente a dividir o valor por 2 elevado à quantidade.
+
+Operador Bitwise Right Shift sem sinal (>>>):
+Símbolo: >>>
+Uso: valor >>> quantidade
+Explicação: Desloca os bits do valor para a direita, preenchendo os bits à esquerda com zeros, pelo número de posições especificado pela quantidade. Esse operador sempre preenche com zeros, mesmo que o bit mais significativo (sinal) seja 1.
+Exemplo:
+
+let valor1 = 5; // Representado em binário como 00000101
+let valor2 = 3; // Representado em binário como 00000011
+
+let resultadoAnd = valor1 & valor2; // Resultado: 00000001 (1 em decimal)
+let resultadoOr = valor1 | valor2; // Resultado: 00000111 (7 em decimal)
+let resultadoXor = valor1 ^ valor2; // Resultado: 00000110 (6 em decimal)
+let resultadoNot = ~valor1; // Resultado: 11111010 (-6 em decimal)
+let resultadoLeftShift = valor1 << 2; // Resultado: 00010100 (20 em decimal)
+let resultadoRightShift = valor1 >> 1; // Resultado: 00000010 (2 em decimal)
+let resultadoUnsignedRightShift = valor1 >>> 1; // Resultado: 00000010 (2 em decimal)
+
+
+É importante notar que os operadores bitwise trabalham com números inteiros de 32 bits em JavaScript. Valores numéricos com ponto flutuante serão convertidos em inteiros antes de realizar as operações bitwise. Além disso, os resultados também são retornados como números inteiros de 32 bits.
