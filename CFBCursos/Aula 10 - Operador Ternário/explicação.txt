@@ -1,0 +1,33 @@
+O operador ternário em JavaScript é uma forma compacta de escrever uma estrutura condicional (if-else) em uma única linha. Ele é frequentemente utilizado quando se deseja atribuir um valor a uma variável com base em uma condição.
+
+A sintaxe do operador ternário é a seguinte:
+
+condicao ? valorSeVerdadeiro : valorSeFalso;
+
+condicao: Uma expressão que será avaliada como verdadeira ou falsa (truthy ou falsy).
+valorSeVerdadeiro: O valor que será atribuído à variável caso a condição seja verdadeira.
+valorSeFalso: O valor que será atribuído à variável caso a condição seja falsa.
+A ideia é que se a condição for verdadeira, o valor após o ? será atribuído à variável, caso contrário, o valor após o : será atribuído.
+
+Exemplo:
+
+let idade = 20;
+let status = idade >= 18 ? 'adulto' : 'menor';
+
+console.log(status); // Saída: 'adulto'
+
+Neste exemplo, a variável status receberá o valor 'adulto' se a idade for maior ou igual a 18, caso contrário, receberá o valor 'menor'. É uma forma concisa de escrever a seguinte estrutura condicional:
+
+let idade = 20;
+let status;
+
+if (idade >= 18) {
+  status = 'adulto';
+} else {
+  status = 'menor';
+}
+
+console.log(status); // Saída: 'adulto'
+
+
+O operador ternário é útil em situações em que uma decisão simples precisa ser tomada com base em uma única condição. Ele ajuda a tornar o código mais legível e conciso, evitando repetições desnecessárias de blocos de código em estruturas condicionais. No entanto, é importante usá-lo com moderação e garantir que o código resultante permaneça claro e compreensível para outros desenvolvedores.
