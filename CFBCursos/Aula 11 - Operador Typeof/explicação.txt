@@ -1,0 +1,30 @@
+Em JavaScript, o operador typeof é utilizado para determinar o tipo de dado de uma determinada expressão. Ele retorna uma string que representa o tipo do valor avaliado. O operador typeof é útil em situações em que você precisa verificar o tipo de dado de uma variável ou valor antes de realizar alguma operação específica.
+
+A sintaxe do operador typeof é a seguinte:
+
+typeof(valor)
+
+Onde valor é a expressão cujo tipo você deseja verificar. Aqui estão alguns exemplos para entender melhor o seu uso:
+
+Exemplo 1 - Verificando o tipo de uma variável:
+const nome = "João";
+console.log(typeof nome); // Output: "string"
+
+const idade = 30;
+console.log(typeof (idade)); // Output: "number"
+
+Exemplo 2 - Verificando o tipo de um valor literal:
+console.log(typeof ("Olá")); // Output: "string"
+console.log(typeof (42)); // Output: "number"
+console.log(typeof (true)); // Output: "boolean"
+
+Exemplo 3 - Verificando o tipo de variáveis que podem conter valores especiais:
+let x;
+console.log(typeof (x)); // Output: "undefined"
+
+const y = null;
+console.log(typeof (y)); // Output: "object" (Atenção: é um comportamento histórico e estranho do JavaScript)
+
+É importante notar que typeof null retorna "object", o que pode ser confuso, mas é um comportamento histórico e não indica que null seja realmente um objeto. Na verdade, null é um valor primitivo que representa a ausência intencional de valor.
+
+Em resumo, o operador typeof é uma ferramenta útil para identificar o tipo de dado em JavaScript, mas é essencial estar ciente de suas peculiaridades e limitações para usá-lo corretamente em diferentes situações.
