@@ -1,7 +1,9 @@
-// Classe base para todos os personagens do jogo
+
+// Classe base para todos os personagens do jogo :Knight, Sorcerer, LittleMonster e BigMonster
+
 class Character {
 
-    // Propriedades com valores padrão para um personagem genérico
+    // Propriedades com valores padrão para um personagem genérico (personagem que os personagens compartilham)
     _life = 1; // Vida atual (propriedade interna, deve ser acessada através do getter/setter)
     maxLife = 1; // Vida máxima (não muda após ser definida)
     attack = 0; // Valor do ataque (dano que o personagem causa)
@@ -31,7 +33,7 @@ class Knight extends Character {
         // Chama o construtor da classe pai (Character) passando o nome do cavaleiro
         super(name);
 
-        // Define valores específicos para as propriedades do cavaleiro
+        // Define valores específicos para as propriedades do cavaleiro sobreescrevendo os valores padrão definidos na classe Character
         this.life = 100; // Vida inicial do cavaleiro é 100
         this.attack = 10; // Valor do ataque do cavaleiro é 10
         this.defense = 8; // Valor da defesa do cavaleiro é 8
