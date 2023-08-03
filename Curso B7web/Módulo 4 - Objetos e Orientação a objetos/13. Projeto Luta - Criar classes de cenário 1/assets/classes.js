@@ -62,7 +62,6 @@ class LittleMonster extends Character {
     constructor() {
         // Chama o construtor da classe pai (Character) com o nome 'Little Monster'
         super('Little Monster');
-
         // Define valores específicos para as propriedades do Pequeno Monstro
         this.life = 40; // Vida inicial do Pequeno Monstro é 40
         this.attack = 4; // Valor do ataque do Pequeno Monstro é 4
@@ -87,27 +86,47 @@ class BigMonster extends Character {
     }
 }
 
-class Stage{
-    constructor(fighter1, fighter2, fighter1Element, fighter2Element){
-        this.fighter1 = fighter1;
-        this.fighter2 - fighter2;
-        this.fighter1Element = fighter1Element;
-        this.fighter2Element = fighter2Element;
+
+// Classe Stage representa um "cenário" de luta com dois lutadores e seus elementos correspondentes.
+class Stage {
+    //o
+    constructor(fighter1, fighter2, fighter1Element, fighter2Element) {
+        this.fighter1 = fighter1; // Lutador 1
+        this.fighter2 = fighter2; // Lutador 2
+        this.fighter1Element = fighter1Element; // Elemento HTML do Lutador 1
+        this.fighter2Element = fighter2Element; // Elemento HTML do Lutador 2
     }
 
-    Start(){
-        this.update();
+    start() {
+        this.update(); // Inicia a atualização dos elementos na tela.
     }
-    
-    update(){
-        //figther1
+
+    update() {
+        // Atualiza o elemento HTML do Lutador 1 com seu respectivo nome.
         this.fighter1Element.querySelector('.name').innerHTML = this.fighter1.name;
-    
-        //fighter2
-        this.fighter2Element.querySelector('.name').innerHTML =  this.fighter2.name;
+        
+        // Atualiza o elemento HTML do Lutador 2 com seu respectivo nome.
+        this.fighter2Element.querySelector('.name').innerHTML = this.fighter2.name;
     }
-    
-    
-    
 }
+
+
+/*Este código define uma classe chamada Stage, que é usada para gerenciar a exibição de informações de dois lutadores (fighters) em um cenário (stage) específico. A lógica do código pode ser explicada da seguinte maneira:
+
+Construtor:
+
+O construtor Stage recebe quatro parâmetros: fighter1, fighter2, fighter1Element e fighter2Element.
+Os parâmetros fighter1 e fighter2 representam os objetos de lutadores, cada um contendo informações como o nome do lutador (name) e outras propriedades relacionadas.
+Os parâmetros fighter1Element e fighter2Element são elementos HTML que representam onde as informações dos lutadores serão exibidas na interface do usuário.
+Método start:
+
+O método start é chamado para iniciar o cenário (stage).
+Neste caso, a função update é chamada a partir de start().
+Método update:
+
+O método update atualiza a exibição dos nomes dos lutadores na interface do usuário.
+Ele encontra os elementos HTML com a classe .name dentro de fighter1Element e fighter2Element (que são os elementos fornecidos ao criar uma instância da classe Stage).
+Em seguida, atualiza o conteúdo desses elementos com o nome do lutador correspondente.
+Isso implica que os elementos fighter1Element e fighter2Element devem conter elementos HTML com a classe .name para que a atualização funcione corretamente.
+A ideia geral é que, ao criar uma instância da classe Stage e chamar o método start(), a interface do usuário será atualizada com os nomes dos lutadores fornecidos nos parâmetros fighter1 e fighter2. Isso é útil para criar uma representação simples do cenário de luta na página HTML, onde os nomes dos lutadores são exibidos em algum lugar.*/
 
