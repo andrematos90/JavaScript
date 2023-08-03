@@ -116,7 +116,7 @@ class Stage {
 Construtor:
 
 O construtor Stage recebe quatro parâmetros: fighter1, fighter2, fighter1Element e fighter2Element.
-Os parâmetros fighter1 e fighter2 representam os objetos de lutadores, cada um contendo informações como o nome do lutador (name) e outras propriedades relacionadas.
+Os parâmetros fighter1 e fighter2 representam os objetos de lutadores que foram instanciados em "script", sendo "char e monster", cada um contendo informações como o nome do lutador (name) e outras propriedades relacionadas.
 Os parâmetros fighter1Element e fighter2Element são elementos HTML que representam onde as informações dos lutadores serão exibidas na interface do usuário.
 Método start:
 
