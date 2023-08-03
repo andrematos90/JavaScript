@@ -60,7 +60,7 @@ class LittleMonster extends Character {
 
     // Construtor da classe LittleMonster
     constructor() {
-        // Chama o construtor da classe pai (Character) com o nome 'Little Monster'
+        // "super" Chama o construtor da classe pai (Character) com o nome 'Little Monster'
         super('Little Monster');
 
         // Define valores específicos para as propriedades do Pequeno Monstro
