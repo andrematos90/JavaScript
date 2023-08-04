@@ -1,0 +1,44 @@
+Em JavaScript, if...else é uma estrutura de controle condicional usada para executar diferentes blocos de código com base em uma condição. A estrutura geral do if...else é a seguinte:
+
+if (condição) {
+  // Código a ser executado se a condição for verdadeira
+} else {
+  // Código a ser executado se a condição for falsa
+}
+
+Aqui está como funciona:
+
+A condição é uma expressão que será avaliada para true (verdadeiro) ou false (falso). Se a condição for verdadeira, o bloco de código dentro do primeiro conjunto de chaves {} será executado. Caso contrário, o bloco de código dentro do conjunto de chaves de else (ou o próximo bloco if...else, se houver) será executado.
+
+O bloco de código do if será executado apenas se a condição for verdadeira. Se a condição for falsa, o bloco do else será executado.
+
+Aqui está um exemplo prático:
+
+let idade = 18;
+
+if (idade >= 18) {
+  console.log("Você é maior de idade.");
+} else {
+  console.log("Você é menor de idade.");
+}
+
+Neste exemplo, se a variável idade for maior ou igual a 18, a mensagem "Você é maior de idade." será exibida no console. Caso contrário, a mensagem "Você é menor de idade." será exibida.
+
+Também é possível encadear várias condições usando else if, que permite verificar várias alternativas:
+
+
+let diaDaSemana = "quinta-feira";
+
+if (diaDaSemana === "segunda-feira") {
+  console.log("É segunda-feira.");
+} else if (diaDaSemana === "quarta-feira") {
+  console.log("É quarta-feira.");
+} else if (diaDaSemana === "sexta-feira") {
+  console.log("É sexta-feira.");
+} else {
+  console.log("Não é segunda, quarta ou sexta-feira.");
+}
+
+Neste exemplo, o código verificará se diaDaSemana é igual a cada um dos dias da semana especificados e exibirá a mensagem correspondente. Se a variável não corresponder a nenhum dos dias especificados, a mensagem "Não é segunda, quarta ou sexta-feira." será exibida.
+
+Essa estrutura condicional if...else é fundamental para criar lógica mais complexa em programas JavaScript, permitindo a execução de diferentes blocos de código com base nas condições avaliadas.
