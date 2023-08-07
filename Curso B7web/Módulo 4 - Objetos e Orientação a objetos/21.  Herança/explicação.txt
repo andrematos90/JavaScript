@@ -1,0 +1,27 @@
+Na programação procedural em JavaScript, o conceito de herança é menos formalizado e estruturado em comparação com a programação orientada a objetos. No entanto, você pode implementar um tipo de herança simples usando funções e objetos.
+
+Uma forma de simular a herança na programação procedural é criar funções que atuam como "protótipos" para outros objetos. Essas funções podem conter métodos e propriedades que podem ser compartilhados por vários objetos. Vamos ver um exemplo simples:
+
+
+// Função protótipo para criar objetos "animal"
+function criarAnimal(nome) {
+  return {
+    nome: nome,
+    falar: function() {
+      console.log(`${this.nome} faz um som.`);
+    }
+  };
+}
+
+const cachorro = criarAnimal('Cachorro');
+const gato = criarAnimal('Gato');
+
+cachorro.falar(); // Output: Cachorro faz um som.
+gato.falar(); // Output: Gato faz um som.
+
+
+Neste exemplo, a função criarAnimal age como um protótipo para a criação de objetos "animal". Ambos os objetos cachorro e gato herdam o método falar do protótipo.
+
+No entanto, essa abordagem de herança na programação procedural em JavaScript não é tão robusta ou flexível quanto o sistema de herança encontrado na programação orientada a objetos. A herança na programação procedural tende a ser mais simples e limitada, pois você está criando objetos que compartilham características comuns, mas não há uma estrutura formal de classes e subclasses.
+
+Lembre-se de que, se você está buscando aproveitar ao máximo os conceitos de herança, polimorfismo e encapsulamento, a programação orientada a objetos é uma abordagem mais adequada e poderosa. O JavaScript oferece suporte completo à orientação a objetos com a sintaxe de classes (introduzida no ECMAScript 2015) e aos protótipos (uma característica fundamental da linguagem). Portanto, se você deseja trabalhar com herança de maneira mais eficaz e estruturada, é recomendável considerar a programação orientada a objetos em vez da programação procedural.
