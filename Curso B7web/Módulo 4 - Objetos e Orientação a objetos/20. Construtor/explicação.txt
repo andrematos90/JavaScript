@@ -1,0 +1,26 @@
+Na programação procedural em JavaScript, não existe uma noção direta de "construtor" como é comum na programação orientada a objetos. Em programação procedural, o foco está em funções e procedimentos que operam em dados, e a criação e manipulação desses dados ocorrem de maneira mais direta, sem a necessidade de classes e instâncias de objetos.
+
+Em vez de construtores, você simplesmente define funções que realizam a criação e inicialização de objetos. Essas funções podem ser chamadas de "criadoras" ou "inicializadoras" de objetos. Por exemplo:
+
+function criarPessoa(nome, idade) {
+  return {
+    nome: nome,
+    idade: idade,
+    saudacao: function() {
+      console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`);
+    }
+  };
+}
+
+const pessoa1 = criarPessoa('João', 30);
+const pessoa2 = criarPessoa('Maria', 25);
+
+pessoa1.saudacao(); // Output: Olá, meu nome é João e tenho 30 anos.
+pessoa2.saudacao(); // Output: Olá, meu nome é Maria e tenho 25 anos.
+
+
+Neste exemplo, criarPessoa é uma função que recebe dois argumentos, nome e idade, e retorna um objeto com propriedades correspondentes. A função saudacao é uma função dentro desse objeto que pode ser chamada para exibir uma saudação com base nas propriedades do objeto.
+
+Vale ressaltar que, na programação procedural, você não tem os recursos de herança e encapsulamento associados a construtores e classes na programação orientada a objetos. Em vez disso, a organização do código e a criação de objetos ocorrem de maneira mais simples, usando funções e estruturas de dados comuns.
+
+Embora o exemplo acima ilustre como criar objetos em uma abordagem mais procedural, é importante notar que a programação procedural é mais limitada quando se trata de organizar e reutilizar código, em comparação com a programação orientada a objetos.
