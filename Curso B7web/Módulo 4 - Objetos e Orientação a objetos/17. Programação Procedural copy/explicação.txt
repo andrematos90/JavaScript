@@ -1,0 +1,17 @@
+O paradigma de programação procedural é um estilo de programação que se concentra na organização do código em procedimentos ou funções. Nesse paradigma, o programa é estruturado em uma série de etapas ou passos, cada um dos quais corresponde a um procedimento específico, também conhecido como função. Cada procedimento contém um conjunto de instruções que são executadas sequencialmente, e o fluxo de controle é direcionado de um procedimento para outro.
+
+Principais características do paradigma procedural:
+
+Procedimentos e Funções: O código é dividido em procedimentos ou funções que têm a responsabilidade de realizar tarefas específicas. Cada procedimento é um bloco de código autônomo que pode ser chamado a partir de outras partes do programa.
+
+Execução Sequencial: O fluxo de execução do programa segue uma ordem sequencial, onde as instruções são executadas uma após a outra. A ênfase está na ordem em que as instruções são escritas no código.
+
+Variáveis e Estruturas de Dados: O paradigma procedural também envolve o uso de variáveis para armazenar dados temporários e estruturas de dados como arrays e structs para organizar informações.
+
+Controle de Fluxo: O controle de fluxo é gerenciado principalmente por estruturas de controle como loops (for, while) e instruções condicionais (if-else).
+
+Modularização: O código é dividido em módulos ou procedimentos, permitindo a reutilização de código e a manutenção mais fácil. Isso facilita a separação das preocupações e a organização do programa em partes menores e mais gerenciáveis.
+
+Efeitos Colaterais: Embora o foco não seja tão forte quanto em paradigmas mais puramente funcionais, o paradigma procedural tende a permitir efeitos colaterais, ou seja, alterações em variáveis ou estado que podem afetar o comportamento do programa.
+
+Linguagens de programação que seguem o paradigma procedural incluem C, Pascal e Fortran. Embora muitas linguagens modernas tenham elementos de programação procedural, elas geralmente também suportam outros paradigmas, como a orientação a objetos ou a programação funcional. O paradigma procedural é adequado para problemas onde a sequência de passos e o controle de fluxo são elementos centrais da solução.
