@@ -1,0 +1,55 @@
+Em JavaScript, uma Factory (ou Fábrica) é um padrão de design que envolve a criação de objetos. Ele permite que você crie instâncias de objetos de uma maneira mais flexível e abstrata, encapsulando a lógica de criação e ocultando os detalhes de implementação subjacentes. Vou explicar como implementar uma Factory em JavaScript usando programação procedural.
+
+Suponha que você queira criar diferentes tipos de veículos, como carros e motos. Você pode criar uma Factory para isso da seguinte maneira:
+
+
+// Definindo a função de fábrica
+function criarVeiculo(tipo, marca, modelo) {
+    if (tipo === 'carro') {
+        return criarCarro(marca, modelo);
+    } else if (tipo === 'moto') {
+        return criarMoto(marca, modelo);
+    } else {
+        throw new Error('Tipo de veículo desconhecido');
+    }
+}
+
+// Função para criar um carro
+function criarCarro(marca, modelo) {
+    return {
+        tipo: 'carro',
+        marca: marca,
+        modelo: modelo,
+        dirigir: function() {
+            console.log(`Dirigindo o carro ${marca} ${modelo}`);
+        }
+    };
+}
+
+// Função para criar uma moto
+function criarMoto(marca, modelo) {
+    return {
+        tipo: 'moto',
+        marca: marca,
+        modelo: modelo,
+        pilotar: function() {
+            console.log(`Pilotando a moto ${marca} ${modelo}`);
+        }
+    };
+}
+
+// Usando a Factory para criar veículos
+const meuCarro = criarVeiculo('carro', 'Toyota', 'Corolla');
+const minhaMoto = criarVeiculo('moto', 'Honda', 'CBR');
+
+meuCarro.dirigir();  // Saída: Dirigindo o carro Toyota Corolla
+minhaMoto.pilotar(); // Saída: Pilotando a moto Honda CBR
+
+
+
+
+
+
+Neste exemplo, a função criarVeiculo é a Factory responsável por criar objetos de diferentes tipos de veículos. Dependendo do tipo passado como argumento, ela redireciona a criação para as funções especializadas criarCarro ou criarMoto. Cada uma dessas funções cria um objeto com as propriedades específicas do veículo e seus comportamentos associados.
+
+Embora essa seja uma abordagem procedural para a implementação de uma Factory, é importante notar que o JavaScript é uma linguagem orientada a objetos, e muitas vezes você verá padrões de design mais orientados a objetos sendo utilizados para criar factories, como usando classes ou funções construtoras.
