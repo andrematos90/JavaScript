@@ -1,0 +1,79 @@
+                                         Instanciação
+
+na programação procedural não existe diferença entre classe e uma instância
+o que existe são funções que quando geram um objeto ja é o próprio objeto que 
+será manipulado.
+
+Na programação procedural, a distinção entre classes e objetos não é tão proeminente quanto na programação orientada a objetos. No paradigma procedural, o foco está em funções e procedimentos que operam em dados, e não necessariamente em classes e instâncias de objetos como na POO.
+
+Em JavaScript, mesmo quando você está escrevendo código procedural, você ainda pode criar objetos e usar propriedades e métodos associados a esses objetos. No entanto, a abordagem e a terminologia podem ser um pouco diferentes.
+
+Vamos considerar um exemplo simples:
+
+
+// Programação procedural
+
+function calcularAreaRetangulo(altura, largura) {
+  return altura * largura;
+}
+
+const alturaRetangulo = 5;
+const larguraRetangulo = 10;
+const area = calcularAreaRetangulo(alturaRetangulo, larguraRetangulo);
+
+console.log(`A área do retângulo é: ${area}`);
+
+
+No exemplo acima, estamos usando uma função (calcularAreaRetangulo) para calcular a área de um retângulo. Embora não estejamos usando explicitamente classes ou objetos, ainda estamos realizando operações em dados e encapsulando a lógica em uma função.
+
+Na programação orientada a objetos, a ênfase estaria mais na definição de uma classe Retangulo e na criação de objetos a partir dessa classe para calcular a área:
+
+
+// Programação orientada a objetos
+
+class Retangulo {
+  constructor(altura, largura) {
+    this.altura = altura;
+    this.largura = largura;
+  }
+
+  calcularArea() {
+    return this.altura * this.largura;
+  }
+}
+
+const retangulo = new Retangulo(5, 10);
+const area = retangulo.calcularArea();
+
+console.log(`A área do retângulo é: ${area}`);
+
+
+Portanto, enquanto a programação procedural em JavaScript não segue o mesmo padrão rígido de classes e objetos encontrados na programação orientada a objetos, você ainda pode usar objetos e funções para organizar e modularizar seu código de maneira mais orientada a objetos, se desejar.
+
+
+
+                                              Uso do This
+
+
+                                              Na programação procedural, o uso do this é mais limitado e menos comum em comparação com a programação orientada a objetos. O this é uma referência especial que se refere ao objeto atual no contexto de execução. Em um ambiente procedural, o this normalmente se refere ao objeto global (no caso de navegadores, seria o objeto window), ou pode se referir a objetos específicos em determinados contextos.
+
+No entanto, é importante notar que o uso do this em um contexto procedural não está associado a classes e instâncias de objetos, como é o caso na programação orientada a objetos. Em vez disso, o this pode ser usado em algumas situações específicas, como em funções dentro de funções ou callbacks, para referenciar o objeto que invocou a função.
+
+Aqui está um exemplo simples de como o this pode ser usado em um contexto procedural:
+
+
+function saudacao() {
+  console.log(`Olá, ${this.nome}!`);
+}
+
+const pessoa = {
+  nome: 'João',
+  cumprimentar: saudacao
+};
+
+pessoa.cumprimentar(); // Output: Olá, João!
+
+
+Nesse exemplo, a função saudacao é definida no escopo global, e o this dentro dela se refere ao objeto global (no caso de um navegador, ao objeto window). No entanto, quando a função é chamada dentro do método cumprimentar do objeto pessoa, o this se refere ao próprio objeto pessoa, permitindo que a função acesse a propriedade nome.
+
+No geral, o uso do this na programação procedural é mais limitado e menos estruturado do que na programação orientada a objetos. O this em um contexto procedural geralmente é usado em situações específicas e pode variar dependendo do contexto de execução.
