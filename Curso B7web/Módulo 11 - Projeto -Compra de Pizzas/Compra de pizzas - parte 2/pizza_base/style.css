@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url('images/PizzaBackground.jpg');
+    background-color: #FFF;
     font-family:'Lato',Helvetica,Arial;
     font-size:15px;
     display:flex;
