@@ -45,6 +45,7 @@ console.log(mensagem);
 
 Neste exemplo, o switch é usado para comparar a variável cor com diferentes valores de string. Se cor for "verde", o bloco de código associado a esse case será executado, e a variável mensagem será definida como "A cor é verde".
 
+
 Lembre-se de que cada case deve corresponder exatamente ao valor da expressão. Além disso, o default é opcional e é usado quando nenhum dos casos corresponde à expressão.
 
 O switch é uma ferramenta versátil em JavaScript para fazer escolhas com base em múltiplas opções de valores, seja para números, strings ou outros tipos de dados.

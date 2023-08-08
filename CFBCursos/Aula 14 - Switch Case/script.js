@@ -1,5 +1,6 @@
 let position = 1;
 
+
 switch(position){
     case 1: {
         console.log("pole position")
