@@ -21,7 +21,6 @@ for (var i = 0; i < 5; i++) {
   console.log("Valor de i: " + i);
 }
 
-
 Neste exemplo:
 
 A inicialização var i = 0 cria e inicializa a variável de controle i com o valor 0.
