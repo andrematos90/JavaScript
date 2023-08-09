@@ -1,0 +1,24 @@
+O método map() é uma função embutida em JavaScript que é usada para iterar sobre os elementos de um array e criar um novo array com base em uma transformação aplicada a cada elemento do array original. Ele retorna um novo array com os resultados das operações realizadas em cada elemento do array original, mantendo a mesma ordem dos elementos.
+
+A sintaxe básica do método map() é a seguinte:
+
+const novoArray = arrayOriginal.map(funcaoDeTransformacao);
+
+
+Onde:
+
+arrayOriginal: O array no qual você deseja aplicar a transformação.
+funcaoDeTransformacao: Uma função que será aplicada a cada elemento do arrayOriginal. Essa função deve receber pelo menos um parâmetro (o elemento atual do array) e, opcionalmente, também pode receber os seguintes parâmetros: o índice do elemento atual e o próprio array original.
+Aqui está um exemplo simples de uso do método map():
+
+const numeros = [1, 2, 3, 4, 5];
+const dobrados = numeros.map(numero => numero * 2);
+
+console.log(dobrados); // Output: [2, 4, 6, 8, 10]
+
+Neste exemplo, a função de transformação numero => numero * 2 multiplica cada elemento do array numeros por 2, resultando em um novo array chamado dobrados.
+
+O método map() é útil quando você deseja transformar cada elemento de um array de acordo com alguma lógica específica e criar um novo array com os resultados transformados. Ele é amplamente utilizado para evitar a necessidade de loops explícitos e torna o código mais legível e conciso.
+
+o Map é indicado para o uso quando se deseja percorrer todo o array, manipular ou retornar sem interrupção, 
+e o For indicado quando pode se ter uma parada ou pausa na execução antes do termino de todo o array por exemplo
