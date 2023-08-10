@@ -1,0 +1,31 @@
+O loop while é uma estrutura de controle em JavaScript (e em muitas outras linguagens de programação) que permite que um bloco de código seja executado repetidamente enquanto uma condição especificada for verdadeira. Ele é uma forma de criar iterações em seu código, permitindo que você execute um conjunto de instruções várias vezes até que a condição seja avaliada como falsa.
+Utilizado quando não se tem certeza de quantas vezes se quer a execução do bloco do códgio
+
+A sintaxe básica do loop while é a seguinte:
+
+while (condição) {
+    // Bloco de código a ser executado enquanto a condição for verdadeira
+}
+
+Aqui está uma explicação passo a passo de como o loop while funciona:
+
+A expressão de condição é avaliada antes da primeira execução do bloco de código. Se a condição for verdadeira, o bloco de código dentro do loop é executado. Se a condição for falsa desde o início, o bloco de código pode nunca ser executado.
+
+Após a execução do bloco de código, a expressão de condição é avaliada novamente a cada iteração. Se ainda for verdadeira, o bloco de código é executado novamente. Esse processo se repete até que a condição seja avaliada como falsa.
+
+Assim que a expressão de condição for avaliada como falsa, a execução do loop while é interrompida e o controle passa para as instruções após o loop.
+
+Aqui está um exemplo simples de um loop while que conta de 1 a 5:
+
+
+let contador = 1;
+
+while (contador <= 5) {
+    console.log(contador);
+    contador++;
+}
+
+
+Neste exemplo, a expressão de condição é contador <= 5. O loop continuará a executar o bloco de código enquanto o valor de contador for menor ou igual a 5. A cada iteração, o valor de contador é incrementado em 1. O loop imprimirá os números de 1 a 5 no console.
+
+É importante ter cuidado ao usar loops while, pois se a condição nunca se tornar falsa, você pode entrar em um loop infinito, o que fará com que o programa fique preso e não responda mais. Certifique-se sempre de que a condição eventualmente se torne falsa para evitar isso.
