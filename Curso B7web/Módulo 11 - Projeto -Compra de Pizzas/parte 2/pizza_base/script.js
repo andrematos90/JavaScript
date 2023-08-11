@@ -15,7 +15,6 @@ pizzaJson.map((item, index) => {
 
 
 /*
-
 Esse trecho de código em JavaScript parece estar relacionado à criação de elementos de pizza em uma página web usando um arquivo JSON (talvez contendo informações sobre diferentes tipos de pizzas) e inserindo esses elementos na área designada no documento HTML.
 
 Vou explicar o código passo a passo:
