@@ -35,4 +35,46 @@ Esta linha está criando um novo elemento HTML para representar um item de pizza
 element('.pizza-area').append(pizzaItem);
 Finalmente, a cópia do elemento de pizza criada anteriormente (pizzaItem) é adicionada à área de exibição de pizzas. O método append é usado para inserir o elemento no final da área designada.
 
-Em resumo, o código percorre um array chamado pizzaJson, clona um elemento de pizza do HTML, e depois insere esse elemento clonado em uma área específica no documento HTML, provavelmente para exibir as diferentes variedades de pizzas contidas no array pizzaJson.*/
+Em resumo, o código percorre um array chamado pizzaJson, clona um elemento de pizza do HTML, e depois insere esse elemento clonado em uma área específica no documento HTML, provavelmente para exibir as diferentes variedades de pizzas contidas no array pizzaJson.
+
+
+                                       FUNÇÃO cloneNode()
+
+
+
+A função cloneNode() é um método disponível no DOM (Document Object Model) em JavaScript, que permite criar uma cópia exata de um nó (elemento) existente dentro do DOM. Essa cópia pode ser inserida em outra parte do documento ou usada para outras finalidades, como manipulação ou reutilização de elementos.
+
+Aqui está como a função cloneNode() funciona:
+
+Sintaxe básica:
+
+const clone = node.cloneNode(deep);
+
+node: O nó (elemento) que você deseja clonar.
+deep: Um valor booleano opcional que especifica se a clonagem deve ser "profunda" ou não. Se deep for true, todos os descendentes do nó também serão clonados. Se for false, apenas o próprio nó será clonado. O valor padrão é false.
+Exemplo de Uso:
+Suponha que você tenha o seguinte HTML:
+
+
+<div id="original">
+  <p>Este é um parágrafo dentro da div.</p>
+</div>
+
+
+Você pode usar o cloneNode() para criar uma cópia dessa div, incluindo seu conteúdo:
+
+
+const originalDiv = document.getElementById('original');
+const clonedDiv = originalDiv.cloneNode(true); // O argumento true indica clonagem profunda
+
+document.body.appendChild(clonedDiv);
+
+
+No exemplo acima, a função cloneNode(true) cria uma cópia completa da div, incluindo o parágrafo dentro dela. A cópia é então anexada ao corpo do documento usando appendChild().
+
+Notas Importantes:
+A cópia criada usando cloneNode() não possui o mesmo id que o elemento original. Se você deseja usar a cópia para identificação posterior, é necessário atribuir um novo id manualmente.
+Eventuais manipuladores de eventos ou outros dados específicos do elemento original não são copiados automaticamente. Você precisaria configurá-los novamente na cópia, se necessário.
+A função cloneNode() é útil quando você precisa duplicar elementos no DOM, seja para mover elementos, criar modelos reutilizáveis ou outras situações em que a replicação de um nó existente é necessária.
+
+*/
