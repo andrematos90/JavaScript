@@ -92,4 +92,13 @@ element('.pizzaWindowArea').style.opacity = 0;: Define a opacidade da área da j
 element('.pizzaWindowArea').style.display = 'flex';: Define o estilo de exibição da área da janela de detalhes para 'flex', tornando-a visível. Isso é feito mesmo que a opacidade seja 0, para que a área seja preparada para aparecer.
 setTimeout(() => { element('.pizzaWindowArea').style.opacity = 1; }, 200);: Usando setTimeout, após um atraso de 200 milissegundos, a opacidade da área da janela de detalhes é definida como 1. Isso cria uma transição suave, fazendo a área de detalhes da pizza aparecer gradualmente após a janela ser exibida.
 
+
+OBS:
+
+
+no contexto específico desse trecho de código, o "e" se refere ao evento de clique em um link "a". O evento de clique é gerado quando um elemento é clicado com o mouse.
+
+Quando você clica em um link "a" normalmente, o comportamento padrão é abrir o URL especificado no atributo href desse link. No entanto, ao usar e.preventDefault(); dentro da função de callback do evento de clique (como (e) => { ... }), você está interrompendo o comportamento padrão de abrir o link.
+
+Portanto, nesse contexto, o "e" representa o evento de clique que ocorre quando o link é clicado, e e.preventDefault(); está sendo usado para evitar que o navegador siga o link para um novo URL, permitindo que você implemente ações personalizadas em resposta ao clique.
 */
