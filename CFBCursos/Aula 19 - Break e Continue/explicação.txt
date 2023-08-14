@@ -1,0 +1,40 @@
+Em JavaScript, break e continue são palavras-chave utilizadas em loops (como for, while e do-while) para controlar o fluxo de execução do código. Eles permitem que você altere o comportamento padrão do loop, permitindo que você saia do loop prematuramente ou pule para a próxima iteração, respectivamente.
+
+break:
+A instrução break é usada para interromper a execução de um loop e sair dele imediatamente. Isso é útil quando você atinge uma condição que requer a interrupção do loop antes de percorrer todos os itens.
+Exemplo de uso do break:
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        break; // Quando i for 3, o loop é interrompido
+    }
+    console.log(i);
+}
+// Saída: 1, 2
+
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        break; // Quando i for 3, o loop é interrompido
+    }
+    console.log(i);
+}
+// Saída: 1, 2
+
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        continue; // Quando i for 3, a iteração é pulada
+    }
+    console.log(i);
+}
+// Saída: 1, 2, 4, 5
+
+
+No exemplo acima, quando i é igual a 3, a instrução continue faz com que a iteração atual seja pulada e o loop continue com a próxima iteração.
+
+Em resumo:
+
+break é usado para sair do loop completamente.
+continue é usado para pular para a próxima iteração do loop.
+Ambas as instruções são ferramentas úteis para controlar o fluxo de execução do seu código em situações específicas durante a execução de loops.
