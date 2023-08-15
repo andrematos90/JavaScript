@@ -1,0 +1,64 @@
+Funções parametrizadas, também conhecidas como funções com parâmetros, são um conceito fundamental na programação, inclusive em JavaScript. Elas permitem que você defina uma função com um conjunto de parâmetros, que são valores que a função pode receber quando é chamada. Esses parâmetros permitem que você passe informações específicas para a função, permitindo que ela execute tarefas com base nesses valores.
+
+Aqui está uma explicação passo a passo sobre como trabalhar com funções parametrizadas em JavaScript:
+
+Definindo uma função parametrizada:
+Você define uma função parametrizada fornecendo uma lista de parâmetros entre os parênteses após o nome da função. Cada parâmetro é separado por vírgulas. Por exemplo:
+
+function saudacao(nome) {
+    console.log("Olá, " + nome + "!");
+}
+
+Neste exemplo, a função saudacao tem um parâmetro chamado nome.
+
+Chamando a função com argumentos:
+Para usar a função e passar valores para seus parâmetros, você chama a função com argumentos. Os argumentos são os valores específicos que você deseja que a função utilize. Por exemplo:
+
+saudacao("João"); // Saída: Olá, João!
+
+Aqui, estamos chamando a função saudacao com o argumento "João".
+
+Parâmetros múltiplos:
+Uma função pode ter mais de um parâmetro. Por exemplo:
+
+function somar(a, b) {
+    return a + b;
+}
+
+let resultado = somar(5, 3); // resultado é 8
+
+A função somar tem dois parâmetros, a e b, e ela retorna a soma dos valores passados como argumentos.
+
+Usando parâmetros na função:
+Dentro do corpo da função, você pode usar os parâmetros como variáveis para realizar operações ou executar lógica. Por exemplo:
+
+function multiplicarPorDois(numero) {
+    return numero * 2;
+}
+
+let resultado = multiplicarPorDois(7); // resultado é 14
+
+
+Parâmetros opcionais:
+Em JavaScript, os parâmetros de função são, por padrão, opcionais. Isso significa que você pode chamar a função sem fornecer todos os argumentos, e os parâmetros que não receberem um valor terão o valor undefined.
+
+function saudacao(nome) {
+    if (nome === undefined) {
+        console.log("Olá, pessoa desconhecida!");
+    } else {
+        console.log("Olá, " + nome + "!");
+    }
+}
+
+saudacao(); // Saída: Olá, pessoa desconhecida!
+
+
+Passando argumentos em ordem:
+Quando você chama uma função com vários argumentos, eles devem ser passados na mesma ordem em que os parâmetros foram definidos na função. Isso garante que os valores corretos sejam atribuídos aos parâmetros corretos.
+Em resumo, funções parametrizadas em JavaScript são usadas para criar funcionalidades mais flexíveis e reutilizáveis, permitindo que você personalize o comportamento da função com base nos valores passados como argumentos.
+
+
+
+
+
+
