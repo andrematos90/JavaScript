@@ -1,0 +1,46 @@
+Em JavaScript, as funções com retorno são aquelas que executam um bloco de código e, em seguida, retornam um valor específico. Essas funções são essenciais para a programação, pois permitem que você execute cálculos, manipule dados ou realize qualquer tipo de processamento e, em seguida, utilize o resultado desse processamento em outras partes do seu código.
+
+Aqui está uma estrutura básica de uma função com retorno em JavaScript:
+
+function nomeDaFuncao(parametro1, parametro2) {
+  // Bloco de código
+  // ...
+  
+  return valorDeRetorno; // Valor que a função retorna
+}
+
+Vamos criar um exemplo simples para ilustrar:
+
+function soma(a, b) {
+  var resultado = a + b;
+  return resultado;
+}
+
+var resultadoSoma = soma(5, 3); // Chamando a função e atribuindo o resultado a uma variável
+console.log(resultadoSoma); // Isso imprimirá 8 no console
+
+Nesse exemplo, a função soma recebe dois parâmetros a e b, realiza a adição dos valores e retorna o resultado da operação. Quando a função é chamada com os argumentos 5 e 3, ela retorna 8, que é então atribuído à variável resultadoSoma.
+
+Você pode retornar qualquer tipo de valor em uma função, incluindo números, strings, objetos, arrays e até mesmo outras funções. Aqui está um exemplo de uma função que retorna um objeto:
+
+function criarPessoa(nome, idade) {
+  var pessoa = {
+    nome: nome,
+    idade: idade
+  };
+  return pessoa;
+}
+
+var pessoa1 = criarPessoa("João", 25);
+console.log(pessoa1); // Isso imprimirá { nome: 'João', idade: 25 } no console
+
+Em resumo, funções com retorno em JavaScript são uma maneira poderosa de encapsular lógica e cálculos, permitindo que você reutilize resultados em diferentes partes do seu código. Elas desempenham um papel fundamental na criação de programas eficientes e organizados.
+
+
+
+
+
+
+
+
+
