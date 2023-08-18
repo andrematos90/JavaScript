@@ -52,7 +52,6 @@ function saudacao(nome) {
 
 saudacao(); // Saída: Olá, pessoa desconhecida!
 
-
 Passando argumentos em ordem:
 Quando você chama uma função com vários argumentos, eles devem ser passados na mesma ordem em que os parâmetros foram definidos na função. Isso garante que os valores corretos sejam atribuídos aos parâmetros corretos.
 Em resumo, funções parametrizadas em JavaScript são usadas para criar funcionalidades mais flexíveis e reutilizáveis, permitindo que você personalize o comportamento da função com base nos valores passados como argumentos.
