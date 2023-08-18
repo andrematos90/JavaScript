@@ -1,0 +1,22 @@
+Em JavaScript, uma função com parâmetro rest permite que você passe um número variável de argumentos para a função, que serão agrupados em um array dentro da função. Isso é especialmente útil quando você não sabe quantos argumentos serão passados antecipadamente. O parâmetro rest é denotado pelo uso de três pontos seguidos do nome do parâmetro (geralmente chamado de ...args, mas o nome pode ser qualquer coisa válida).
+
+Vamos ver um exemplo para entender melhor como funciona:
+
+function minhaFuncao(param1, param2, ...restoDosParametros) {
+  console.log(param1); // imprime o primeiro argumento
+  console.log(param2); // imprime o segundo argumento
+  console.log(restoDosParametros); // imprime um array com os argumentos restantes
+}
+
+minhaFuncao('a', 'b', 'c', 'd', 'e');
+
+
+Neste exemplo, 'a' será atribuído ao parâmetro param1, 'b' será atribuído ao parâmetro param2 e 'c', 'd', 'e' serão agrupados em um array e atribuídos ao parâmetro restoDosParametros.
+
+Agora, dentro da função, você pode usar o array restoDosParametros para trabalhar com todos os argumentos adicionais passados, independentemente de quantos sejam.
+
+Lembrando que o parâmetro rest deve sempre ser o último parâmetro na lista de parâmetros da função. Isso ocorre porque ele captura todos os argumentos restantes, então não faria sentido ter parâmetros após o parâmetro rest, já que todos os argumentos subsequentes seriam agrupados nele.
+
+
+
+
