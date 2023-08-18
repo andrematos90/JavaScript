@@ -91,11 +91,16 @@ element('.pizzaInfo--addButton').addEventListener('click', () => {
     //variável indentifier recebee a junção do id da pizza mais o tamanho 
     let identifier = pizzaJson[modalKey].id + '@' + size;
 
+    //varre o array e retorna o indice do primeiro elemento se for igual ao identifier
     let key = cart.findIndex((item) => item.identifier == identifier);
 
+    /*verfifica se já há no carrinho um item com o mesmo identificador, se sim ele não adiciona o item no carrinho, mas sim adiciona somente mais um a quantidade
+    */
     if(key > -1){
         cart[key].qt += modalQt;
-    }else{
+    }
+    //se não houver o item adiciona tudo ao carrinho
+    else{
         cart.push({
             identifier,
             id: pizzaJson[modalKey].id,
@@ -131,5 +136,33 @@ Se o item não existir no carrinho, um novo objeto será criado e adicionado ao 
 closeModal();
 Esta função é chamada para fechar algum tipo de modal ou janela após o processo de adição da pizza ao carrinho ter sido concluído.
 
-Em resumo, este código lida com a adição de pizzas ao carrinho de compras. Ele verifica se a pizza selecionada já existe no carrinho com base no tamanho e identificador únicos, e atualiza a quantidade correspondente ou adiciona uma nova entrada ao carrinho, dependendo do resultado dessa verificação. Após isso, ele fecha uma janela modal que provavelmente foi usada para selecionar as opções da pizza.*/
+Em resumo, este código lida com a adição de pizzas ao carrinho de compras. Ele verifica se a pizza selecionada já existe no carrinho com base no tamanho e identificador únicos, e atualiza a quantidade correspondente ou adiciona uma nova entrada ao carrinho, dependendo do resultado dessa verificação. Após isso, ele fecha uma janela modal que provavelmente foi usada para selecionar as opções da pizza.
+---------------------------------------------------------------------------
+explicação: 
+para quando por exemplo for adicionada duas pizzas pequenas de calabresa e depois foi adicionada mais uma do mesmo tipo e tamanho  apenas um objeto deve ser criado dentro do array, mais de um objetos só quando os tamanhos e pizzas forem diferentes  para isso algumas verificações dever ser feitas
 
+primeiro: a mesma pizza do mesmo tamanho devem estar juntas
+criar um identificador que junta o id da pizza o tamanho dela 
+
+let identifier = pizzaJson[modalKey].id + '@' + size;
+
+procura no array "cart" o indice do primeiro elemento
+e o adiciona na variáevl "key" se for igual ao  identifier,  se não achar a variável recebe o valor -1
+let key = cart.findIndex((item) => item.identifier == identifier);
+
+verfifica se já há no carrinh um item com o mesmo identificador, se sim  (key maior do que -1) ele não adiciona o item no carrinho, mas sim adiciona somente mais um a quantidade
+    
+    if(key > -1){
+        cart[key].qt += modalQt;
+    }
+    //se não houver o item adiciona tudo ao carrinho
+    else{
+        cart.push({
+            identifier,
+            id: pizzaJson[modalKey].id,
+            size: size,
+            qt: modalQt
+        });
+    }
+
+*/
