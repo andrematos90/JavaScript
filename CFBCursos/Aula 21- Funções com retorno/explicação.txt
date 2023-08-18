@@ -23,6 +23,7 @@ Nesse exemplo, a função soma recebe dois parâmetros a e b, realiza a adição
 
 Você pode retornar qualquer tipo de valor em uma função, incluindo números, strings, objetos, arrays e até mesmo outras funções. Aqui está um exemplo de uma função que retorna um objeto:
 
+
 function criarPessoa(nome, idade) {
   var pessoa = {
     nome: nome,
