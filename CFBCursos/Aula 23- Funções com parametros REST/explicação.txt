@@ -10,7 +10,6 @@ function minhaFuncao(param1, param2, ...restoDosParametros) {
 
 minhaFuncao('a', 'b', 'c', 'd', 'e');
 
-
 Neste exemplo, 'a' será atribuído ao parâmetro param1, 'b' será atribuído ao parâmetro param2 e 'c', 'd', 'e' serão agrupados em um array e atribuídos ao parâmetro restoDosParametros.
 
 Agora, dentro da função, você pode usar o array restoDosParametros para trabalhar com todos os argumentos adicionais passados, independentemente de quantos sejam.
