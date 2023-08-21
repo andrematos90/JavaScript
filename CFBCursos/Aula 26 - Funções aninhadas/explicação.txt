@@ -1,0 +1,27 @@
+Funções aninhadas em JavaScript referem-se à prática de definir uma função dentro do escopo de outra função. Isso permite que a função interna acesse variáveis e parâmetros da função externa. Funções aninhadas são usadas principalmente para modularizar o código, encapsular lógica e limitar o escopo de variáveis para evitar conflitos de nomes.
+
+Aqui está um exemplo simples de como as funções aninhadas funcionam:
+
+function funcaoExterna(x) {
+    function funcaoInterna(y) {
+        return x + y; // A função interna tem acesso a 'x'
+    }
+    return funcaoInterna;
+}
+
+const resultado = funcaoExterna(5); // Aqui 'x' é 5
+console.log(resultado(3)); // Chama a função interna com 'y' igual a 3, resultado é 5 + 3 = 8
+
+
+Neste exemplo, funcaoExterna retorna a função funcaoInterna, que ainda tem acesso à variável x mesmo depois que funcaoExterna já foi executada.
+
+Vantagens das funções aninhadas:
+
+Encapsulamento: Funções aninhadas permitem que você encapsule lógica específica dentro do escopo de uma função externa, ocultando-a do escopo global.
+Limitação de Escopo: Variáveis declaradas dentro da função externa não são acessíveis fora dela ou dentro de outras funções aninhadas, evitando possíveis conflitos de nome.
+Modularização: Funções aninhadas facilitam a divisão do código em partes menores e mais gerenciáveis, melhorando a organização do código.
+No entanto, também é importante estar ciente de algumas considerações:
+
+Desempenho: Funções aninhadas podem ter um impacto ligeiramente negativo no desempenho, já que cada chamada à função externa cria uma nova instância da função interna. Isso pode ser negligenciável na maioria dos casos, mas é algo a ser considerado em cenários críticos de desempenho.
+Legibilidade: Funções aninhadas em excesso podem tornar o código mais difícil de entender, especialmente se houver muitos níveis de aninhamento. É importante encontrar um equilíbrio entre encapsulamento e legibilidade.
+Em resumo, funções aninhadas são uma ferramenta útil em JavaScript para organizar e modularizar o código, permitindo que você crie estruturas mais coesas e evite vazamento de variáveis para o escopo global.
