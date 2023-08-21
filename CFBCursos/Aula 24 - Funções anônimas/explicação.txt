@@ -1,0 +1,43 @@
+Uma função anônima em JavaScript é uma função que não possui um nome associado a ela. Elas são usadas quando você deseja criar uma função temporária que só existe em tempo de execução ou quando precisa passar uma função como argumento para outra função. As funções anônimas são frequentemente usadas em callbacks, eventos e expressões lambda.
+
+Aqui está a sintaxe básica de uma função anônima em JavaScript:
+
+
+var funcaoAnonima = function(parâmetros) {
+    // Corpo da função
+    // Pode conter código para executar
+    return algumValor; // Opcional: retornar um valor
+};
+
+
+Aqui está um exemplo simples de uma função anônima que calcula o quadrado de um número:
+
+var calcularQuadrado = function(numero) {
+    return numero * numero;
+};
+
+var resultado = calcularQuadrado(5); // resultado agora é 25
+
+
+Além disso, as funções anônimas podem ser usadas diretamente como argumentos para outras funções. Por exemplo, a função setTimeout pode ser usada para executar uma função após um certo período de tempo:
+
+setTimeout(function() {
+    console.log("Esta é uma função anônima sendo executada após um intervalo de tempo.");
+}, 1000); // Executará após 1 segundo (1000 milissegundos)
+
+
+Outra situação comum em que você pode encontrar funções anônimas é ao trabalhar com arrays e métodos de array, como map, filter e reduce:
+
+
+var numeros = [1, 2, 3, 4, 5];
+
+var quadrados = numeros.map(function(numero) {
+    return numero * numero;
+});
+
+console.log(quadrados); // [1, 4, 9, 16, 25]
+
+
+
+
+
