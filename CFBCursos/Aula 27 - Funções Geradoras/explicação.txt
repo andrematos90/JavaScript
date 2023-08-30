@@ -1,0 +1,35 @@
+Funções geradoras, também conhecidas como "generator functions", são um recurso poderoso introduzido no JavaScript pelo ECMAScript 6 (também conhecido como ES6 ou ES2015). Elas permitem a criação de iteradores personalizados de uma maneira mais concisa e controlada, tornando mais fácil a iteração sobre sequências de valores, como elementos de uma lista, elementos de um conjunto, entre outros.
+
+A principal diferença entre uma função geradora e uma função comum é que uma função geradora pode ser pausada durante a execução e posteriormente retomada. Elas usam a palavra-chave function* para serem declaradas e contêm um novo tipo de construção chamado yield.
+
+Aqui está um exemplo básico de como uma função geradora é definida e usada:
+
+
+function* contador(max) {
+  let count = 0;
+  while (count < max) {
+    yield count;
+    count++;
+  }
+}
+
+const iterator = contador(5);
+
+console.log(iterator.next().value);  // Saída: 0
+console.log(iterator.next().value);  // Saída: 1
+console.log(iterator.next().value);  // Saída: 2
+console.log(iterator.next().value);  // Saída: 3
+console.log(iterator.next().value);  // Saída: 4
+console.log(iterator.next().value);  // Saída: undefined (iteração completa)
+
+
+No exemplo acima, a função geradora contador é definida para gerar valores de 0 até um valor máximo (neste caso, 5). A cada chamada do método next(), a execução da função é pausada na instrução yield e o valor é retornado para o chamador. Quando o método next() é chamado novamente, a execução é retomada a partir do ponto onde parou e continua até encontrar a próxima instrução yield.
+
+As funções geradoras são úteis em cenários onde você precisa lidar com grandes conjuntos de dados ou quando você quer uma maneira mais eficiente de iterar sobre elementos sob demanda. Elas permitem economizar memória, já que os valores não precisam ser pré-calculados ou armazenados em uma estrutura de dados. Além disso, as funções geradoras podem ser usadas em loops for...of, tornando o código mais legível e conciso.
+
+Lembre-se de que as funções geradoras não executam todo o código de uma vez; elas são executadas incrementalmente conforme você chama o método next(). Isso as torna especialmente úteis para situações em que você não quer calcular ou carregar todos os valores de uma vez, mas sim conforme necessário.
+
+
+
+
+
