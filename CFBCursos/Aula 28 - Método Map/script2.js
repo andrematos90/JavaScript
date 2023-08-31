@@ -1,21 +1,21 @@
 // Seleciona todos os elementos <div> no documento e armazena em uma variável chamada 'element'.
-let element = document.getElementsByTagName("div");
+let elements = document.getElementsByTagName("div");
 
 // Converte a coleção de elementos HTML (HTML Collection) em um array utilizando o operador spread (...).
-let el = [...element];
+ elements = [...elements];
 
-// Utiliza o método 'map()' no array 'el' para iterar sobre cada elemento <div>.
-el.map((e, i) => {
+// Utiliza o método 'map()' no array 'elements' para iterar sobre cada elemento <div>.
+elements.map((e, i) => {
     // Modifica o conteúdo interno (HTML) do elemento <div> atual.
     e.innerHTML = "curso javascript";
 });
 
 
-/*let element = document.getElementsByTagName("div");: Isso seleciona todos os elementos <div> no documento HTML e armazena-os em uma coleção.
+/*let elements = document.getElementsByTagName("div");: Isso seleciona todos os elementos <div> no documento HTML e armazena-os em uma coleção.
 
-let el = [...element];: O operador spread (...) é usado para converter a coleção de elementos HTML em um array chamado el.
+let elements = [...elements];: O operador spread (...) é usado para converter a coleção de elementos HTML em um array chamado el.
 
-el.map((e, i) => {...});: Utiliza o método map() no array el para iterar sobre cada elemento <div>. Para cada elemento, a função de callback é chamada, que recebe dois parâmetros: e (o elemento atual) e i (o índice do elemento).
+elements.map((e, i) => {...});: Utiliza o método map() no array el para iterar sobre cada elemento <div>. Para cada elemento, a função de callback é chamada, que recebe dois parâmetros: e (o elemento atual) e i (o índice do elemento).
 
 e.innerHTML = "curso javascript";: Modifica o conteúdo interno (HTML) do elemento <div> atual para "curso javascript".
 

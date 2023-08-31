@@ -3,7 +3,7 @@ const cursos = ['HTML', 'CSS', 'JavaScript', 'C#', 'React'];
 
 // Utilizando o método 'map()' para criar um novo array 'c', onde cada elemento é copiado do array original 'cursos'.
 let novoArray = cursos.map((elmentodoArray, indices) => {
-    return elmentodoArray;
+    return elmentodoArray + 'oi';
 });
 
 // Imprimindo o novo array 'c' no console.
