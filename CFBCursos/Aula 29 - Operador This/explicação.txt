@@ -1,0 +1,61 @@
+Em JavaScript, a palavra-chave this é usada para se referir ao objeto no qual uma função está sendo executada. O valor de this pode mudar dependendo de como a função é chamada e de onde ela é definida. O uso de this é especialmente importante em objetos e construtores, pois permite que você acesse propriedades e métodos específicos do objeto em que a função está sendo invocada.
+
+A forma como this é determinado em uma função varia de acordo com o contexto de execução. Aqui estão alguns cenários comuns:
+
+
+Métodos de Objeto:
+Quando uma função é chamada como método de um objeto, o this se refere ao próprio objeto que contém o método. Isso permite que você acesse as propriedades e métodos do objeto usando this.
+
+
+const pessoa = {
+    nome: "João",
+    saudacao: function() {
+        console.log(`Olá, eu sou ${this.nome}`);
+    }
+};
+
+pessoa.saudacao(); // Saída: Olá, eu sou João
+
+
+
+
+
+Funções Normais:
+Quando uma função é chamada de forma independente, fora do contexto de um objeto, o this pode apontar para o objeto global (no caso de navegadores, o objeto window no contexto de navegador) ou undefined em strict mode.
+
+
+function exemplo() {
+    console.log(this); // Saída depende do contexto de execução
+}
+
+exemplo(); // Saída depende do ambiente de execução
+
+
+
+
+Funções de Evento:
+Quando uma função é usada como um manipulador de evento, o this frequentemente se refere ao elemento que acionou o evento.
+
+
+const botao = document.querySelector('button');
+botao.addEventListener('click', function() {
+    console.log(this); // Neste contexto, this se refere ao botão
+});
+
+
+
+
+Funções Construtoras:
+Em funções construtoras, que são usadas para criar objetos com características semelhantes, o this se refere ao objeto sendo criado.
+
+
+function Pessoa(nome) {
+    this.nome = nome;
+}
+
+
+const pessoa1 = new Pessoa('Maria');
+console.log(pessoa1.nome); // Saída: Maria
+
+É importante entender o contexto em que uma função está sendo chamada para determinar qual objeto this se refere. Você pode usar técnicas como .bind(), .call(), ou .apply() para controlar explicitamente o valor de this em uma função, se necessário.
+
