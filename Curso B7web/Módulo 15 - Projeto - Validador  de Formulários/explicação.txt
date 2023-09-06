@@ -1,0 +1,31 @@
+Este código JavaScript cria um objeto chamado Validator que encapsula a lógica de validação de um formulário HTML. O objetivo é permitir que você possa usar esse objeto para validar formulários de maneira reutilizável. Vou explicar o código linha por linha:
+
+O código começa com a definição de um objeto chamado Validator.
+
+Dentro do objeto Validator, há um método chamado handleSubmit, que lida com o envio do formulário. Esse método é chamado quando o formulário é submetido.
+
+Dentro do método handleSubmit, a primeira linha previne o envio padrão do formulário, que recarregaria a página, usando event.preventDefault().
+
+A variável send é definida como verdadeira, inicialmente, para determinar se o formulário pode ser enviado.
+
+A próxima linha obtém uma lista de todos os elementos input dentro do formulário HTML usando form.querySelectorAll('input'). Aqui, form é uma variável que deve ser definida em algum lugar no seu código com uma referência ao formulário que deseja validar.
+
+A função Validator.clearErrors() é chamada para limpar quaisquer mensagens de erro que possam ter sido exibidas anteriormente.
+
+O código entra em um loop for que itera sobre todos os elementos input encontrados no passo 5.
+
+Para cada elemento input, a função Validator.checkInput(input) é chamada para verificar se o valor do input atende às regras especificadas. Isso é feito através da definição de regras personalizadas em um atributo HTML chamado data-rules.
+
+Se a função checkInput retornar algo diferente de true, isso significa que houve um erro de validação. Nesse caso, a variável send é definida como false, e a função Validator.showError(input, check) é chamada para exibir a mensagem de erro ao lado do input correspondente.
+
+Após a conclusão do loop for, o código verifica se a variável send ainda é verdadeira. Se for, significa que nenhum erro foi encontrado durante a validação, e o formulário é submetido usando form.submit().
+
+O objeto Validator também inclui um método chamado checkInput, que verifica as regras de validação especificadas no atributo data-rules de cada input.
+
+O método showError é responsável por exibir mensagens de erro ao lado dos campos de entrada que não passaram na validação. Ele muda a cor da borda do input para vermelho e cria um elemento div para exibir a mensagem de erro.
+
+O método clearErrors é responsável por limpar as mensagens de erro da tela e restaurar a cor da borda do input para seu estado padrão.
+
+Finalmente, o código seleciona o formulário com a classe "validator" e adiciona um ouvinte de evento de envio. Quando o formulário é enviado, o método Validator.handleSubmit é chamado para realizar a validação.
+
+Para usar esse código, você deve criar um formulário HTML com os elementos input que deseja validar e definir as regras de validação usando o atributo data-rules. Certifique-se de definir a variável form com uma referência ao seu formulário, e o código cuidará do restante, exibindo mensagens de erro e impedindo o envio do formulário se a validação falhar.
