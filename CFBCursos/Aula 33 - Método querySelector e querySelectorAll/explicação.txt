@@ -1,0 +1,38 @@
+O método querySelector é uma função disponível em JavaScript que permite selecionar um elemento HTML específico em uma página da web com base em um seletor CSS. Ele faz parte da API DOM (Document Object Model) e é uma maneira eficaz de interagir com elementos HTML em uma página da web. O método querySelector retorna o primeiro elemento que corresponde ao seletor especificado.
+
+Aqui está a sintaxe básica do método querySelector:
+
+
+const elemento = document.querySelector(seletor);
+seletor: Uma string que representa o seletor CSS que você deseja usar para selecionar o elemento.
+Aqui estão alguns exemplos de uso do querySelector:
+
+Selecionando por um ID:
+
+
+const elementoPorId = document.querySelector('#meuId'); // Seleciona o elemento com o ID "meuId"
+Selecionando por classe:
+
+
+const elementoPorClasse = document.querySelector('.minhaClasse'); // Seleciona o primeiro elemento com a classe "minhaClasse"
+
+
+
+
+Selecionando por tipo de elemento:
+
+
+const primeiroParagrafo = document.querySelector('p'); // Seleciona o primeiro elemento <p> na página
+
+Selecionando por seletor combinado:
+
+
+const primeiroLinkNoMenu = document.querySelector('ul#menu li a'); // Seleciona o primeiro link (<a>) dentro de um <li> em uma lista (<ul>) com o ID "menu"
+
+É importante notar que o querySelector retorna apenas o primeiro elemento que corresponde ao seletor especificado, mesmo que haja vários elementos correspondentes na página. Se você deseja selecionar todos os elementos que correspondem a um seletor, você pode usar o método querySelectorAll.
+
+Exemplo:
+
+
+const todosOsParagrafos = document.querySelectorAll('p'); // Seleciona todos os elementos <p> na página e os retorna como uma lista NodeList
+Depois de selecionar um elemento usando querySelector, você pode realizar várias operações nele, como modificar seu conteúdo, estilo ou anexar ou remover classes. Isso é muito útil ao criar scripts para manipular a estrutura e o comportamento de páginas da web dinâmicas.
