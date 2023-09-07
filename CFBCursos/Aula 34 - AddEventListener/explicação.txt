@@ -1,0 +1,33 @@
+O método addEventListener é uma função utilizada em linguagens de programação web, como JavaScript, para registrar ou anexar um ouvinte de eventos a um elemento HTML. Esse método permite que você especifique uma função (ou função anônima) que será executada quando um evento específico ocorrer no elemento HTML alvo. Isso é fundamental para tornar as páginas da web interativas, pois permite que você responda a ações do usuário, como cliques de mouse, pressionamentos de teclas, movimentos do mouse, entre outros.
+
+Aqui está uma explicação passo a passo de como usar o método addEventListener:
+
+Selecionando o elemento alvo: Primeiro, você precisa selecionar o elemento HTML ao qual deseja adicionar o ouvinte de eventos. Você pode fazer isso usando métodos como getElementById, querySelector, getElementsByClassName, etc.
+
+
+Exemplo:
+
+const meuBotao = document.getElementById('meu-botao');
+Chamando o método addEventListener: Agora, você chama o método addEventListener no elemento HTML alvo. Ele aceita dois argumentos principais:
+
+O primeiro argumento é uma string que especifica o tipo de evento que você deseja ouvir, como "click", "mouseover", "keydown", etc.
+O segundo argumento é a função que será executada quando o evento ocorrer.
+
+Exemplo:
+
+meuBotao.addEventListener('click', minhaFuncao);
+
+Definindo a função de tratamento de evento: A função especificada como o segundo argumento será chamada sempre que o evento ocorrer. Esta função é conhecida como função de tratamento de evento e geralmente recebe um objeto de evento como argumento, que contém informações sobre o evento, como a posição do mouse, teclas pressionadas, etc.
+
+Exemplo:
+
+function minhaFuncao(event) {
+  // Seu código de manipulação de evento aqui
+}
+
+Removendo ouvintes de eventos (opcional): Em alguns casos, você pode precisar remover ouvintes de eventos para evitar comportamentos indesejados ou economizar recursos. Para fazer isso, você usa o método removeEventListener.
+
+Exemplo:
+
+meuBotao.removeEventListener('click', minhaFuncao);
+O método addEventListener é uma parte essencial da programação web interativa, permitindo que você crie comportamentos dinâmicos em resposta às ações do usuário. Ele é amplamente utilizado para criar aplicativos da web, jogos, formulários interativos e muito mais.
