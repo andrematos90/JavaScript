@@ -38,11 +38,6 @@ h1{
    
 }
 
-
-.selecionada{
-    background-color: red;
-}
-
 #botao{
     width: 80px;
     height: 40px;
@@ -70,4 +65,8 @@ h1{
 .exemplo:hover{
     background-color: crimson;
     cursor: pointer;
+}
+
+.selecionada{
+    background-color: red;
 }
