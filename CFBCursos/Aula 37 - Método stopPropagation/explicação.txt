@@ -1,0 +1,35 @@
+stopPropagation é um método comumente usado na programação JavaScript para lidar com eventos no modelo DOM (Document Object Model). Esse método geralmente é chamado em um objeto de evento (como um evento de clique, mouse, teclado, etc.) para evitar que o evento se propague para outros elementos DOM, o que significa que o evento não será mais propagado na hierarquia de elementos DOM.
+
+Em outras palavras, quando você tem vários elementos HTML aninhados (como divs dentro de divs), um evento disparado em um elemento de nível mais baixo pode se propagar para os elementos pai na árvore DOM. Isso é chamado de propagação de eventos. Usando stopPropagation, você pode interromper essa propagação e garantir que o evento não afete outros elementos na hierarquia DOM.
+
+Vamos criar um exemplo simples usando HTML e JavaScript para demonstrar como stopPropagation funciona. Suponhamos que temos um conjunto de elementos HTML aninhados e queremos interromper a propagação de eventos de clique. Vamos criar o código:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de stopPropagation</title>
+</head>
+<body>
+
+<div id="container">
+  <button id="botao">Clique em mim!</button>
+</div>
+
+<script>
+document.getElementById("container").addEventListener("click", function() {
+  alert("Container clicado!");
+});
+
+document.getElementById("botao").addEventListener("click", function(event) {
+  alert("Botão clicado!");
+  event.stopPropagation(); // Impede a propagação do evento para o elemento pai (container)
+});
+</script>
+
+</body>
+</html>
+Neste exemplo, temos um botão dentro de um contêiner. Quando você clica no botão, dois eventos de clique são disparados: um para o botão e outro para o contêiner pai. No entanto, usamos event.stopPropagation() dentro do manipulador de eventos do botão para impedir que o evento de clique se propague para o contêiner pai.
+
+Sem o event.stopPropagation(), ao clicar no botão, você veria duas mensagens de alerta: "Botão clicado!" e "Container clicado!". No entanto, com event.stopPropagation(), apenas a mensagem "Botão clicado!" será exibida, e o evento não se propagará para o contêiner pai. Isso ilustra como stopPropagation pode ser usado para controlar a propagação de eventos em elementos DOM aninhados.
