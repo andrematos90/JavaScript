@@ -1,10 +1,10 @@
-let divsesquerda = document.querySelectorAll('.esquerda .exemplo');
+let divEsquerda = document.querySelectorAll('.esquerda .exemplo');
 let divDireita = document.querySelector(".direita");
 let botaoCopia = document.querySelector('#botao');
 
 
 //coneverte o HTMLCollection ou nodelist para array
-arrayDeDivs = Array.from(divsesquerda);
+const arrayDeDivs = Array.from(divEsquerda);
 
 
 arrayDeDivs.map((elemento) =>{
@@ -17,13 +17,23 @@ arrayDeDivs.map((elemento) =>{
 })
 
 
-botaoCopia.addEventListener("click", copiar);
+botaoCopia.addEventListener("click", transferir);
 
-function copiar(){
+function transferir(){
     const divsSelecionadas = [...document.querySelectorAll(".selecionada")]
+    const divsNãoSelecionadas = [...document.querySelectorAll(".exemplo:not(.selecionada)")]
+   
+
     divsSelecionadas.map((el)=>{
     divDireita.appendChild(el)
-    })
+    });
+
+    
+    divsNãoSelecionadas.map((el)=>{
+        divEsquerda.appendChild(el)
+        });
+
+   
 }
     
 
