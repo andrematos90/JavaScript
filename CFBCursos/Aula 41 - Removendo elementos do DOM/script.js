@@ -3,7 +3,7 @@ const divs = ["Primeiradiv", "SegundaDiv", "TerceiraDiv", "QuartaDiv", "QuintaDi
 
 
 
-
+divs.map()
 
 
 
