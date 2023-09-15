@@ -1,0 +1,29 @@
+O método filter() é uma função de array em JavaScript que é usada para criar um novo array contendo elementos de um array original que atendem a um determinado critério ou condição especificada em uma função de callback. Ele não modifica o array original, mas retorna um novo array com os elementos filtrados.
+
+A sintaxe básica do método filter() é a seguinte:
+
+const novoArray = arrayOriginal.filter(callback(elemento, índice, array) => {
+  // lógica de filtro
+  return condição;
+});
+
+arrayOriginal: O array a ser filtrado.
+callback: Uma função que é executada para cada elemento do array original.
+elemento: O elemento atual sendo avaliado.
+índice (opcional): O índice do elemento atual no array.
+array (opcional): O próprio array original.
+condição: Uma expressão que determina se o elemento deve ser incluído no novo array resultante.
+A função de callback é chamada para cada elemento do array original. Se a condição especificada dentro da função de callback for avaliada como verdadeira (ou seja, retornar true), o elemento será incluído no novo array; caso contrário, será excluído.
+
+Aqui está um exemplo simples de uso do método filter():
+
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Filtra os números pares
+const numerosPares = numeros.filter(numero => numero % 2 === 0);
+
+console.log(numerosPares); // [2, 4, 6, 8, 10]
+
+Neste exemplo, a função numero => numero % 2 === 0 é usada como a função de callback para filtrar os números pares do array original numeros. Qualquer número que seja divisível por 2 (ou seja, tenha resto zero na divisão por 2) passará na condição e será incluído no novo array numerosPares.
+
+O método filter() é muito útil quando você precisa extrair um subconjunto de elementos de um array com base em uma condição específica, deixando o array original intacto.
