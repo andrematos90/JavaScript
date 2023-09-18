@@ -5,27 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
-    <link rel="stylesheet"   href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <main>
-        <div id="caixa1" class="caixa">
-            <!-- 
-                serão adicionadas dinamicamente
-                
-            <div id="div1" class="divs">Primeira Div</div>
-            <div id="div2" class="divs">Segunda Div</div>
-            <div id="div3" class="divs">Terceira Div</div>
-            <div id="div4" class="divs">Quarta Div</div>
-            <div id="div5" class="divs">Quinta Div</div>
-            <div id="div6" class="divs">Sexta Div</div> -->
+        <div id="caixaNovoFuncionalidades" class="caixa">
+            <div id="caixaNovoCurso" class="caixaFuncionalidades">
+                <label>Nome do curso</label>
+                <input type="text" name="nomeCurso" id="nomeCurso">
+                <button id="btnAdicionarNovoCurso">Adicionar</button>
+            </div>
+            <div id="caixaRemoverCurso" class="caixaFuncionalidades">
+                <button id="btnRemoverCurso">Remover Selecionado</button>
+            </div>
+            <div id="caixaCursoSelecionado" class="caixaFuncionalidades">
+                <button id="btnCursoSelecionado">Curso Selecionado</button>
+            </div>
         </div>
-
+        <div id="caixaCursos" class="caixa">
+            <!--cursos serao adicionados aqui-->
+        </div>
     </main>
-  
-
+    <script src="script.js"></script>
 </body>
 
 </html>
