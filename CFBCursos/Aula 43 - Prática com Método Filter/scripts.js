@@ -1,25 +1,3 @@
-const idades  = [10, 15, 33, 28, 12, 25]
-
-const maiorDeIdade = idades.filter((elemento, index, idade)=>{
-    if(elemento >= 18){
-       return elemento
-    }
-})
-
-console.log(maiorDeIdade)
-
-
-const menorDeIdade = idades.filter((elemento)=>{
-    if(elemento < 18){
-        return elemento
-    }
-})
-
-console.log(menorDeIdade)
-
-
-
-
 const caixaCursos = document.querySelector('#caixaCursos');
 const btnC = [...document.querySelectorAll(".curso")];
 const c1_2 = document.querySelector('#c1_2');
@@ -44,4 +22,15 @@ cursos.map((elemento, index) =>{
 
     novoElemento.appendChild(comnandos);
     caixaCursos.appendChild(novoElemento)
+})
+
+btnCursoSelecionado.addEventListener('click', ()=>{
+    const todosRadios = [...document.querySelectorAll("input[type = radio")];
+    let radioSelecionado = todosRadios.filter((elemento, indice, array) =>{
+        return elemento.checked
+    })
+    radioSelecionado = radioSelecionado[0]
+    //const curoselecionado = radioSelecionado.parentNode.parentNode.firstChild.textContent faz a mesma seleção
+    const curoselecionado = radioSelecionado.parentNode.previousSibling.textContent
+    alert(curoselecionado)
 })
