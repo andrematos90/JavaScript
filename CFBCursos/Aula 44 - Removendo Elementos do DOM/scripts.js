@@ -3,9 +3,9 @@ const btnC = [...document.querySelectorAll(".curso")];
 const c1_2 = document.querySelector('#c1_2');
 const cursos = ['HTML', 'CSS', 'JavaScript', "C#", "ASP.NET", "React"];
 const btnCursoSelecionado = document.getElementById("btnCursoSelecionado");
-const btnRemoverCurso = document.getElementById("btnRemove");
+const btnRemoverCurso = document.querySelector('#btnRemoverCurso');
 
-// Declare a função radioSelecionado antes de usá-la
+
 const radioSelecionado = () => {
     const todosRadios = [...document.querySelectorAll("input[type=radio")];
     let radioSelecionado = todosRadios.filter((elemento, indice, array) => {
