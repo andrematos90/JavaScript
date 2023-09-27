@@ -1,0 +1,31 @@
+O método "toggle" é uma função comumente encontrada em linguagens de programação, principalmente em JavaScript, que permite alternar entre dois estados ou valores. Esse método é frequentemente usado em elementos da interface do usuário, como botões ou caixas de seleção, para alternar entre duas opções, como ligado/desligado ou visível/invisível. O método "toggle" funciona da seguinte forma:
+
+Uso mais comum: Em muitos contextos, o "toggle" é usado para alternar uma classe CSS em um elemento HTML. Por exemplo, você pode ter um botão que, quando clicado, adiciona ou remove uma classe CSS de um elemento, alterando assim sua aparência ou comportamento. O método toggle permite fazer isso de forma concisa. Aqui está um exemplo em JavaScript:
+
+// HTML:
+// <button id="toggleButton">Clique para Alternar</button>
+// <div id="elementToToggle" class="hidden">Este elemento pode ser alternado.</div>
+
+// JavaScript:
+const toggleButton = document.getElementById("toggleButton");
+const elementToToggle = document.getElementById("elementToToggle");
+
+toggleButton.addEventListener("click", () => {
+  elementToToggle.classList.toggle("hidden");
+});
+
+No exemplo acima, quando o botão é clicado, a classe "hidden" é alternada no elemento elementToToggle, tornando-o visível quando a classe está ausente e invisível quando a classe está presente.
+
+Alternar valores booleanos: O método "toggle" também pode ser usado para alternar entre dois valores booleanos, como true e false. Por exemplo, você pode alternar o estado de uma variável booleana da seguinte maneira:
+
+let isActive = false;
+isActive = !isActive; // Alternando o valor de isActive
+console.log(isActive); // Agora isActive é true
+isActive = !isActive; // Alternando novamente
+console.log(isActive); // isActive agora é false novamente
+
+O método "toggle" simplifica a alternância entre estados ou valores, tornando o código mais limpo e legível em situações em que você precisa alternar entre duas opções. Seu uso pode variar dependendo da linguagem de programação ou do contexto em que está sendo aplicado.
+
+
+
+
