@@ -1,0 +1,28 @@
+Em JavaScript, o método every() é uma função de array que verifica se todos os elementos do array satisfazem uma determinada condição, que é especificada por uma função de retorno (callback). O método every() retorna true se a condição for verdadeira para todos os elementos do array e false se pelo menos um elemento não atender à condição.
+
+A sintaxe básica do método every() é a seguinte:
+
+array.every(funcaoDeRetorno(elemento, indice, array), thisArg)
+
+funcaoDeRetorno é a função que será executada para cada elemento do array. Ela recebe três argumentos:
+elemento: o elemento atual sendo avaliado.
+indice (opcional): o índice do elemento atual no array.
+array (opcional): o array no qual o método every() foi chamado.
+thisArg (opcional) é um valor que pode ser usado como this ao chamar a função de retorno. Isso pode ser útil se a função de retorno usar o this para alguma finalidade.
+
+A função de retorno deve retornar um valor booleano (true ou false). O método every() itera por todos os elementos do array e verifica se a função de retorno retorna true para cada elemento. Se a função de retorno retornar true para todos os elementos, o método every() retorna true. Caso contrário, se a função de retorno retornar false para pelo menos um elemento, o método every() retorna false.
+
+Aqui está um exemplo simples de uso do método every():
+
+const numbers = [2, 4, 6, 8, 10];
+
+const allEven = numbers.every(function(element) {
+  return element % 2 === 0;
+});
+
+console.log(allEven); // Retorna true, porque todos os números no array são pares.
+
+Neste exemplo, o every() verifica se todos os números no array numbers são pares, o que é verdade, e, portanto, retorna true.
+
+O método every() é útil quando você deseja determinar se uma determinada condição é verdadeira para todos os elementos de um array, por exemplo, ao validar dados ou aplicar regras de negócios a uma coleção de elementos.
+
