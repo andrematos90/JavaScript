@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.caixa_verde {
+    border: 3px solid green;
+    border-radius: 5px;
+    height: 30px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    background-color: #98FB98;
+}
+
+.caixa_azul {
+    border: 3px solid blue;
+    border-radius: 5px;
+    height: 80px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    background-color: #DCDCDC;
+    display: flex;
+    justify-content: center;
+}
+
+#txt_pesquisar{
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+
+#btnReduzir{
+    background-color: #4B0082;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    color: antiquewhite;
+}
+
+.caixa_vermelha {
+
+    border: 3px solid red;
+    border-radius: 5px;
+    height: 30px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    background-color: #FA8072;
+}
